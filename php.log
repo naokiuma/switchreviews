@@ -1,0 +1,3900 @@
+
+
+[16-Jun-2019 07:08:44 UTC] デバッグ:取得したコメントデータdetail：Array
+(
+)
+
+[16-Jun-2019 07:08:44 UTC] デバッグ:画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[16-Jun-2019 07:08:44 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/switchreviews/reviewdetail.php on line 99
+[16-Jun-2019 07:08:44 UTC] デバッグ:お気に入り情報があるか確認します。
+[16-Jun-2019 07:08:44 UTC] デバッグ:ユーザーID：
+[16-Jun-2019 07:08:44 UTC] デバッグ:レビューID：30
+[16-Jun-2019 07:08:44 UTC] デバッグ:クエリ成功
+[16-Jun-2019 07:08:44 UTC] デバッグ:特に気に入ってません
+[16-Jun-2019 16:39:26 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[16-Jun-2019 16:39:26 UTC] デバッグ:「　トップページ　
+[16-Jun-2019 16:39:26 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[16-Jun-2019 16:39:26 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[16-Jun-2019 16:39:26 UTC] デバッグ:セッションID：ek34shb1hva1hsqm017nhl3muv
+[16-Jun-2019 16:39:26 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[16-Jun-2019 16:39:26 UTC] デバッグ:現在日時タイムスタンプ：1560703166
+[16-Jun-2019 16:39:26 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[16-Jun-2019 16:39:26 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[16-Jun-2019 16:39:26 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] =>
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] =>
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] =>
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] =>
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[16-Jun-2019 16:39:31 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[16-Jun-2019 16:39:31 UTC] デバッグ:「　トップページ　
+[16-Jun-2019 16:39:31 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[16-Jun-2019 16:39:31 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[16-Jun-2019 16:39:31 UTC] デバッグ:セッションID：i8i563gh7hnk1v4ko7h3mnamni
+[16-Jun-2019 16:39:31 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[16-Jun-2019 16:39:31 UTC] デバッグ:現在日時タイムスタンプ：1560703171
+[16-Jun-2019 16:39:31 UTC] デバッグ:レビュー情報一覧を取得します
+[16-Jun-2019 16:39:31 UTC] デバッグ:クエリ成功
+[16-Jun-2019 16:39:31 UTC] デバッグ:SQL文章:SELECT * FROM reviews ORDER BY id desc LIMIT 20 OFFSET 0
+[16-Jun-2019 16:39:31 UTC] デバッグ:クエリ成功
+[16-Jun-2019 16:39:31 UTC] デバッグ:$resultの中身Array
+(
+    [total] => 39
+    [total_page] => 2
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 43
+                    [title] => テストその２
+                    [category_id] => 0
+                    [body] => テストその２
+                    [abouturl] =>
+                    [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-04-07 04:01:42
+                    [update_date] => 2019-04-07 13:01:42
+                )
+
+            [1] => Array
+                (
+                    [id] => 42
+                    [title] => テストアクションゲーム
+                    [category_id] => 1
+                    [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+                    [abouturl] =>
+                    [pic] =>
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-04-07 03:51:01
+                    [update_date] => 2019-04-07 12:51:01
+                )
+
+            [2] => Array
+                (
+                    [id] => 41
+                    [title] => 寿司ストライカーで指トレ
+                    [category_id] => 2
+                    [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+                    [abouturl] =>
+                    [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-03-03 14:44:48
+                    [update_date] => 2019-03-03 23:44:49
+                )
+
+            [3] => Array
+                (
+                    [id] => 40
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [4] => Array
+                (
+                    [id] => 39
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [5] => Array
+                (
+                    [id] => 38
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [6] => Array
+                (
+                    [id] => 37
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [7] => Array
+                (
+                    [id] => 36
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [8] => Array
+                (
+                    [id] => 35
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [9] => Array
+                (
+                    [id] => 34
+                    [title] => テストです。
+                    [category_id] => 2
+                    [body] => ゆるゆるとしたアクション。
+                    [abouturl] =>
+                    [pic] =>
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-25 04:36:59
+                    [update_date] => 2019-02-25 13:36:59
+                )
+
+            [10] => Array
+                (
+                    [id] => 33
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [11] => Array
+                (
+                    [id] => 32
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [12] => Array
+                (
+                    [id] => 31
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [13] => Array
+                (
+                    [id] => 30
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [14] => Array
+                (
+                    [id] => 29
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [15] => Array
+                (
+                    [id] => 28
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [16] => Array
+                (
+                    [id] => 27
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [17] => Array
+                (
+                    [id] => 26
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [18] => Array
+                (
+                    [id] => 25
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [19] => Array
+                (
+                    [id] => 24
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+        )
+
+)
+
+[16-Jun-2019 16:39:31 UTC] デバッグ:カテゴリー情報を取得します
+[16-Jun-2019 16:39:31 UTC] デバッグ:クエリ成功
+[16-Jun-2019 16:39:31 UTC] デバッグ:画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[16-Jun-2019 16:40:59 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[16-Jun-2019 16:40:59 UTC] デバッグ:「　トップページ　
+[16-Jun-2019 16:40:59 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[16-Jun-2019 16:40:59 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[16-Jun-2019 16:40:59 UTC] デバッグ:セッションID：sl8rspam3ti4vstar7jhm1f3es
+[16-Jun-2019 16:40:59 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[16-Jun-2019 16:40:59 UTC] デバッグ:現在日時タイムスタンプ：1560703259
+[16-Jun-2019 16:40:59 UTC] デバッグ:検索ワードに一致するデータを取得します。
+[16-Jun-2019 16:40:59 UTC] デバッグ:クエリ成功
+[16-Jun-2019 16:40:59 UTC] デバッグ:クエリ結果情報です!!：PDOStatement Object
+(
+    [queryString] => SELECT * FROM reviews WHERE (title LIKE '%%' OR body LIKE '%%')  AND category_id = 3
+)
+
+[16-Jun-2019 16:40:59 UTC] デバッグ:全体のクエリ結果情報：Array
+(
+    [total] => 0
+    [total_page] => 0
+    [data] => Array
+        (
+        )
+
+)
+
+[16-Jun-2019 16:40:59 UTC] デバッグ:カテゴリー情報を取得します
+[16-Jun-2019 16:40:59 UTC] デバッグ:クエリ成功
+[16-Jun-2019 16:40:59 UTC] デバッグ:画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[16-Jun-2019 16:42:05 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[16-Jun-2019 16:42:05 UTC] デバッグ:「　トップページ　
+[16-Jun-2019 16:42:05 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[16-Jun-2019 16:42:05 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[16-Jun-2019 16:42:05 UTC] デバッグ:セッションID：uioskhveqbjvcerv2l2eq5na9d
+[16-Jun-2019 16:42:05 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[16-Jun-2019 16:42:05 UTC] デバッグ:現在日時タイムスタンプ：1560703325
+[16-Jun-2019 16:42:05 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[16-Jun-2019 16:42:05 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[16-Jun-2019 16:42:05 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[16-Jun-2019 16:42:29 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[16-Jun-2019 16:42:29 UTC] デバッグ:「　トップページ　
+[16-Jun-2019 16:42:29 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[16-Jun-2019 16:42:29 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[16-Jun-2019 16:42:29 UTC] デバッグ:セッションID：bnfvdcbkdh2ufad3dio78h4nhk
+[16-Jun-2019 16:42:29 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[16-Jun-2019 16:42:29 UTC] デバッグ:現在日時タイムスタンプ：1560703349
+[16-Jun-2019 16:42:29 UTC] デバッグ:レビュー情報一覧を取得します
+[16-Jun-2019 16:42:29 UTC] デバッグ:クエリ成功
+[16-Jun-2019 16:42:29 UTC] デバッグ:SQL文章:SELECT * FROM reviews ORDER BY id desc LIMIT 20 OFFSET 0
+[16-Jun-2019 16:42:29 UTC] デバッグ:クエリ成功
+[16-Jun-2019 16:42:29 UTC] デバッグ:$resultの中身Array
+(
+    [total] => 39
+    [total_page] => 2
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 43
+                    [title] => テストその２
+                    [category_id] => 0
+                    [body] => テストその２
+                    [abouturl] => 
+                    [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-04-07 04:01:42
+                    [update_date] => 2019-04-07 13:01:42
+                )
+
+            [1] => Array
+                (
+                    [id] => 42
+                    [title] => テストアクションゲーム
+                    [category_id] => 1
+                    [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+                    [abouturl] => 
+                    [pic] => 
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-04-07 03:51:01
+                    [update_date] => 2019-04-07 12:51:01
+                )
+
+            [2] => Array
+                (
+                    [id] => 41
+                    [title] => 寿司ストライカーで指トレ
+                    [category_id] => 2
+                    [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+                    [abouturl] => 
+                    [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-03-03 14:44:48
+                    [update_date] => 2019-03-03 23:44:49
+                )
+
+            [3] => Array
+                (
+                    [id] => 40
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [4] => Array
+                (
+                    [id] => 39
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [5] => Array
+                (
+                    [id] => 38
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [6] => Array
+                (
+                    [id] => 37
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [7] => Array
+                (
+                    [id] => 36
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [8] => Array
+                (
+                    [id] => 35
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [9] => Array
+                (
+                    [id] => 34
+                    [title] => テストです。
+                    [category_id] => 2
+                    [body] => ゆるゆるとしたアクション。
+                    [abouturl] => 
+                    [pic] => 
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-25 04:36:59
+                    [update_date] => 2019-02-25 13:36:59
+                )
+
+            [10] => Array
+                (
+                    [id] => 33
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [11] => Array
+                (
+                    [id] => 32
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [12] => Array
+                (
+                    [id] => 31
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [13] => Array
+                (
+                    [id] => 30
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [14] => Array
+                (
+                    [id] => 29
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [15] => Array
+                (
+                    [id] => 28
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [16] => Array
+                (
+                    [id] => 27
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [17] => Array
+                (
+                    [id] => 26
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [18] => Array
+                (
+                    [id] => 25
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [19] => Array
+                (
+                    [id] => 24
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+        )
+
+)
+
+[16-Jun-2019 16:42:29 UTC] デバッグ:カテゴリー情報を取得します
+[16-Jun-2019 16:42:29 UTC] デバッグ:クエリ成功
+[16-Jun-2019 16:42:29 UTC] デバッグ:画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[17-Jun-2019 14:32:28 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[17-Jun-2019 14:32:28 UTC] デバッグ:「　トップページ　
+[17-Jun-2019 14:32:28 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[17-Jun-2019 14:32:28 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[17-Jun-2019 14:32:28 UTC] デバッグ:セッションID：vueabeq9e5ooqipro4vaeullg9
+[17-Jun-2019 14:32:28 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[17-Jun-2019 14:32:28 UTC] デバッグ:現在日時タイムスタンプ：1560781948
+[17-Jun-2019 14:32:28 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[17-Jun-2019 14:32:29 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[17-Jun-2019 14:32:29 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[17-Jun-2019 14:32:32 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[17-Jun-2019 14:32:32 UTC] デバッグ:「　トップページ　
+[17-Jun-2019 14:32:32 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[17-Jun-2019 14:32:32 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[17-Jun-2019 14:32:32 UTC] デバッグ:セッションID：oag043lqjo6er0mnoni5r20prc
+[17-Jun-2019 14:32:32 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[17-Jun-2019 14:32:32 UTC] デバッグ:現在日時タイムスタンプ：1560781952
+[17-Jun-2019 14:32:32 UTC] デバッグ:レビュー情報一覧を取得します
+[17-Jun-2019 14:32:32 UTC] デバッグ:クエリ成功
+[17-Jun-2019 14:32:32 UTC] デバッグ:SQL文章:SELECT * FROM reviews ORDER BY id desc LIMIT 20 OFFSET 0
+[17-Jun-2019 14:32:32 UTC] デバッグ:クエリ成功
+[17-Jun-2019 14:32:32 UTC] デバッグ:$resultの中身Array
+(
+    [total] => 39
+    [total_page] => 2
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 43
+                    [title] => テストその２
+                    [category_id] => 0
+                    [body] => テストその２
+                    [abouturl] => 
+                    [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-04-07 04:01:42
+                    [update_date] => 2019-04-07 13:01:42
+                )
+
+            [1] => Array
+                (
+                    [id] => 42
+                    [title] => テストアクションゲーム
+                    [category_id] => 1
+                    [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+                    [abouturl] => 
+                    [pic] => 
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-04-07 03:51:01
+                    [update_date] => 2019-04-07 12:51:01
+                )
+
+            [2] => Array
+                (
+                    [id] => 41
+                    [title] => 寿司ストライカーで指トレ
+                    [category_id] => 2
+                    [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+                    [abouturl] => 
+                    [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-03-03 14:44:48
+                    [update_date] => 2019-03-03 23:44:49
+                )
+
+            [3] => Array
+                (
+                    [id] => 40
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [4] => Array
+                (
+                    [id] => 39
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [5] => Array
+                (
+                    [id] => 38
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [6] => Array
+                (
+                    [id] => 37
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [7] => Array
+                (
+                    [id] => 36
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [8] => Array
+                (
+                    [id] => 35
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [9] => Array
+                (
+                    [id] => 34
+                    [title] => テストです。
+                    [category_id] => 2
+                    [body] => ゆるゆるとしたアクション。
+                    [abouturl] => 
+                    [pic] => 
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-25 04:36:59
+                    [update_date] => 2019-02-25 13:36:59
+                )
+
+            [10] => Array
+                (
+                    [id] => 33
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [11] => Array
+                (
+                    [id] => 32
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [12] => Array
+                (
+                    [id] => 31
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [13] => Array
+                (
+                    [id] => 30
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [14] => Array
+                (
+                    [id] => 29
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [15] => Array
+                (
+                    [id] => 28
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [16] => Array
+                (
+                    [id] => 27
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [17] => Array
+                (
+                    [id] => 26
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [18] => Array
+                (
+                    [id] => 25
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [19] => Array
+                (
+                    [id] => 24
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+        )
+
+)
+
+[17-Jun-2019 14:32:32 UTC] デバッグ:カテゴリー情報を取得します
+[17-Jun-2019 14:32:32 UTC] デバッグ:クエリ成功
+[17-Jun-2019 14:32:32 UTC] デバッグ:画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[17-Jun-2019 14:32:33 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[17-Jun-2019 14:32:33 UTC] デバッグ:「　トップページ　
+[17-Jun-2019 14:32:33 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[17-Jun-2019 14:32:33 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[17-Jun-2019 14:32:33 UTC] デバッグ:セッションID：fv06q82l05n8ii9475dj7koj82
+[17-Jun-2019 14:32:33 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[17-Jun-2019 14:32:33 UTC] デバッグ:現在日時タイムスタンプ：1560781953
+[17-Jun-2019 14:32:33 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[17-Jun-2019 14:32:33 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[17-Jun-2019 14:32:33 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[18-Jul-2019 13:44:35 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[18-Jul-2019 13:44:35 UTC] デバッグ:「　トップページ　
+[18-Jul-2019 13:44:35 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[18-Jul-2019 13:44:35 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[18-Jul-2019 13:44:35 UTC] デバッグ:セッションID：i7ibgvm9n93ve96p2q9lqsedd2
+[18-Jul-2019 13:44:35 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[18-Jul-2019 13:44:35 UTC] デバッグ:現在日時タイムスタンプ：1563457475
+[18-Jul-2019 13:44:35 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[18-Jul-2019 13:44:35 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[18-Jul-2019 13:44:35 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[18-Jul-2019 13:45:15 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[18-Jul-2019 13:45:15 UTC] デバッグ:「　トップページ　
+[18-Jul-2019 13:45:15 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[18-Jul-2019 13:45:15 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[18-Jul-2019 13:45:15 UTC] デバッグ:セッションID：e06b492b7pfr53i5o77828jek9
+[18-Jul-2019 13:45:15 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[18-Jul-2019 13:45:15 UTC] デバッグ:現在日時タイムスタンプ：1563457515
+[18-Jul-2019 13:45:15 UTC] デバッグ:レビュー情報一覧を取得します
+[18-Jul-2019 13:45:15 UTC] デバッグ:クエリ成功
+[18-Jul-2019 13:45:15 UTC] デバッグ:SQL文章:SELECT * FROM reviews ORDER BY id desc LIMIT 20 OFFSET 0
+[18-Jul-2019 13:45:15 UTC] デバッグ:クエリ成功
+[18-Jul-2019 13:45:15 UTC] デバッグ:$resultの中身Array
+(
+    [total] => 39
+    [total_page] => 2
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 43
+                    [title] => テストその２
+                    [category_id] => 0
+                    [body] => テストその２
+                    [abouturl] => 
+                    [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-04-07 04:01:42
+                    [update_date] => 2019-04-07 13:01:42
+                )
+
+            [1] => Array
+                (
+                    [id] => 42
+                    [title] => テストアクションゲーム
+                    [category_id] => 1
+                    [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+                    [abouturl] => 
+                    [pic] => 
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-04-07 03:51:01
+                    [update_date] => 2019-04-07 12:51:01
+                )
+
+            [2] => Array
+                (
+                    [id] => 41
+                    [title] => 寿司ストライカーで指トレ
+                    [category_id] => 2
+                    [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+                    [abouturl] => 
+                    [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-03-03 14:44:48
+                    [update_date] => 2019-03-03 23:44:49
+                )
+
+            [3] => Array
+                (
+                    [id] => 40
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [4] => Array
+                (
+                    [id] => 39
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [5] => Array
+                (
+                    [id] => 38
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [6] => Array
+                (
+                    [id] => 37
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [7] => Array
+                (
+                    [id] => 36
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [8] => Array
+                (
+                    [id] => 35
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [9] => Array
+                (
+                    [id] => 34
+                    [title] => テストです。
+                    [category_id] => 2
+                    [body] => ゆるゆるとしたアクション。
+                    [abouturl] => 
+                    [pic] => 
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-25 04:36:59
+                    [update_date] => 2019-02-25 13:36:59
+                )
+
+            [10] => Array
+                (
+                    [id] => 33
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [11] => Array
+                (
+                    [id] => 32
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [12] => Array
+                (
+                    [id] => 31
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [13] => Array
+                (
+                    [id] => 30
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [14] => Array
+                (
+                    [id] => 29
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [15] => Array
+                (
+                    [id] => 28
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [16] => Array
+                (
+                    [id] => 27
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [17] => Array
+                (
+                    [id] => 26
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [18] => Array
+                (
+                    [id] => 25
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [19] => Array
+                (
+                    [id] => 24
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+        )
+
+)
+
+[18-Jul-2019 13:45:15 UTC] デバッグ:カテゴリー情報を取得します
+[18-Jul-2019 13:45:15 UTC] デバッグ:クエリ成功
+[18-Jul-2019 13:45:15 UTC] デバッグ:画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[18-Jul-2019 13:45:22 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[18-Jul-2019 13:45:22 UTC] デバッグ:「　トップページ　
+[18-Jul-2019 13:45:22 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[18-Jul-2019 13:45:22 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[18-Jul-2019 13:45:22 UTC] デバッグ:セッションID：r1bquraec6rlj92a8psb0qi0rc
+[18-Jul-2019 13:45:22 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[18-Jul-2019 13:45:22 UTC] デバッグ:現在日時タイムスタンプ：1563457522
+[18-Jul-2019 13:45:22 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[18-Jul-2019 13:45:22 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[18-Jul-2019 13:45:22 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[28-Jul-2019 06:43:40 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[28-Jul-2019 06:43:40 UTC] デバッグ:「　トップページ　
+[28-Jul-2019 06:43:40 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[28-Jul-2019 06:43:40 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[28-Jul-2019 06:43:40 UTC] デバッグ:セッションID：s4vbbhvt7pbt749ik68t5qnbm5
+[28-Jul-2019 06:43:40 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[28-Jul-2019 06:43:40 UTC] デバッグ:現在日時タイムスタンプ：1564296220
+[28-Jul-2019 06:43:40 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[28-Jul-2019 06:43:40 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[28-Jul-2019 06:43:40 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[28-Jul-2019 06:43:43 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[28-Jul-2019 06:43:43 UTC] デバッグ:「　トップページ　
+[28-Jul-2019 06:43:43 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[28-Jul-2019 06:43:43 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[28-Jul-2019 06:43:43 UTC] デバッグ:セッションID：j352p83apvmn5nh6j8athrfmgk
+[28-Jul-2019 06:43:43 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[28-Jul-2019 06:43:43 UTC] デバッグ:現在日時タイムスタンプ：1564296223
+[28-Jul-2019 06:43:44 UTC] デバッグ:レビュー情報一覧を取得します
+[28-Jul-2019 06:43:44 UTC] デバッグ:クエリ成功
+[28-Jul-2019 06:43:44 UTC] デバッグ:SQL文章:SELECT * FROM reviews ORDER BY id desc LIMIT 20 OFFSET 0
+[28-Jul-2019 06:43:44 UTC] デバッグ:クエリ成功
+[28-Jul-2019 06:43:44 UTC] デバッグ:$resultの中身Array
+(
+    [total] => 39
+    [total_page] => 2
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 43
+                    [title] => テストその２
+                    [category_id] => 0
+                    [body] => テストその２
+                    [abouturl] => 
+                    [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-04-07 04:01:42
+                    [update_date] => 2019-04-07 13:01:42
+                )
+
+            [1] => Array
+                (
+                    [id] => 42
+                    [title] => テストアクションゲーム
+                    [category_id] => 1
+                    [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+                    [abouturl] => 
+                    [pic] => 
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-04-07 03:51:01
+                    [update_date] => 2019-04-07 12:51:01
+                )
+
+            [2] => Array
+                (
+                    [id] => 41
+                    [title] => 寿司ストライカーで指トレ
+                    [category_id] => 2
+                    [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+                    [abouturl] => 
+                    [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-03-03 14:44:48
+                    [update_date] => 2019-03-03 23:44:49
+                )
+
+            [3] => Array
+                (
+                    [id] => 40
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [4] => Array
+                (
+                    [id] => 39
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [5] => Array
+                (
+                    [id] => 38
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [6] => Array
+                (
+                    [id] => 37
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [7] => Array
+                (
+                    [id] => 36
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [8] => Array
+                (
+                    [id] => 35
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [9] => Array
+                (
+                    [id] => 34
+                    [title] => テストです。
+                    [category_id] => 2
+                    [body] => ゆるゆるとしたアクション。
+                    [abouturl] => 
+                    [pic] => 
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-25 04:36:59
+                    [update_date] => 2019-02-25 13:36:59
+                )
+
+            [10] => Array
+                (
+                    [id] => 33
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [11] => Array
+                (
+                    [id] => 32
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [12] => Array
+                (
+                    [id] => 31
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [13] => Array
+                (
+                    [id] => 30
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [14] => Array
+                (
+                    [id] => 29
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [15] => Array
+                (
+                    [id] => 28
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [16] => Array
+                (
+                    [id] => 27
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [17] => Array
+                (
+                    [id] => 26
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [18] => Array
+                (
+                    [id] => 25
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [19] => Array
+                (
+                    [id] => 24
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+        )
+
+)
+
+[28-Jul-2019 06:43:44 UTC] デバッグ:カテゴリー情報を取得します
+[28-Jul-2019 06:43:44 UTC] デバッグ:クエリ成功
+[28-Jul-2019 06:43:44 UTC] デバッグ:画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[28-Jul-2019 06:43:55 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[28-Jul-2019 06:43:55 UTC] デバッグ:「　トップページ　
+[28-Jul-2019 06:43:55 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[28-Jul-2019 06:43:55 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[28-Jul-2019 06:43:55 UTC] デバッグ:セッションID：8dhi9oca1cg4qedomh1hso2g00
+[28-Jul-2019 06:43:55 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[28-Jul-2019 06:43:55 UTC] デバッグ:現在日時タイムスタンプ：1564296235
+[28-Jul-2019 06:43:55 UTC] デバッグ:検索ワードに一致するデータを取得します。
+[28-Jul-2019 06:43:55 UTC] デバッグ:クエリ成功
+[28-Jul-2019 06:43:55 UTC] デバッグ:カテゴリー情報を取得します
+[28-Jul-2019 06:43:55 UTC] デバッグ:クエリ成功
+[28-Jul-2019 06:43:55 UTC] デバッグ:画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[09-Oct-2019 17:04:04 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Oct-2019 17:04:05 UTC] デバッグ:「　トップページ　
+[09-Oct-2019 17:04:05 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Oct-2019 17:04:05 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-Oct-2019 17:04:05 UTC] デバッグ:セッションID：ueod53191l0ui6inu8hk6hc7hg
+[09-Oct-2019 17:04:05 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[09-Oct-2019 17:04:05 UTC] デバッグ:現在日時タイムスタンプ：1570640645
+[09-Oct-2019 17:04:05 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[09-Oct-2019 17:04:05 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[09-Oct-2019 17:04:05 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[09-Oct-2019 17:04:46 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Oct-2019 17:04:46 UTC] デバッグ:「　ユーザー登録ページ　
+[09-Oct-2019 17:04:46 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Oct-2019 17:04:46 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-Oct-2019 17:04:46 UTC] デバッグ:セッションID：gm7ol753h4kfvg2lag8e3kg0nl
+[09-Oct-2019 17:04:46 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[09-Oct-2019 17:04:46 UTC] デバッグ:現在日時タイムスタンプ：1570640686
+[09-Oct-2019 17:04:46 UTC] デバッグ:画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[09-Oct-2019 17:04:51 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Oct-2019 17:04:51 UTC] デバッグ:「　ユーザー登録ページ　
+[09-Oct-2019 17:04:51 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Oct-2019 17:04:51 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-Oct-2019 17:04:51 UTC] デバッグ:セッションID：4t3vo0rt8c7blbgsl2sj8n5utv
+[09-Oct-2019 17:04:51 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[09-Oct-2019 17:04:51 UTC] デバッグ:現在日時タイムスタンプ：1570640691
+[09-Oct-2019 17:04:51 UTC] デバッグ:POST送信あり。
+[09-Oct-2019 17:04:51 UTC] デバッグ:バリデーションokです。
+[09-Oct-2019 17:04:51 UTC] デバッグ:クエリ成功
+[09-Oct-2019 17:04:51 UTC] デバッグ:クエリ結果の中身:
+[09-Oct-2019 17:04:51 UTC] デバッグ:パスワードが違います
+[09-Oct-2019 17:04:51 UTC] デバッグ:画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[09-Oct-2019 17:05:00 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Oct-2019 17:05:00 UTC] デバッグ:「　トップページ　
+[09-Oct-2019 17:05:00 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Oct-2019 17:05:00 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-Oct-2019 17:05:00 UTC] デバッグ:セッションID：otkk4mfh9t42r5vfrl598h234s
+[09-Oct-2019 17:05:00 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[09-Oct-2019 17:05:00 UTC] デバッグ:現在日時タイムスタンプ：1570640700
+[09-Oct-2019 17:05:00 UTC] デバッグ:レビュー情報一覧を取得します
+[09-Oct-2019 17:05:00 UTC] デバッグ:クエリ成功
+[09-Oct-2019 17:05:00 UTC] デバッグ:SQL文章:SELECT * FROM reviews ORDER BY id desc LIMIT 20 OFFSET 0
+[09-Oct-2019 17:05:00 UTC] デバッグ:クエリ成功
+[09-Oct-2019 17:05:00 UTC] デバッグ:$resultの中身Array
+(
+    [total] => 39
+    [total_page] => 2
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 43
+                    [title] => テストその２
+                    [category_id] => 0
+                    [body] => テストその２
+                    [abouturl] => 
+                    [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-04-07 04:01:42
+                    [update_date] => 2019-04-07 13:01:42
+                )
+
+            [1] => Array
+                (
+                    [id] => 42
+                    [title] => テストアクションゲーム
+                    [category_id] => 1
+                    [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+                    [abouturl] => 
+                    [pic] => 
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-04-07 03:51:01
+                    [update_date] => 2019-04-07 12:51:01
+                )
+
+            [2] => Array
+                (
+                    [id] => 41
+                    [title] => 寿司ストライカーで指トレ
+                    [category_id] => 2
+                    [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+                    [abouturl] => 
+                    [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-03-03 14:44:48
+                    [update_date] => 2019-03-03 23:44:49
+                )
+
+            [3] => Array
+                (
+                    [id] => 40
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [4] => Array
+                (
+                    [id] => 39
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [5] => Array
+                (
+                    [id] => 38
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [6] => Array
+                (
+                    [id] => 37
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [7] => Array
+                (
+                    [id] => 36
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [8] => Array
+                (
+                    [id] => 35
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [9] => Array
+                (
+                    [id] => 34
+                    [title] => テストです。
+                    [category_id] => 2
+                    [body] => ゆるゆるとしたアクション。
+                    [abouturl] => 
+                    [pic] => 
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-25 04:36:59
+                    [update_date] => 2019-02-25 13:36:59
+                )
+
+            [10] => Array
+                (
+                    [id] => 33
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [11] => Array
+                (
+                    [id] => 32
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [12] => Array
+                (
+                    [id] => 31
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [13] => Array
+                (
+                    [id] => 30
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [14] => Array
+                (
+                    [id] => 29
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [15] => Array
+                (
+                    [id] => 28
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [16] => Array
+                (
+                    [id] => 27
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [17] => Array
+                (
+                    [id] => 26
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [18] => Array
+                (
+                    [id] => 25
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [19] => Array
+                (
+                    [id] => 24
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+        )
+
+)
+
+[09-Oct-2019 17:05:00 UTC] デバッグ:カテゴリー情報を取得します
+[09-Oct-2019 17:05:00 UTC] デバッグ:クエリ成功
+[09-Oct-2019 17:05:00 UTC] デバッグ:画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[09-Oct-2019 17:05:16 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Oct-2019 17:05:16 UTC] デバッグ:「　トップページ　
+[09-Oct-2019 17:05:16 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Oct-2019 17:05:16 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-Oct-2019 17:05:16 UTC] デバッグ:セッションID：fka86c54kurppnrq0lui9kgmg7
+[09-Oct-2019 17:05:16 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[09-Oct-2019 17:05:16 UTC] デバッグ:現在日時タイムスタンプ：1570640716
+[09-Oct-2019 17:05:16 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[09-Oct-2019 17:05:16 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[09-Oct-2019 17:05:16 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[09-Oct-2019 17:05:22 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Oct-2019 17:05:22 UTC] デバッグ:「　トップページ　
+[09-Oct-2019 17:05:22 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Oct-2019 17:05:22 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-Oct-2019 17:05:22 UTC] デバッグ:セッションID：7bq5qdsjvepten5f0kvrfruujt
+[09-Oct-2019 17:05:22 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[09-Oct-2019 17:05:22 UTC] デバッグ:現在日時タイムスタンプ：1570640722
+[09-Oct-2019 17:05:22 UTC] デバッグ:レビュー情報一覧を取得します
+[09-Oct-2019 17:05:22 UTC] デバッグ:クエリ成功
+[09-Oct-2019 17:05:22 UTC] デバッグ:SQL文章:SELECT * FROM reviews ORDER BY id desc LIMIT 20 OFFSET 0
+[09-Oct-2019 17:05:22 UTC] デバッグ:クエリ成功
+[09-Oct-2019 17:05:22 UTC] デバッグ:$resultの中身Array
+(
+    [total] => 39
+    [total_page] => 2
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 43
+                    [title] => テストその２
+                    [category_id] => 0
+                    [body] => テストその２
+                    [abouturl] => 
+                    [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-04-07 04:01:42
+                    [update_date] => 2019-04-07 13:01:42
+                )
+
+            [1] => Array
+                (
+                    [id] => 42
+                    [title] => テストアクションゲーム
+                    [category_id] => 1
+                    [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+                    [abouturl] => 
+                    [pic] => 
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-04-07 03:51:01
+                    [update_date] => 2019-04-07 12:51:01
+                )
+
+            [2] => Array
+                (
+                    [id] => 41
+                    [title] => 寿司ストライカーで指トレ
+                    [category_id] => 2
+                    [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+                    [abouturl] => 
+                    [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-03-03 14:44:48
+                    [update_date] => 2019-03-03 23:44:49
+                )
+
+            [3] => Array
+                (
+                    [id] => 40
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [4] => Array
+                (
+                    [id] => 39
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [5] => Array
+                (
+                    [id] => 38
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [6] => Array
+                (
+                    [id] => 37
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [7] => Array
+                (
+                    [id] => 36
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [8] => Array
+                (
+                    [id] => 35
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [9] => Array
+                (
+                    [id] => 34
+                    [title] => テストです。
+                    [category_id] => 2
+                    [body] => ゆるゆるとしたアクション。
+                    [abouturl] => 
+                    [pic] => 
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-25 04:36:59
+                    [update_date] => 2019-02-25 13:36:59
+                )
+
+            [10] => Array
+                (
+                    [id] => 33
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [11] => Array
+                (
+                    [id] => 32
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [12] => Array
+                (
+                    [id] => 31
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [13] => Array
+                (
+                    [id] => 30
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [14] => Array
+                (
+                    [id] => 29
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [15] => Array
+                (
+                    [id] => 28
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [16] => Array
+                (
+                    [id] => 27
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [17] => Array
+                (
+                    [id] => 26
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [18] => Array
+                (
+                    [id] => 25
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [19] => Array
+                (
+                    [id] => 24
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+        )
+
+)
+
+[09-Oct-2019 17:05:22 UTC] デバッグ:カテゴリー情報を取得します
+[09-Oct-2019 17:05:22 UTC] デバッグ:クエリ成功
+[09-Oct-2019 17:05:22 UTC] デバッグ:画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[09-Oct-2019 17:05:46 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Oct-2019 17:05:46 UTC] デバッグ:「　トップページ　
+[09-Oct-2019 17:05:46 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Oct-2019 17:05:46 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-Oct-2019 17:05:46 UTC] デバッグ:セッションID：f06rc1cdgigurk9gbvt1qk5lke
+[09-Oct-2019 17:05:46 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[09-Oct-2019 17:05:46 UTC] デバッグ:現在日時タイムスタンプ：1570640746
+[09-Oct-2019 17:05:46 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[09-Oct-2019 17:05:46 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[09-Oct-2019 17:05:46 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 0202くん
+            [email] => 0202@gmail.com
+            [password] => $2y$10$9V1qRg.LIbkCniV3PnA0N.CGKwjConFC.xRfrsWwVh8XrG14DczYu
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => ダンダラ
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[09-Oct-2019 17:10:42 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Oct-2019 17:10:42 UTC] デバッグ:「　トップページ　
+[09-Oct-2019 17:10:42 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Oct-2019 17:10:42 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-Oct-2019 17:10:42 UTC] デバッグ:セッションID：vpv5rcl92ahboud7b3jlv5hit6
+[09-Oct-2019 17:10:42 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[09-Oct-2019 17:10:42 UTC] デバッグ:現在日時タイムスタンプ：1570641042
+[09-Oct-2019 17:10:42 UTC] デバッグ:レビュー情報一覧を取得します
+[09-Oct-2019 17:10:42 UTC] デバッグ:クエリ成功
+[09-Oct-2019 17:10:42 UTC] デバッグ:SQL文章:SELECT * FROM reviews ORDER BY id desc LIMIT 20 OFFSET 0
+[09-Oct-2019 17:10:42 UTC] デバッグ:クエリ成功
+[09-Oct-2019 17:10:42 UTC] デバッグ:$resultの中身Array
+(
+    [total] => 39
+    [total_page] => 2
+    [data] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 43
+                    [title] => テストその２
+                    [category_id] => 0
+                    [body] => テストその２
+                    [abouturl] => 
+                    [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-04-07 04:01:42
+                    [update_date] => 2019-04-07 13:01:42
+                )
+
+            [1] => Array
+                (
+                    [id] => 42
+                    [title] => テストアクションゲーム
+                    [category_id] => 1
+                    [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+                    [abouturl] => 
+                    [pic] => 
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-04-07 03:51:01
+                    [update_date] => 2019-04-07 12:51:01
+                )
+
+            [2] => Array
+                (
+                    [id] => 41
+                    [title] => 寿司ストライカーで指トレ
+                    [category_id] => 2
+                    [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+                    [abouturl] => 
+                    [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-03-03 14:44:48
+                    [update_date] => 2019-03-03 23:44:49
+                )
+
+            [3] => Array
+                (
+                    [id] => 40
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [4] => Array
+                (
+                    [id] => 39
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [5] => Array
+                (
+                    [id] => 38
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [6] => Array
+                (
+                    [id] => 37
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [7] => Array
+                (
+                    [id] => 36
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [8] => Array
+                (
+                    [id] => 35
+                    [title] => スネークパスやってみてえ
+                    [category_id] => 2
+                    [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+                    [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+                    [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:12:17
+                    [update_date] => 2019-02-11 23:26:13
+                )
+
+            [9] => Array
+                (
+                    [id] => 34
+                    [title] => テストです。
+                    [category_id] => 2
+                    [body] => ゆるゆるとしたアクション。
+                    [abouturl] => 
+                    [pic] => 
+                    [user_id] => 7
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-25 04:36:59
+                    [update_date] => 2019-02-25 13:36:59
+                )
+
+            [10] => Array
+                (
+                    [id] => 33
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [11] => Array
+                (
+                    [id] => 32
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [12] => Array
+                (
+                    [id] => 31
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [13] => Array
+                (
+                    [id] => 30
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [14] => Array
+                (
+                    [id] => 29
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [15] => Array
+                (
+                    [id] => 28
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [16] => Array
+                (
+                    [id] => 27
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [17] => Array
+                (
+                    [id] => 26
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [18] => Array
+                (
+                    [id] => 25
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+            [19] => Array
+                (
+                    [id] => 24
+                    [title] => レイジングループはめっちゃ時間盗みます
+                    [category_id] => 10
+                    [body] => 人狼ゲームが風習として残る村の物語を綴るアドベンチャーゲーム。ほぼ一本道、また絵柄が少し独特ですが、ストーリーがとにかく読ませます。活字中毒者にオススメ。
+                    [abouturl] => https://jp.ign.com/raging-loop/21306/feature/adv7
+                    [pic] => uploads/23216c213be02f1de31f1c827eabff1e9761bdf8.png
+                    [user_id] => 4
+                    [delete_flg] => 0
+                    [create_date] => 2019-02-11 14:07:17
+                    [update_date] => 2019-02-11 23:26:04
+                )
+
+        )
+
+)
+
+[09-Oct-2019 17:10:42 UTC] デバッグ:カテゴリー情報を取得します
+[09-Oct-2019 17:10:42 UTC] デバッグ:クエリ成功
+[09-Oct-2019 17:10:42 UTC] デバッグ:画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[09-Oct-2019 17:10:45 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Oct-2019 17:10:45 UTC] デバッグ:「　トップページ　
+[09-Oct-2019 17:10:45 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[09-Oct-2019 17:10:45 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[09-Oct-2019 17:10:45 UTC] デバッグ:セッションID：s5tpqik6qc7tu11ls1nsms1ofi
+[09-Oct-2019 17:10:45 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[09-Oct-2019 17:10:45 UTC] デバッグ:現在日時タイムスタンプ：1570641045
+[09-Oct-2019 17:10:45 UTC] デバッグ:コメント情報を取得します
+[09-Oct-2019 17:10:45 UTC] デバッグ:クエリ成功
+[09-Oct-2019 17:10:45 UTC] デバッグ:レビュー情報を取得します。レビューID：43
+[09-Oct-2019 17:10:45 UTC] デバッグ:クエリ成功
+[09-Oct-2019 17:10:45 UTC] デバッグ:ユーザー情報を取得します。
+[09-Oct-2019 17:10:45 UTC] デバッグ:クエリ成功
+[09-Oct-2019 17:10:45 UTC] デバッグ:クエリ成功。
+[09-Oct-2019 17:10:45 UTC] デバッグ:取得したユーザー情報：Array
+(
+    [id] => 7
+    [username] => 0210ユーザー
+    [email] => 0210@gmail.com
+    [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+    [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+    [lovegame] => RPGが好きです。
+    [delete_flg] => 0
+    [create_date] => 2019-02-11 14:48:14
+    [update_date] => 2019-02-11 23:48:14
+)
+
+[09-Oct-2019 17:10:45 UTC] デバッグ:取得したDBデータdetail：Array
+(
+    [id] => 43
+    [title] => テストその２
+    [body] => テストその２
+    [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+    [user_id] => 7
+    [create_date] => 2019-04-07 04:01:42
+    [update_date] => 2019-04-07 13:01:42
+    [abouturl] => 
+    [category] => 
+)
+
+[09-Oct-2019 17:10:45 UTC] デバッグ:取得したコメントデータdetail：Array
+(
+    [0] => Array
+        (
+            [id] => 54
+            [comment] => おらあ！
+            [comment_user] => 7
+            [review_id] => 43
+            [delete_flg] => 0
+            [create_date] => 2019-05-07 17:33:09
+            [update_date] => 2019-05-08 02:33:09
+        )
+
+)
+
+[09-Oct-2019 17:10:45 UTC] デバッグ:画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[09-Oct-2019 17:10:45 UTC] PHP Notice:  Undefined index: user_id in /Applications/MAMP/htdocs/switchreviews/reviewdetail.php on line 99
+[09-Oct-2019 17:10:45 UTC] デバッグ:お気に入り情報があるか確認します。
+[09-Oct-2019 17:10:45 UTC] デバッグ:ユーザーID：
+[09-Oct-2019 17:10:45 UTC] デバッグ:レビューID：43
+[09-Oct-2019 17:10:45 UTC] デバッグ:クエリ成功
+[09-Oct-2019 17:10:45 UTC] デバッグ:特に気に入ってません
