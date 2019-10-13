@@ -12,6 +12,9 @@ body {
   height: 100%;
   font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif; }
 
+p {
+  font-size: 16px; }
+
 label {
   display: block; }
 
@@ -71,12 +74,14 @@ header img {
   display: flex;
   justify-content: space-between; }
 
-.header-logo a {
-  line-height: 100%;
-  text-align: center;
-  margin: 20px 0 0 100px;
-  font-size: 2em;
-  letter-spacing: 3px; }
+.header-logo {
+  height: 80px;
+  line-height: 80px;
+  margin: 0 10px; }
+  .header-logo a {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 20px; }
 
 @media screen and (max-width: 414px) {
   .header-logo a {
@@ -86,7 +91,8 @@ header img {
 
 /*ヘッダーメニュー*/
 #top-nav {
-  padding: 1%; }
+  height: 80px;
+  line-height: 80px; }
 
 @media screen and (max-width: 414px) {
   #top-nav {
@@ -237,9 +243,9 @@ header a {
 .bg-box h2 {
   width: 50%;
   font-size: 40px;
-  height: 10%;
   text-align: center;
-  text-shadow: white 2px 2px 0px; }
+  text-shadow: white 2px 2px 0px;
+  background-color: #ffebcd7d; }
 
 @media screen and (max-width: 414px) {
   .bg-box h2 {
@@ -257,7 +263,7 @@ header a {
   height: 800px;
   width: 100%;
   overflow: hidden;
-  background-color: #66FF33; }
+  background-color: #E6EA9A8F; }
 
 .about-left {
   width: 40%;
@@ -269,7 +275,6 @@ header a {
 
 .about-right {
   width: 100%;
-  height: 100%;
   float: center; }
 
 /*この辺参考　https://saruwakakun.com/html-css/reference/box */
@@ -277,8 +282,6 @@ header a {
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 200px;
-  padding-top: 5px;
-  padding-bottom: 90px;
   background: #FFF;
   border: solid 3px #6091d3;
   /*線*/
@@ -287,9 +290,6 @@ header a {
   height: 400px; }
 
 .about-title {
-  font-size: 30px;
-  margin-top: 5%;
-  margin-bottom: 5%;
   width: 100%;
   text-align: center; }
 
@@ -299,14 +299,15 @@ header a {
   margin-top: 40px;
   width: 90%;
   line-height: 25px;
-  font-size: 20px;
   text-align: center; }
 
 .about-h1 {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 300px; }
+  width: 100%;
+  height: 200px;
+  line-height: 200px; }
 
 .about-h1::before {
   font-family: FontAwesome;
@@ -317,7 +318,7 @@ header a {
   /*アイコンの色*/ }
 
 .disc {
-  background-color: #66FF33;
+  background-color: #E6EA9A8F;
   height: 1100px;
   overflow: hidden;
   width: 100%;
@@ -348,9 +349,7 @@ header a {
   height: 60px; }
 
 .disc-left-image {
-  width: 80%;
-  min-width: 350px;
-  height: 500px;
+  width: 70%;
   border-radius: 50%;
   margin: 10% 10% 10% 10%; }
 
@@ -371,10 +370,7 @@ header a {
   height: 60px; }
 
 .disc-center-image {
-  width: 80%;
-  min-width: 350px;
-  height: 500px;
-  border-radius: 50%;
+  width: 70%;
   margin: 10% 10% 10% 10%; }
 
 .move {
@@ -416,13 +412,14 @@ header a {
   font-size: 30px;
   border: solid 1px;
   border-radius: 20px;
-  transition: 0.5s;
   box-shadow: 1px 1px 1px #668AD8; }
 
-button:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
-  background-color: #BBFFFF; }
+button {
+  transition: 0.1s; }
+  button:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+    background-color: #BBFFFF; }
 
 .top-games a:visited {
   text-decoration: none;
@@ -739,7 +736,7 @@ button:hover {
 .js-category-success-effect {
   animation-name: Underline;
   animation-fill-mode: forwards;
-  animation-duration: 0.5s; }
+  animation-duration: 0.1s; }
 
 .js-cover {
   background: rgba(0, 0, 0, 0.5);

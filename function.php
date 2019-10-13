@@ -4,6 +4,8 @@ ini_set('log_errors','on');
 ini_set('error_log','php.log');
 
 
+require('db.php');
+
 //================================
 // デバッグ
 //================================
@@ -58,7 +60,7 @@ function h($key){
 
 define('MSG01','入力必須です。');
 define('MSG02','パスワードが一致してないです、確認して。');
-define('MSG03','なんでかエラーが発生しました。しばらく経ってからやり直してください。');
+define('MSG03','エラーが発生しました。しばらく経ってからやり直してください。');
 define('MSG04', 'そのEmailは既に登録されています');
 define('MSG05', 'パスワードが異なります。');
 define('MSG06', '6文字以上で入力してください');
@@ -117,6 +119,7 @@ function validSelect($str, $key){
     $err_msg[$key] = MSG08;
   }
 }
+
 //メルアドの重複確認
 function validEmailDup($email){
   global $err_msg;
@@ -139,27 +142,6 @@ function validEmailDup($email){
     $err_msg['common'] = MSG03;
   }
 }
-//--------------------------------------------
-//接続系
-//DB接続準備。dbhを作る。
-function dbConnect(){
-  //dbへ接続準備
-  $dsn = 'mysql:dbname=switchreview;host=localhost;charset=utf8';
-  $user = 'root';
-  $password = 'root';
-  $options = array(
-    // SQL実行失敗時にはエラーコードのみ設定
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_SILENT,
-    // デフォルトフェッチモードを連想配列形式に設定
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    // バッファードクエリを使う(一度に結果セットをすべて取得し、サーバー負荷を軽減)
-    // SELECTで得た結果に対してもrowCountメソッドを使えるようにする
-    PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
-  );
-  $dbh = new PDO($dsn, $user, $password, $options);
-  return $dbh;
-}
-
 
 function queryPost($dbh, $sql, $data){
   //debug('この時点でのdbh:'.print_r($dbh,true));
