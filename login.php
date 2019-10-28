@@ -105,7 +105,7 @@ debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
         </div>
 
         <label class="<?php if(!empty($err_msg['email'])) echo 'err'; ?>">
-          メールアドレス<br>
+          ユーザーID<br>
           <input type="text" name="email" class="textbox" value="<?php if(!empty($_POST['email'])) echo $_POST['email']; ?>">
         </label>
         <div class="area-msg">

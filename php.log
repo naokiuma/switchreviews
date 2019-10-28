@@ -2797,3 +2797,1328 @@ Stack trace:
 
 )
 
+[13-Oct-2019 18:51:42 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[13-Oct-2019 18:51:42 UTC] デバッグ:「　トップページ　
+[13-Oct-2019 18:51:42 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[13-Oct-2019 18:51:42 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[13-Oct-2019 18:51:42 UTC] デバッグ:セッションID：0l3vi9fj8pkqrsjitq1u9ogq0e
+[13-Oct-2019 18:51:42 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[13-Oct-2019 18:51:42 UTC] デバッグ:現在日時タイムスタンプ：1570992702
+[13-Oct-2019 18:51:42 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[13-Oct-2019 18:51:42 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[13-Oct-2019 18:51:42 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[14-Oct-2019 14:05:09 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:05:10 UTC] デバッグ:「　ユーザー登録ページ　
+[14-Oct-2019 14:05:10 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:05:10 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[14-Oct-2019 14:05:10 UTC] デバッグ:セッションID：k8pd4c7tr29jbpg82s895pv105
+[14-Oct-2019 14:05:10 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[14-Oct-2019 14:05:10 UTC] デバッグ:現在日時タイムスタンプ：1571061910
+[14-Oct-2019 14:05:10 UTC] デバッグ:画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[14-Oct-2019 14:06:49 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:06:49 UTC] デバッグ:「　ユーザー登録ページ　
+[14-Oct-2019 14:06:49 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:06:49 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[14-Oct-2019 14:06:49 UTC] デバッグ:セッションID：sqk6jla78fntomqtpqtrl1nee7
+[14-Oct-2019 14:06:49 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[14-Oct-2019 14:06:49 UTC] デバッグ:現在日時タイムスタンプ：1571062009
+[14-Oct-2019 14:06:49 UTC] デバッグ:画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[14-Oct-2019 14:06:50 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:06:50 UTC] デバッグ:「　ユーザー登録ページ　
+[14-Oct-2019 14:06:50 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:06:50 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[14-Oct-2019 14:06:50 UTC] デバッグ:セッションID：47ptvqj1u0grcqdvinnqcqk387
+[14-Oct-2019 14:06:50 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[14-Oct-2019 14:06:50 UTC] デバッグ:現在日時タイムスタンプ：1571062010
+[14-Oct-2019 14:06:50 UTC] デバッグ:ページフラグ:0
+[14-Oct-2019 14:07:08 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:07:08 UTC] デバッグ:「　ユーザー登録ページ　
+[14-Oct-2019 14:07:08 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:07:08 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[14-Oct-2019 14:07:08 UTC] デバッグ:セッションID：9qc8eb4is8b9vtj99to50c7rsh
+[14-Oct-2019 14:07:08 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[14-Oct-2019 14:07:08 UTC] デバッグ:現在日時タイムスタンプ：1571062028
+[14-Oct-2019 14:07:08 UTC] デバッグ:ページフラグ:0
+[14-Oct-2019 14:07:33 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:07:33 UTC] デバッグ:「　ユーザー登録ページ　
+[14-Oct-2019 14:07:33 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:07:33 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[14-Oct-2019 14:07:33 UTC] デバッグ:セッションID：5lc1vdf5v8aohii6nkubdfvp03
+[14-Oct-2019 14:07:33 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[14-Oct-2019 14:07:33 UTC] デバッグ:現在日時タイムスタンプ：1571062053
+[14-Oct-2019 14:07:33 UTC] デバッグ:ページフラグ:0
+[14-Oct-2019 14:20:13 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:20:13 UTC] デバッグ:「　トップページ　
+[14-Oct-2019 14:20:13 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:20:13 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[14-Oct-2019 14:20:13 UTC] デバッグ:セッションID：ei45vamqr61rgk6l5e5oj7k3of
+[14-Oct-2019 14:20:13 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[14-Oct-2019 14:20:13 UTC] デバッグ:現在日時タイムスタンプ：1571062813
+[14-Oct-2019 14:20:13 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[14-Oct-2019 14:20:14 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[14-Oct-2019 14:20:14 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[14-Oct-2019 14:21:36 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:21:36 UTC] デバッグ:「　トップページ　
+[14-Oct-2019 14:21:36 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:21:36 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[14-Oct-2019 14:21:36 UTC] デバッグ:セッションID：q81crnj8c4fe82n3el20u8ehd4
+[14-Oct-2019 14:21:36 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[14-Oct-2019 14:21:36 UTC] デバッグ:現在日時タイムスタンプ：1571062896
+[14-Oct-2019 14:21:36 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[14-Oct-2019 14:21:36 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[14-Oct-2019 14:21:36 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[14-Oct-2019 14:25:18 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:25:18 UTC] デバッグ:「　トップページ　
+[14-Oct-2019 14:25:18 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:25:18 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[14-Oct-2019 14:25:18 UTC] デバッグ:セッションID：ecvrhs25r97u1hfrauobt25p4q
+[14-Oct-2019 14:25:18 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[14-Oct-2019 14:25:18 UTC] デバッグ:現在日時タイムスタンプ：1571063118
+[14-Oct-2019 14:25:18 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[14-Oct-2019 14:25:18 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[14-Oct-2019 14:25:18 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[14-Oct-2019 14:25:21 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:25:21 UTC] デバッグ:「　トップページ　
+[14-Oct-2019 14:25:21 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:25:21 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[14-Oct-2019 14:25:21 UTC] デバッグ:セッションID：4ion7kkvigb6odg45r8h4j0g3c
+[14-Oct-2019 14:25:21 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[14-Oct-2019 14:25:21 UTC] デバッグ:現在日時タイムスタンプ：1571063121
+[14-Oct-2019 14:25:21 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[14-Oct-2019 14:25:21 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[14-Oct-2019 14:25:21 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[14-Oct-2019 14:37:59 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:37:59 UTC] デバッグ:「　トップページ　
+[14-Oct-2019 14:37:59 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:37:59 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[14-Oct-2019 14:37:59 UTC] デバッグ:セッションID：6nqmcnqvgak3g5lm1l7q66n0e8
+[14-Oct-2019 14:37:59 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[14-Oct-2019 14:37:59 UTC] デバッグ:現在日時タイムスタンプ：1571063879
+[14-Oct-2019 14:37:59 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[14-Oct-2019 14:37:59 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[14-Oct-2019 14:37:59 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[14-Oct-2019 14:38:04 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:38:04 UTC] デバッグ:「　トップページ　
+[14-Oct-2019 14:38:04 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:38:04 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[14-Oct-2019 14:38:04 UTC] デバッグ:セッションID：sgr3db4ce3p8j85il1ete88nur
+[14-Oct-2019 14:38:04 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[14-Oct-2019 14:38:04 UTC] デバッグ:現在日時タイムスタンプ：1571063884
+[14-Oct-2019 14:38:04 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[14-Oct-2019 14:38:04 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[14-Oct-2019 14:38:04 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[14-Oct-2019 14:38:28 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:38:28 UTC] デバッグ:「　トップページ　
+[14-Oct-2019 14:38:28 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 14:38:28 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[14-Oct-2019 14:38:28 UTC] デバッグ:セッションID：08kdpu54k0m080v383i4f8fhks
+[14-Oct-2019 14:38:28 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[14-Oct-2019 14:38:28 UTC] デバッグ:現在日時タイムスタンプ：1571063908
+[14-Oct-2019 14:38:28 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[14-Oct-2019 14:38:28 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[14-Oct-2019 14:38:28 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[14-Oct-2019 16:19:30 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 16:19:30 UTC] デバッグ:「　トップページ　
+[14-Oct-2019 16:19:30 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[14-Oct-2019 16:19:30 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[14-Oct-2019 16:19:30 UTC] デバッグ:セッションID：i7b06r934ggdbd5scnpbc5q7hl
+[14-Oct-2019 16:19:30 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[14-Oct-2019 16:19:30 UTC] デバッグ:現在日時タイムスタンプ：1571069970
+[14-Oct-2019 16:19:30 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[14-Oct-2019 16:19:31 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[14-Oct-2019 16:19:31 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+
+[19-Oct-2019 10:44:09 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[19-Oct-2019 10:44:09 UTC] デバッグ:「　トップページ　
+[19-Oct-2019 10:44:09 UTC] デバッグ:「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「
+[19-Oct-2019 10:44:09 UTC] デバッグ:>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 画面表示処理開始
+[19-Oct-2019 10:44:09 UTC] デバッグ:セッションID：0oadqsmu6msoitdh992gn7412u
+[19-Oct-2019 10:44:09 UTC] デバッグ:セッション変数の中身：Array
+(
+)
+
+[19-Oct-2019 10:44:09 UTC] デバッグ:現在日時タイムスタンプ：1571481849
+[19-Oct-2019 10:44:09 UTC] デバッグ:ログイン有無に関わらず、top用のpostを検索します
+[19-Oct-2019 10:44:09 UTC] デバッグ:sqlの結果情報：SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6
+[19-Oct-2019 10:44:09 UTC] デバッグ:クエリ結果情報：Array
+(
+    [0] => Array
+        (
+            [id] => 43
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/d4e5227caf3544783abaf66518a1a8ddc051c0fa.png
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 04:01:42
+            [update_date] => 2019-04-07 13:01:42
+            [title] => テストその２
+            [category_id] => 0
+            [body] => テストその２
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [1] => Array
+        (
+            [id] => 42
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => 
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-04-07 03:51:01
+            [update_date] => 2019-04-07 12:51:01
+            [title] => テストアクションゲーム
+            [category_id] => 1
+            [body] => アクションゲームですよね。
+アクションゲームですよね。
+骨太アクションゲームです。
+ムズかしいです。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [2] => Array
+        (
+            [id] => 41
+            [username] => 0210ユーザー
+            [email] => 0210@gmail.com
+            [password] => $2y$10$4/DIltwwKEx4zzS8ExD5Ouoa3XL5ziu7CwmSe5CN7.NzkYAFCMGKi
+            [pic] => uploads/806219e4a1adfe1be9d2e466ab684b5f0aebefe4.jpeg
+            [lovegame] => RPGが好きです。
+            [delete_flg] => 0
+            [create_date] => 2019-03-03 14:44:48
+            [update_date] => 2019-03-03 23:44:49
+            [title] => 寿司ストライカーで指トレ
+            [category_id] => 2
+            [body] => 寿司を食いまくります。連打、操作しまくるパズルアクション。
+            [abouturl] => 
+            [user_id] => 7
+        )
+
+    [3] => Array
+        (
+            [id] => 40
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [4] => Array
+        (
+            [id] => 39
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+    [5] => Array
+        (
+            [id] => 38
+            [username] => 
+            [email] => 
+            [password] => 
+            [pic] => uploads/8dc81226abec4b9d138e99619ad3f4a2f1d35676.png
+            [lovegame] => 
+            [delete_flg] => 0
+            [create_date] => 2019-02-11 14:12:17
+            [update_date] => 2019-02-11 23:26:13
+            [title] => スネークパスやってみてえ
+            [category_id] => 2
+            [body] => 蛇を操作するアクションゲーム。操作感覚が独特で、蛇っぽい感じになるらしい。
+            [abouturl] => https://kentworld-blog.com/archives/snakepass-review.html
+            [user_id] => 4
+        )
+
+)
+

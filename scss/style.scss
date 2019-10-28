@@ -136,7 +136,7 @@ header img{
   display: inline-block;
   padding: 0 10px;
   color:white;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 #top-nav li::after{
@@ -348,7 +348,7 @@ header a{
   background: #FFF;
   border: solid 3px #6091d3;/*線*/
   border-radius: 10px;/*角の丸み*/
-  height: 400px;
+  height: 300px;
 }
 
 
@@ -421,6 +421,7 @@ header a{
 }
 .disc-left-image{
   width: 70%;
+  height: 214px;
   border-radius: 50%;
   margin: 10% 10% 10% 10%;
 }
@@ -444,6 +445,7 @@ header a{
 
 .disc-center-image{
   width: 70%;
+  border-radius: 50%;
   margin: 10% 10% 10% 10%;
 }
 

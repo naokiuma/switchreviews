@@ -53,8 +53,6 @@ require('head.php');
             レビューして、質問して、コメントして、お気に入りして。<br>
             スイッチインディーズゲームをもっと楽しむためのサイトです。<br>
             <br>
-            インディーズゲームだけじゃなく、普通のゲームももちろん歓迎です。<br>
-            <br>
             <a href="https://twitter.com/intent/tweet?button_hashtag=スイッチインディーズライフ&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
         </p>
