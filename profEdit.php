@@ -30,6 +30,8 @@ if(!empty($_POST)){
   $email = $_POST['email'];
   $lovegame = $_POST['lovegame'];
   $pic = (!empty($_FILES['pic']['name'])) ? uploadImg($_FILES['pic'],'pic') : '';
+  // 画像をPOSTしてない（登録していない）が既にDBに登録されている場合、DBのパスを入れる（POSTには反映されないので）
+  $pic = (empty($pic) && !empty($dbFormData['pic']) ) ? $dbFormData['pic'] : $pic;
 
   if($dbFormData['username'] !== $username){
     validRequired($username, 'username');
@@ -112,12 +114,12 @@ require('head.php');
             </div>
 
             <label>
-              好きなゲームのタイトルやカテゴリー<br>
+              ひとこと<br>
               <input type="text" name="lovegame" class="textbox" value="<?php echo getFormData('lovegame'); ?>">
             </label>
             プロフィール画像
             <div class="imgdrop-container">
-            <label for="input-file" class="area-drop <?php if(!empty($err_msg['pic'])) echo 'err'; ?>" style="height: 300px; line-height: 300px; width:400px; position: relative; border: medium none; z-index:3;" >
+            <label class="area-drop <?php if(!empty($err_msg['pic'])) echo 'err'; ?>" style="height: 300px; line-height: 300px; width:400px; position: relative; border: medium none; z-index:3;" >
               <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
               <input type="file" name="pic" class="input-file" style="height:300px; width:400px;">
               <img src="<?php echo getFormData('pic'); ?>" class="prev-img" style="width:400px; height:300px; position:absolute;left:0px; <?php if(empty(getFormData('pic'))) echo 'display:none;' ?>">

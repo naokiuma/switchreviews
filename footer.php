@@ -9,6 +9,18 @@
 
 <script>
 
+//ドロップダウンメニュー
+$(function(){
+  var menuclick = $('.js-toggle-sp-menu');
+  $(menuclick).on("click",function(){
+    console.log("動作");
+    var target = $('.toggle_menu');
+    $(target).slideToggle(600);
+    //$(target).css('display','flex');
+    //$(target).toggleClass("menu_active");
+  })
+})
+
 
 
   $(function(){
@@ -32,6 +44,8 @@
   });
 
 //どーんと出てくるテキストラッピングエリア。
+if($('.about-text-wrap').length){
+
   $('.about-text-wrap').css("opacity","0");
   $(window).scroll(function(){
     var imgPos = $('.about-text-wrap').offset().top;
@@ -39,34 +53,24 @@
     var windowHeight = $(window).height();
     if(scroll > imgPos - windowHeight + windowHeight/6){
       $('.about-text-wrap').css("opacity","1");
-      $('.about-text-wrap').css("transition","all 1.5s");
+      $('.about-text-wrap').css("transition","all 0.5s");
       $('.about-text-wrap').css("transform","scale(1.1, 1.1)"); //どーんと出てくる。
     }else{
       $('.about-text-wrap').css("opacity","0");
     }
   });
+}
 
 //右から左
   $(window).scroll(function(){
-    $('.disc-center').addClass('move');
-    var imgPos = $('.disc-center').offset().top;
+    $('.disc').addClass('move');
+    var imgPos = $('.disc').offset().top;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if(scroll > imgPos - windowHeight + windowHeight/2){
-      $('.disc-center').removeClass("move");
+      $('.disc').removeClass("move");
     }
   });
-
-  $(window).scroll(function(){
-    $('.disc-left').addClass('move');
-    var imgPos = $('.disc-left').offset().top;
-    var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    if(scroll > imgPos - windowHeight + windowHeight/2){
-      $('.disc-left').removeClass("move");
-    }
-  });
-
 
 
 
@@ -102,6 +106,7 @@
         });
       });
     }
+
 
   //フラッシュメッセージ表示
   var $jsShowMsg = $('#js-show-msg');

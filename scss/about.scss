@@ -1,0 +1,99 @@
+
+/*アバウトエリア*/
+.about-wrapper{
+  width:100%;
+}
+
+.about-box{
+  width:70%;
+  margin: auto auto;
+  p{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 40px;
+    width:90%;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+/*この辺参考　https://saruwakakun.com/html-css/reference/box */
+.about-text-wrap{
+  margin-left:10%;
+  margin-right: 10%;
+  margin-top: 200px;
+  background: #FFF;
+  border: solid 3px #6091d3;/*線*/
+  border-radius: 10px;/*角の丸み*/
+}
+
+
+.about-title{
+  width:100%;
+  text-align: center;
+}
+
+
+
+.disc{
+  width:100%;
+  text-align: center;
+  padding:80 0 80 0px;
+  margin-bottom: 200px;
+  h3{
+      font-size:30px;
+      font-weight:bold;
+      &::before{
+        font-family: FontAwesome;
+        content: "\f00c";
+        padding-right : 5px;/*文字との隙間*/
+        color: red;/*アイコンの色*/
+      }
+    }
+
+  &__about{
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 200px;
+    line-height: 200px;
+    font-size: 36px;
+    &__wrapper{
+      margin-bottom: 200px;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+    &__card{
+    width: 30%;
+    box-sizing: border-box;
+    -webkit-transition: all 0.5s;
+    -webkit-transform: translate(0, 0);
+    p {
+      height: 60px;
+    }
+    &__image{
+      font-size: 100px;
+    }
+  }
+
+}
+
+
+
+
+
+
+.slideimg{
+  animation-duration: 2s;/* アニメーション時間 */
+  animation-name: RightToLeft;/* アニメーション名 */
+}
+
+.move{
+  -webkit-transform: translate(100px, 0);
+  opacity:0;
+  animation-duration: 2s;/* アニメーション時間 */
+  animation-name: RightToLeft;/* アニメーション名 */
+}

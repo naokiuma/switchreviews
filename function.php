@@ -230,6 +230,27 @@ function getReviewsTop(){
     //$sql = 'SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id LIMIT 6'; //アウタージョインでユーザー情報も引っ張ってきた！
     $sql = 'SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6';
     //$sql = 'SELECT * FROM reviews WHERE delete_flg = 0 LIMIT 6';
+    //debug('sqlの結果情報：'.print_r($sql,true));
+    $stmt = $dbh->query($sql);
+    $result_r = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    //debug('クエリ結果情報：'.print_r($result_r,true));
+    return $result_r;
+    $dbh = null;
+  } catch(Exceptopn $e){
+    echo "エラー発生:" .htmlspecialchars($e->getmessage(),
+    ENT_QUOTES,'UTF-8)') ."<br>";
+    die();
+  }
+}
+
+
+//3日以内の記事のみ取得
+function getReviewsNew(){
+  debug('等奥から3日以内の記事を検索');
+  try{
+    $dbh = dbConnect();
+    $sql = 'SELECT * FROM reviews Where DATE_ADD(create_date, INTERVAL 1 DAY)';
+    //$sql = 'SELECT * FROM reviews WHERE delete_flg = 0 LIMIT 6';
     debug('sqlの結果情報：'.print_r($sql,true));
     $stmt = $dbh->query($sql);
     $result_r = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -242,6 +263,7 @@ function getReviewsTop(){
     die();
   }
 }
+
 
 
 

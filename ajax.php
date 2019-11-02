@@ -1,3 +1,5 @@
+<!--検索カテゴリー-->
+
 <?php
 if(!empty($_POST)){
     //echo json_encode(array('id'=> $_POST['id']));デバッグ用

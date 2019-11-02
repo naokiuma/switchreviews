@@ -2,7 +2,9 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title><?php echo $siteTitle ?>| Switchライフ</title>
+  <title><?php echo $siteTitle ?>| Switchインディーズライフ</title>
+  <meta name="description" content="Switchnのインディーズゲームの感想やメモを投稿し、交流し、よりゲームを楽しむことを目的としたサイトです。">
+  <meta name="keywords" content="スイッチ,switch,任天堂,NintendoSwitch,ゲーム">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><!--jqueryをここで読み込んでいる-->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">

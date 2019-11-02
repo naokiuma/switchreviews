@@ -33,7 +33,6 @@ $dbReviewsData = (!empty($_POST)) ? searchReviews($search_word) : getReviewsList
 $dbCategoryData = getCategory();
 //debug('カテゴリデータを取る'.print_r($dbCategoryData,true));
 
-//debug('pの中は？!!：'.print_r($currentPageNum,true));
 
 if(!is_int((int)$currentPageNum)){
   error_log('エラー発生：指定ページに不正な値が入りました。');

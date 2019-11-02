@@ -1,6 +1,7 @@
+//カテゴリ検索時に行われる処理
+
 $(function($){
   $('.js-select-category').change(function(e){
-  //$('.js-select-category').on('change',function(e){ でもいけるよ！
 
     var $that = $(this);
     //var target = $('.js-select-category option:selected').val();

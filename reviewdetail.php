@@ -18,8 +18,10 @@ $r_id = (!empty($_GET['r_id'])) ? $_GET['r_id'] : '';
 //DBからコメント情報を取得
 $r_comment = getComment($r_id);
 arsort($r_comment);
+
 // DBからレビューデータを取得
 $viewData = getReviewOne($r_id);
+
 if(empty($viewData)){
   error_log('エラー発生:指定ページに不正な値が入りました');
   header("Location:index.php"); //トップページへ
@@ -77,73 +79,63 @@ require('head.php');
   </p>
 
   <section class="detail-wrapper">
+    <h1><?php echo ($viewData['title']); ?></h1>
 
-    <h2><?php echo ($viewData['title']); ?></h2>
+  <div class="detail-info-wrapper">
+    <div class="detail-pic">
+      <img src="<?php echo (!empty($viewData['pic'])) ? $viewData['pic'] : "images/sample.png"; ?>" alt="ゲーム画像">
+    </div>
 
+    <div class="detail-other">
+      <p>投稿者：<?php echo ($post_user['username']); ?><br>
+        カテゴリー：<?php echo ($viewData['category']); ?><br>
+        お気に入り：<i class="fa fa-heart icn-like js-click-fav <?php if(isFav($_SESSION['user_id'],$viewData['id'])){echo
+          'active';} ?>" aria-hidden="true" data-review_id="<?php echo ($viewData['id']); ?>" ></i></p>
 
-  <div class="detail-pic">
-    <img src="<?php echo (!empty($viewData['pic'])) ? $viewData['pic'] : "images/sample.png"; ?>" alt="ゲーム画像">
+          <!--もしセッションにユーザーIDがあり、かつそのユーザーIDとセッションIDが同じ場合編集できるようにする-->
+          <?php if(!empty($_SESSION['user_id']) && $_SESSION['user_id'] == $post_user['id']) : ?>
 
+            <a href="reviewpost.php?r_id=<?php echo ($viewData['id']); ?>">記事を編集する</a>
+
+          <?php endif;?>
+    </div>
   </div>
-
-  <section class="detail-info-wrapper">
 
   <div class="detail-body">
     <p><?php echo nl2br(h($viewData['body'])); ?></p>
     <p>参考URL：<?php echo ($viewData['abouturl']); ?></p>
   </div>
 
-  <div class="detail-other">
-    <p>【投稿者：<?php echo ($post_user['username']); ?>】<br>
-       【カテゴリー：<?php echo ($viewData['category']); ?>】<br>
-       【お気に入り：<i class="fa fa-heart icn-like js-click-fav <?php if(isFav($_SESSION['user_id'],$viewData['id'])){echo
-      'active';} ?>" aria-hidden="true" data-review_id="<?php echo ($viewData['id']); ?>" ></i>】</p>
-
-      <?php if(!empty($_SESSION['user_id']) && $_SESSION['user_id'] == $post_user['id']) : ?>
-
-        <a href="reviewpost.php?r_id=<?php echo ($viewData['id']); ?>">記事を編集する</a>
-
-      <?php endif;?>
-  </div>
 
 
-  <div class="detail-commnet">
 
-    <?php
-    //debug('$r_commnetの中身：'.print_r($r_comment,true));
-    if(!empty($r_comment)){
-      foreach ($r_comment as $val): ?>
+              <div class="detail-commnet">
 
-          <p style="font-size:20px; margin-bottom: -20px;"><?php echo ($val['comment']); ?><p>
-          <span style="font-size:13px;"><?php echo ($val['create_date']); ?></span>
+                <?php
+                debug('$r_commnetの中身：'.print_r($r_comment,true));
+                //$r_commentとは、コメント情報。
+                if(!empty($r_comment)){
+                  foreach ($r_comment as $val): ?>
+                  <p style="font-size:20px; margin-bottom: -20px;"><?php echo ($val['comment']); ?><p>
+                    <span style="font-size:13px;"><?php echo ($val['create_date']); ?></span>
 
+                    <?php
+                  endforeach;}
+                  ?>
 
-          <?php
-        endforeach;}
-          ?>
+                  <form action="" method="post">
+                    <label class="<?php if(!empty($err_msg['comment'])) echo 'err'; ?>">
+                      <b>コメント一覧</b><br>
+                      <input type="text" name="comment" class="textbox" >
+                    </label>
+                    <input type="submit" placeholder="コメント" class="btn btn-primary" value="コメントする" style="margin-top:0;">
 
-    <form action="" method="post">
-      <label class="<?php if(!empty($err_msg['comment'])) echo 'err'; ?>">
-        <b>コメント一覧</b><br>
-        <input type="text" name="comment" class="textbox" >
-      </label>
-      <input type="submit" placeholder="コメント" class="btn btn-primary" value="コメントする" style="margin-top:0;">
+                  </form>
 
-    </form>
+                </div>
 
-  </div>
-  </section>
-  </section>
+            </section>
 
-<?php
-require('footer.php');
-?>
-
-<script>
-var viewedid = "<?php echo ($viewData['id']); ?>"
-$.cookie("pageid",viewedid);
-</script>
-</body>
-</html>
-
-?>
+  <?php
+    require('footer.php');
+  ?>

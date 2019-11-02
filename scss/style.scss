@@ -1,20 +1,27 @@
 @charset "UTF-8";
+$main_bg:#E6EA9A59;
+$res-max-width:770px;
 $green_color:#66FF33;
-$red_color:#F06060;
+$red_color:#D3001A;
 $font-s:16px;
+$font-l:36px;
+$before-text:#00000091;
 
 html{
   margin:0px;
   padding:0px;
   height: 100%;
-  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+  background-color: $main_bg;
+  font-family: 'Hiragino Kaku Gothic W5 JIS2004',sans-serif;
+  //font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 body {
   margin:0px;
   padding:0px;
   width:100%;
   height: 100%;
-  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+  font-family: 'Hiragino Kaku Gothic W5 JIS2004',sans-serif;
+  //font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 
 p{
@@ -28,20 +35,45 @@ label span{
   margin-top: 200px;
 }
 
+button{
+  transition: 0.1s;
+  &:hover{
+    transform:scale(1.05);
+    transition: 0.1s;
+    //background-color: #BBFFFF;
+  }
+}
+
+ul li{
+  list-style: none;
+  margin: 5px;
+  text-align: center;
+}
+
+header a{
+  display: block;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom:auto;
+}
+
 
 footer{
-  position: fixed;
+  text-align: center;
   bottom: 0px;
   width: 100%;
-  height: 20px;
-  font-size: 12px;
-  background-color: #CBFFD3;
-  text-align: right;
+  height: 60px;
+  line-height: 60px;
+  font-size: $font-s;
+  color: white;
+  background-color: #D3001A;
+  a{
+    text-decoration: none;
+    color: white;
+  }
 }
 
-a{
-  text-decoration: none;
-}
+
 
 /*フラッシュメッセージ*/
 .msg-slide{
@@ -63,16 +95,20 @@ a{
   font-size: 0.8rem;
 }
 
+
 /*ヘッダー*/
 
 header{
   background-color: $red_color;
   height:80px;
-}
-
-header img{
-  height:50px;
-  line-height: 50px;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  img{
+    height:50px;
+    line-height: 50px;
+  }
 }
 
 .logo{
@@ -81,9 +117,9 @@ header img{
   right: 10px;
 }
 
+
 .header-wrapper{
   position: fixed;
-  opacity: 0.9;
   z-index: 3;
   height:80px;
   width: 100%;
@@ -95,77 +131,76 @@ header img{
 .header-logo{
   height: 80px;
   line-height: 80px;
-  margin: 0 10px;
+  margin: 0 20px;
+  @media screen and (max-width: $res-max-width) {
+    width: 70%;
+  }
     a{
      text-align: center;
      letter-spacing: 3px;
      font-size: 20px;
+     @media screen and (max-width: $res-max-width) {
+       width:80%;
+       box-sizing: border-box;
+       font-size: 16px;
+     }
     }
 }
 
 
-@media screen and (max-width: 414px) {
-  .header-logo a{
-    width:80%;
-    box-sizing: border-box;
-    font-size: 1em;
- } }
 /*ヘッダーメニュー*/
 #top-nav{
-  height: 80px;
-  line-height: 80px;
+  a{
+      text-decoration: none;
+      color: #FEFEFB;
+  }
+  li{
+   padding: 20px;
+   color:white;
+   font-size: $font-s;
+ }
 }
-@media screen and (max-width:414px){
-  #top-nav{
-    display: none;
+
+.menu__trigger{
+  height: 100%;
+  button{
+    height: 97%;
+    width: 150px;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 4px;
+    background: 0,0,0,0;
+    border: none;
+    color:white;
   }
 }
 
-
-#top-nav ul{
-  text-align: center;
-  margin:0px;
-}
-
-#top-nav a{
-    text-decoration: none;
-    color: #FEFEFB;
-}
-
-#top-nav li{
-  display: inline-block;
-  padding: 0 10px;
-  color:white;
-  font-size: 12px;
-}
-
-#top-nav li::after{
-  border-bottom: solid 2px white;
-   bottom: 10px;
-   content: "";
-   display: block;
-   transition: all .3s ease;
-   -webkit-transition: all .3s ease;
-   width: 0;
-}
-#top-nav li:hover::after{
+.toggle_menu{
+    text-align: center;
+    margin:0px;
+    display: none;
+    position: fixed;
     width: 100%;
+    background-color:$red_color;
+    z-index: 10;
+    a{
+      text-decoration: none;
+      color: white;
+    }
+    ul{
+      display: flex;
+      justify-content: space-around;
+      @media screen and (max-width: $res-max-width){
+        display: block;
+      }
+      li{
+        margin: 20px 0;
+      }
+    }
 }
 
-ul li{
-  list-style: none;
-  margin: 5px;
-  text-align: center;
-}
 
-header a{
-  display: block;
-  text-align: center;
-  margin-top: auto;
-  margin-bottom:auto;
-}
-
-
+//-----------------------フォーム
 
 #form-main{
   padding-top: 15px;
@@ -294,238 +329,71 @@ header a{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
+  h2{
+    width: 50%;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: white 2px 2px 0px;
+    background-color:#ffebcd33;
+    border-radius: 50%;
+    font-style: italic;
+    padding: 50px 10px;
+    @media screen and (max-width: 414px){
+        font-size: 20px;
 
-.bg-box h2{
-  width: 50%;
-  font-size: 40px;
-  text-align: center;
-  text-shadow: white 2px 2px 0px;
-  background-color: #ffebcd7d;
-}
-
-  @media screen and (max-width: 414px){
-      .bg-box h2{font-size: 20px;
-      }
+    }
   }
-
-
-/*
-.bg-box h2::before{
-  content: 'Play and enjoy!';
-  font-size: 100px;
-  display: block;
-}
-*/
-/*アバウトエリア*/
-.about-wrapper{
-  height: 800px;
-  width:100%;
-  overflow: hidden;
-  background-color: #E6EA9A8F;
-}
-
-.about-left{
-  width:40%;
-  float: left;
-}
-.about-left img{
-  width:80%;
-  margin:20px 0 0 20px;
 }
 
 
-.about-right{
-  width:100%;
-  float: center;
-}
+@import "about.scss";
 
-/*この辺参考　https://saruwakakun.com/html-css/reference/box */
-.about-text-wrap{
-  margin-left:10%;
-  margin-right: 10%;
-  margin-top: 200px;
-  background: #FFF;
-  border: solid 3px #6091d3;/*線*/
-  border-radius: 10px;/*角の丸み*/
-  height: 300px;
-}
-
-
-.about-title{
-  width:100%;
-  text-align: center;
-}
-.about-right p{
-  margin-left:auto;
-  margin-right:auto;
-  margin-top: 40px;
-  width:90%;
-  line-height: 25px;
-  text-align: center;
-}
-
-
-.about-h1{
-  text-align:center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 200px;
-  line-height: 200px;
-}
-
-
-.about-h1::before{
-  font-family: FontAwesome;
-  content: "\f00c";
-  padding-right : 5px;/*文字との隙間*/
-  color: #f89174;/*アイコンの色*/
-}
-
-
-.disc{
-  background-color:#E6EA9A8F;
-  height: 1100px;
-  overflow: hidden;
-  width:100%;
-  text-align: center;
-  font-size: 20px;
-  padding:80 0 80 0px;
-}
-
-
-.disc h3{
-  font-size:30px;
-  font-weight:bold;
-}
-
-.disc h3::before{
-  font-family: FontAwesome;
-  content: "\f00c";
-  padding-right : 5px;/*文字との隙間*/
-  color: #f89174;/*アイコンの色*/
-}
-
-
-.disc-left{
-  width:50%;
-  height: 600px;
-  float: left;
-  -webkit-transition: all 0.5s;
-  -webkit-transform: translate(0, 0);
-}
-
-.disc-left p {
-  height: 60px;
-}
-.disc-left-image{
-  width: 70%;
-  height: 214px;
-  border-radius: 50%;
-  margin: 10% 10% 10% 10%;
-}
-
-.slideimg{
-  animation-duration: 2s;/* アニメーション時間 */
-  animation-name: RightToLeft;/* アニメーション名 */
-}
-
-.disc-center{
-  width:50%;
-  height: 600px;
-  float:left;
-  -webkit-transition: all 0.6s;
-  -webkit-transform: translate(0, 0);
-}
-
-.disc-center p{
-  height: 60px;
-}
-
-.disc-center-image{
-  width: 70%;
-  border-radius: 50%;
-  margin: 10% 10% 10% 10%;
-}
-
-.move{
-  -webkit-transform: translate(100px, 0);
-  opacity:0;
-}
-
-
-
-/*2カラムに変えたので一旦非表示
-
-.disc-right{
-  width:33.3%;
-  height: 600px;
-  float: left;
-}
-
-.disc-right-image{
-  width: 65%;
-  height: 40%;
-  min-width: 350px;
-  border-radius: 50% 30%;
-  margin: 10% 10% 10% 10%;
-}
-
-----------------*/
 
 /*トップページpostのサンプル一覧----------------*/
 .top-games{
-  height: 1800px;
-  overflow: hidden;
-  background-color: #FFCC99;
   text-align: center;
-}
-
-.top-games h2{
-  font-size: 30px;
-  margin-top: 100px;
-}
-
-.top-games button{
-  width:300px;
-  height:60px;
-  margin-bottom: 20px;
-  font-size: 30px;
-  border: solid 1px;
-  border-radius: 20px;
-  box-shadow: 1px 1px 1px #668AD8;
-}
-
-button{
-  transition: 0.1s;
-  &:hover{
-    transform:scale(1.1);
-    transition: 0.1s;
-    background-color: #BBFFFF;
+  &__search{
+    margin-bottom: 100px;
+  }
+  h2{
+    font-size: 30px;
+    margin-top: 100px;
+  }
+  button{
+    width:300px;
+    height:60px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    border: solid 1px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px black;
+  }
+  a:visited {
+    text-decoration: none;
+    color:black;
   }
 }
 
 
-.top-games a:visited {
-  text-decoration: none;
-  color:black;
-}
 
 .top-posts{
   height: 100%;
   width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #fafad2;
+  margin: auto auto 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  &__new{
+    width: 20%;
+    margin: auto;
+    background-color: yellow;border: solid 1px;
+    box-shadow: 2px 2px;
+  }
 }
 
 .top-posts-sample{
   display: block;
-  height:500px;
+//  height:500px;
   width: 50%;
-  float: left;
-  overflow: hidden;
 }
 
 .posts-text > a{
@@ -536,7 +404,6 @@ button{
   color: black;
   margin-top: 20px;
   border: solid 2px;
-  border-radius: 20px;
 }
 
 .posts-text p{
@@ -559,7 +426,6 @@ button{
 /*トップのsignアップコンテンツ-------------------------------*/
 
 .top-signup{
-  background-color: #FFCC99;
   text-align: center;
   padding-top: 40px;
 }
@@ -570,7 +436,6 @@ button{
   margin-bottom: 100px;
   font-size: 30px;
   border: solid;
-  border-radius: 20px;
   box-shadow: 1px 1px 1px #668AD8;
   transition: 1s;
 }
@@ -711,38 +576,52 @@ button{
 
 .detail{
   &-wrapper{
-    background-color: #FFFFCC;
     margin-top: -20px;
+    h1{
+      text-align: center;
+      margin: 100px 0 auto 0;
+      @media screen and (max-width: $res-max-width){
+        margin: 50px 0 auto 0;
+      }
+      &:before{
+        content: "ゲームタイトル";
+        font-size: 16px;
+        margin: 10px;
+        color:$before-text;
+      }
+    }
   }
+
+  &-info-wrapper{
+    display: flex;
+    justify-content: center;
+    p{
+      margin: 50px;
+    }
+  }
+  &-other{
+    width:30%;
+
+  }
+
   &-pic{
-    width: 80%;
-    height: 90%;
-    margin: 5% auto auto auto;
+    width: 60%;
+    margin:50px auto;
     img{
       width:100%;
       border-radius: 5%;
     }
   }
-  &-info-wrapper{
-    overflow: hidden;
-    background-color: #FFFFCC
-  }
+
   &-body{
     text-align: center;
     width:70%;
     min-height: 200px;
-    float: left;
     font-size: 20px;
-  }
-  &-other{
-    width:30%;
-    min-height: 200px;
-    float: left;
   }
   &-commnet{
     width:100%;
     height:100%;
-    float: left;
     padding-left:50px;
     padding-bottom: 50px;
     background-color: pink;
@@ -765,7 +644,6 @@ button{
 /*マイページ*/
 .page-mypage{
   width:100%;
-  background-color: #FFCC99;
 }
 
 .page-2colum{
@@ -856,7 +734,6 @@ button{
   }
 }
 
-/*説明discpritonエリア*/
 
 /* 「RightToLeft」の動作内容 */
 @keyframes RightToLeft {
@@ -887,7 +764,6 @@ button{
     animation-name:Underline;
     animation-fill-mode: forwards;
     animation-duration: 0.1s;
-
 }
 
 .js-cover{

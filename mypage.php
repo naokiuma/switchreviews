@@ -42,11 +42,7 @@ require('head.php');
 ?>
 
 <body class="page-mypage">
-  <style>
-    #main{
-      border: none !important;
-    }
-  </style>
+
 
     <!-- メニュー -->
     <?php
@@ -59,7 +55,7 @@ require('head.php');
     <div class="myprof">
       <img src="<?php echo showImg($userData['pic']); ?>" alt="自分の画像" style="width:90%; margin:20px 20px;">
       <h3><?php echo ($userData['username']); ?></h3>
-      <p>好きなタイプのゲーム：<?php echo ($userData['lovegame']); ?></p>
+      <p>一言：<?php echo ($userData['lovegame']); ?></p>
       <p><button type="button" name="button" class="fav-button">お気に入り一覧</button></p>
       <div class="js-get-id">ここにidが入る。</div>
     </div>
