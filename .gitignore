@@ -1,6 +1,6 @@
 db.php
 php.log
-package.jspn
-package-lock.jspn
+package.json
+package-lock.json
 yarn.lock
 node_modules
