@@ -382,14 +382,18 @@ function searchReviews($s_key, $span = 20){
   try{
   $dbh = dbConnect();
   //タイトルか名前にヒットするか検索
-  $sql = "SELECT * FROM reviews WHERE (title LIKE '%$s_key%' OR body LIKE '%$s_key%') ";
-  //$sql = "SELECT * FROM reviews WHERE LIMIT $span OFFSET $currentMinNum AND (title LIKE '%$s_key%' OR body LIKE '%$s_key%')";
-  //$sql .= ' LIMIT '.$span.' OFFSET '.$currentMinNum;
-  //もしカテゴリもセットしてたらsqlに追加
+  if(!empty($s_key)){
+    $sql = "SELECT * FROM reviews WHERE (title LIKE '%$s_key%' OR body LIKE '%$s_key%') ";
+    if(!empty($category)) $sql .= ' AND category_id = ' .$category;
+  }else{
+    $sql = "SELECT * FROM reviews ";
+    if(!empty($category)) $sql .= ' WHERE category_id = ' .$category;
+  }
+
   if(!empty($category)) $sql .= ' AND category_id = ' .$category;
   $data = array();
   $stmt = queryPost($dbh, $sql, $data);
-  //debug('検索でのクエリ結果情報です!!：'.print_r($stmt,true));
+  debug('検索でのクエリ結果情報です!!：'.print_r($stmt,true));
 
   $result_s['total'] = $stmt->rowCount(); //総レコード数
   $result_s['total_page'] = ceil($result_s['total']/$span); //総ページ数

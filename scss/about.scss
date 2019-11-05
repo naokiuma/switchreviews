@@ -1,12 +1,18 @@
 
 /*アバウトエリア*/
-.about-wrapper{
+.about__wrapper{
+  margin: 200px auto;
   width:100%;
+  @media screen and (max-width: $res-max-width){
+   margin: 150px auto;
+  }
 }
-
-.about-box{
+.about__box{
   width:70%;
   margin: auto auto;
+  @media screen and (max-width: $res-max-width){
+      width: 80%;
+  }
   p{
     margin-left:auto;
     margin-right:auto;
@@ -19,9 +25,7 @@
 
 /*この辺参考　https://saruwakakun.com/html-css/reference/box */
 .about-text-wrap{
-  margin-left:10%;
-  margin-right: 10%;
-  margin-top: 200px;
+  margin: 0 auto;
   background: #FFF;
   border: solid 3px #6091d3;/*線*/
   border-radius: 10px;/*角の丸み*/
@@ -34,12 +38,16 @@
 }
 
 
+//-------disc------
 
 .disc{
   width:100%;
   text-align: center;
   padding:80 0 80 0px;
   margin-bottom: 200px;
+  opacity: 0;
+  animation-duration: 1s;/* アニメーション時間 */
+
   h3{
       font-size:30px;
       font-weight:bold;
@@ -59,10 +67,19 @@
     height: 200px;
     line-height: 200px;
     font-size: 36px;
+    background-color: #ff00002e;
+    @media screen and (max-width: $res-max-width){
+        font-size: 30px;
+        height: 100px;
+        line-height: 100px;
+    }
     &__wrapper{
       margin-bottom: 200px;
       display: flex;
       justify-content: space-around;
+      @media screen and (max-width: $res-max-width){
+        flex-wrap: wrap;
+      }
     }
   }
 
@@ -71,6 +88,9 @@
     box-sizing: border-box;
     -webkit-transition: all 0.5s;
     -webkit-transform: translate(0, 0);
+    @media screen and (max-width: $res-max-width){
+        width: 80%;
+    }
     p {
       height: 60px;
     }
@@ -82,10 +102,6 @@
 }
 
 
-
-
-
-
 .slideimg{
   animation-duration: 2s;/* アニメーション時間 */
   animation-name: RightToLeft;/* アニメーション名 */
@@ -94,6 +110,4 @@
 .move{
   -webkit-transform: translate(100px, 0);
   opacity:0;
-  animation-duration: 2s;/* アニメーション時間 */
-  animation-name: RightToLeft;/* アニメーション名 */
 }

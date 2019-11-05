@@ -21,6 +21,8 @@ arsort($r_comment);
 
 // DBからレビューデータを取得
 $viewData = getReviewOne($r_id);
+date_default_timezone_set('Asia/Tokyo');
+$nowdate = date("Y-m-d H:i:s",strtotime("-3 day"));//strtotimeでdatetimeの方を調べる
 
 if(empty($viewData)){
   error_log('エラー発生:指定ページに不正な値が入りました');
@@ -74,67 +76,64 @@ require('head.php');
   <?php
   require('header.php');
   ?>
-  <p id="js-show-msg" style="display:none;" class="msg-slide">
-    <?php echo getSessionFlash('msg_success'); ?>
-  </p>
+<p id="js-show-msg" style="display:none;" class="msg-slide">
+  <?php echo getSessionFlash('msg_success'); ?>
+</p>
 
-  <section class="detail-wrapper">
+<section class="detail-wrapper">
     <h1><?php echo ($viewData['title']); ?></h1>
 
   <div class="detail-info-wrapper">
     <div class="detail-pic">
       <img src="<?php echo (!empty($viewData['pic'])) ? $viewData['pic'] : "images/sample.png"; ?>" alt="ゲーム画像">
     </div>
+    <?php if ($viewData['create_date'] > $nowdate){  ?>
+      <div class="top-posts__new">
+        NEW!
+      </div>
+    <?php } ?>
 
     <div class="detail-other">
       <p>投稿者：<?php echo ($post_user['username']); ?><br>
         カテゴリー：<?php echo ($viewData['category']); ?><br>
         お気に入り：<i class="fa fa-heart icn-like js-click-fav <?php if(isFav($_SESSION['user_id'],$viewData['id'])){echo
-          'active';} ?>" aria-hidden="true" data-review_id="<?php echo ($viewData['id']); ?>" ></i></p>
-
-          <!--もしセッションにユーザーIDがあり、かつそのユーザーIDとセッションIDが同じ場合編集できるようにする-->
-          <?php if(!empty($_SESSION['user_id']) && $_SESSION['user_id'] == $post_user['id']) : ?>
-
-            <a href="reviewpost.php?r_id=<?php echo ($viewData['id']); ?>">記事を編集する</a>
-
-          <?php endif;?>
+        'active';} ?>" aria-hidden="true" data-review_id="<?php echo ($viewData['id']); ?>" ></i><br>
+        参考URL：<?php echo ($viewData['abouturl']); ?>
+      </p>
+      <div class="detail-body">
+        <h3>投稿本文</h3>
+        <p><?php echo nl2br(h($viewData['body'])); ?></p>
+      </div>
+      <!--もしセッションにユーザーIDがあり、かつそのユーザーIDとセッションIDが同じ場合編集できるようにする-->
+      <?php if(!empty($_SESSION['user_id']) && $_SESSION['user_id'] == $post_user['id']) : ?>
+        <button><a href="reviewpost.php?r_id=<?php echo ($viewData['id']); ?>">記事を編集する</a></button>
+      <?php endif;?>
     </div>
   </div>
+  <div class="detail-commnet">
+    <?php
+      debug('$r_commnetの中身：'.print_r($r_comment,true));
+      //$r_commentとは、コメント情報。
+      if(!empty($r_comment)){
+       foreach ($r_comment as $val): ?>
+       <p><?php echo ($val['comment']); ?><p>
+       <span style="font-size:13px;"><?php echo ($val['create_date']); ?></span>
 
-  <div class="detail-body">
-    <p><?php echo nl2br(h($viewData['body'])); ?></p>
-    <p>参考URL：<?php echo ($viewData['abouturl']); ?></p>
+    <?php
+     endforeach;}
+    ?>
+
+
+    <form action="" method="post">
+      <label class="<?php if(!empty($err_msg['comment'])) echo 'err'; ?>">
+        <b>コメント投稿</b><br>
+        <input type="text" name="comment" class="textbox" >
+        </label>
+      <input type="submit" placeholder="コメント" class="btn btn-primary" value="コメントする">
+    </form>
+
   </div>
-
-
-
-
-              <div class="detail-commnet">
-
-                <?php
-                debug('$r_commnetの中身：'.print_r($r_comment,true));
-                //$r_commentとは、コメント情報。
-                if(!empty($r_comment)){
-                  foreach ($r_comment as $val): ?>
-                  <p style="font-size:20px; margin-bottom: -20px;"><?php echo ($val['comment']); ?><p>
-                    <span style="font-size:13px;"><?php echo ($val['create_date']); ?></span>
-
-                    <?php
-                  endforeach;}
-                  ?>
-
-                  <form action="" method="post">
-                    <label class="<?php if(!empty($err_msg['comment'])) echo 'err'; ?>">
-                      <b>コメント一覧</b><br>
-                      <input type="text" name="comment" class="textbox" >
-                    </label>
-                    <input type="submit" placeholder="コメント" class="btn btn-primary" value="コメントする" style="margin-top:0;">
-
-                  </form>
-
-                </div>
-
-            </section>
+</section>
 
   <?php
     require('footer.php');

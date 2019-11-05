@@ -16,8 +16,6 @@ $(function(){
     console.log("動作");
     var target = $('.toggle_menu');
     $(target).slideToggle(600);
-    //$(target).css('display','flex');
-    //$(target).toggleClass("menu_active");
   })
 })
 
@@ -63,12 +61,13 @@ if($('.about-text-wrap').length){
 
 //右から左
   $(window).scroll(function(){
-    $('.disc').addClass('move');
+    //$('.disc').addClass('move');
     var imgPos = $('.disc').offset().top;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
-    if(scroll > imgPos - windowHeight + windowHeight/2){
-      $('.disc').removeClass("move");
+    if(scroll > imgPos - windowHeight + windowHeight/4){
+      $('.disc').css("animation-name", "RightToLeft");
+      $('.disc').css("opacity", "1");
     }
   });
 

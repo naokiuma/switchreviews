@@ -88,25 +88,36 @@ require('head.php');
 <button type="button" class="search-button" name="button">検索する</button>
     <div class="search-container">
         <form id="search-form-main" action="" method="post">
-          <h2 class="title">投稿を検索する</h2>
-          <label class="search-word">
-            <select name="c_id" class="js-select-category">
-              <option value="">カテゴリ指定</option>
-              <?php
-              foreach ($dbCategoryData as $key => $value) {
-              ?>
-              <option value="<?php echo $value['id'] ?>">
-                <?php echo $value['name']; ?>
-              </option>
-              <?php
-              }
-              ?>
-            </select>
-            <input type="text" name="s_key" class="textbox" placeholder="キーワードで検索" >
-            <p style="margin-bottom:0px">このカテゴリには<span class ="js-category-success">0</span>件の投稿があります。</p>/
-          </label>
-            <br><input type="submit" value="Search!" style="font-size:30px; border-radius: 20px; border:solid 1px; font-size: 30px; box-shadow:4px 4px; margin-bottom:30px;">
+          <h2 class="title">キーワードで検索</h2>
+
+          <section class="search-info__wrapper">
+            <div class="search-category">
+              <label>
+                <select name="c_id" class="js-select-category search-select"><!--app.jsにて処理-->
+                  <option value="">カテゴリで絞り込む</option>
+                  <?php
+                  foreach ($dbCategoryData as $key => $value) {
+                  ?>
+                  <option value="<?php echo $value['id'] ?>">
+                    <?php echo $value['name']; ?>
+                  </option>
+                  <?php
+                  }
+                  ?>
+                </select>
+              </lavel>
+            </div>
+
+            <div class="search-keywords">
+              <label>
+                <input type="text" name="s_key" class="search-textbox" placeholder="キーワードで検索" >
+              </label>
+            </div>
+
+          </section>
+            <input type="submit" value="Search!">
         </form>
+        <p class="search-result">このカテゴリには<span class ="js-category-success">0</span>件の投稿があります。</p>
 
     </div>
 

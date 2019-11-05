@@ -48,8 +48,8 @@ debug("3日前".$nowdate);
   <h2>Play and enjoy!</h2>
 </section>
 
-  <section class="about-wrapper">
-    <div class="about-box">
+  <section class="about__wrapper">
+    <div class="about__box">
       <div class="about-text-wrap">
         <h2 class="about-title">Switchインディーズライフとは？</h2>
         <p>たくさんのインディーズゲームがどんどん毎週のようにリリースされるNintendo Switch。<br>
@@ -61,7 +61,7 @@ debug("3日前".$nowdate);
     </div>
   </section>
 
-  <section class="disc move">
+  <section class="disc">
 
     <h2 class="disc__about">ーできることー</h2>
 
@@ -106,9 +106,7 @@ debug("3日前".$nowdate);
             <a href="reviewdetail.php?r_id=<?php echo h($row['id']) ?>">
               <?php echo h($row['title']);
               echo "<br>";?></a>
-              <p><?php echo h($row['body']);
-              echo "<br>";?>
-              <a href="<?php echo h($row['abouturl']);?>">参考URL</a>
+              <p><?php echo h($row['body']);?><br>
               投稿者：<?php echo h($row['username']); ?>
             </p>
           </div>
@@ -128,10 +126,6 @@ debug("3日前".$nowdate);
         </article>
       <?php endforeach; ?>
 
-    </div>
-
-    <div class="top-games__search">
-      <a href="searchreviews.php"><button>もっと検索する</button></a>
     </div>
 
   </section>
