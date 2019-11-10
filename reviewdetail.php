@@ -7,6 +7,10 @@ debug('「　トップページ　');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 debugLogStart();
 
+
+//ログイン認証
+require('auth.php');
+
 //================================
 // 画面処理
 //================================
@@ -18,6 +22,9 @@ $r_id = (!empty($_GET['r_id'])) ? $_GET['r_id'] : '';
 //DBからコメント情報を取得
 $r_comment = getComment($r_id);
 arsort($r_comment);
+debug("コメント情報");
+//debug($r_comment);
+
 
 // DBからレビューデータを取得
 $viewData = getReviewOne($r_id);
@@ -29,9 +36,9 @@ if(empty($viewData)){
   header("Location:index.php"); //トップページへ
 }
 $post_user = getUser($viewData['user_id']) ;
-debug('取得したユーザー情報：'.print_r($post_user,true));
-debug('取得したDBデータdetail：'.print_r($viewData,true));
-debug('取得したコメントデータdetail：'.print_r($r_comment,true));
+//debug('取得したユーザー情報：'.print_r($post_user,true));
+//debug('取得したDBデータdetail：'.print_r($viewData,true));
+//debug('取得したコメントデータdetail：'.print_r($r_comment,true));
 //debug('ログイン中のユーザーID：'.print_r($_SESSION['user_id'],true));
 
 //post送信されていた場合
@@ -84,24 +91,26 @@ require('head.php');
     <h1><?php echo ($viewData['title']); ?></h1>
 
   <div class="detail-info-wrapper">
+
     <div class="detail-pic">
       <img src="<?php echo (!empty($viewData['pic'])) ? $viewData['pic'] : "images/sample.png"; ?>" alt="ゲーム画像">
+      <?php if ($viewData['create_date'] > $nowdate){  ?>
+        <div class="top-posts__new">
+          NEW!
+        </div>
+      <?php } ?>
     </div>
-    <?php if ($viewData['create_date'] > $nowdate){  ?>
-      <div class="top-posts__new">
-        NEW!
-      </div>
-    <?php } ?>
+
 
     <div class="detail-other">
       <p>投稿者：<?php echo ($post_user['username']); ?><br>
         カテゴリー：<?php echo ($viewData['category']); ?><br>
         お気に入り：<i class="fa fa-heart icn-like js-click-fav <?php if(isFav($_SESSION['user_id'],$viewData['id'])){echo
         'active';} ?>" aria-hidden="true" data-review_id="<?php echo ($viewData['id']); ?>" ></i><br>
-        参考URL：<?php echo ($viewData['abouturl']); ?>
+        参考URL：<a href="<?php echo h($viewData['abouturl']); ?>"><?php echo h($viewData['abouturl']); ?></a>
       </p>
       <div class="detail-body">
-        <h3>投稿本文</h3>
+        <h4>投稿本文</h4>
         <p><?php echo nl2br(h($viewData['body'])); ?></p>
       </div>
       <!--もしセッションにユーザーIDがあり、かつそのユーザーIDとセッションIDが同じ場合編集できるようにする-->
@@ -112,17 +121,22 @@ require('head.php');
   </div>
   <div class="detail-commnet">
     <?php
-      debug('$r_commnetの中身：'.print_r($r_comment,true));
-      //$r_commentとは、コメント情報。
       if(!empty($r_comment)){
-       foreach ($r_comment as $val): ?>
-       <p><?php echo ($val['comment']); ?><p>
-       <span style="font-size:13px;"><?php echo ($val['create_date']); ?></span>
+       foreach ($r_comment as $val):
+      $u_id = $val['comment_user'];
+      $u_name = getUser($u_id);
+    ?>
+    <p>
+    <a href="#">ユーザー名：<?php print_r($u_name['username']); ?></a><br>
+     <?php echo ($val['comment']); ?><br>
+    <p>
+
+    <span style="font-size:13px;">
+    <?php echo ($val['create_date']); ?>posted.</span>
 
     <?php
      endforeach;}
     ?>
-
 
     <form action="" method="post">
       <label class="<?php if(!empty($err_msg['comment'])) echo 'err'; ?>">

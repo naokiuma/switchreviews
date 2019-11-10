@@ -283,6 +283,7 @@ function getUser($u_id){
     // クエリ成功の場合
     if($stmt){
       debug('クエリ成功。');
+      //debug($stmt,true);
     }else{
       debug('クエリに失敗しました。');
     }

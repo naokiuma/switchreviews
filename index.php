@@ -2,6 +2,8 @@
 
 
 require('function.php');
+//require('twitter.php');
+
 
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 debug('「　トップページ　');
@@ -63,28 +65,31 @@ debug("3日前".$nowdate);
 
   <section class="disc">
 
-    <h2 class="disc__about">ーできることー</h2>
+    <h2 class="disc__about">できること</h2>
 
     <div class="disc__about__wrapper">
       <div class="disc__card">
         <h3>投稿する</h3>
         <p>お気に入りのゲーム、気になるゲームについて投稿しよう。</p>
         <i class="fas fa-laptop disc__card__image"></i>
-        <!--<img src="images/disc1.jpg" alt="" class="disc__card__image">-->
       </div>
 
       <div class="disc__card">
         <h3>コメントする</h3>
         <p>投稿にメモやコメントを投稿。</p>
         <i class="fas fa-comments disc__card__image"></i>
-        <!--<img src="images/disc2.jpg" alt="" class="disc__card__image">-->
       </div>
 
       <div class="disc__card">
         <h3>お気に入り</h3>
         <p>投稿をお気に入りしておけばマイページから確認可能です。</p>
         <i class="far fa-star disc__card__image"></i>
-        <!--<img src="images/disc2.jpg" alt="" class="disc__card__image">-->
+      </div>
+
+      <div class="disc__tweet">
+        <h3>ツイッターで見つける</h3>
+        <p>本サービス内で新しく投稿されたゲームや、話題のゲームに関するツイートを収集、表示。<br>気になるゲームの話題をツイートしているアカウントを見つけ、フォローしよう！</p>
+        <i class="fab fa-twitter-square disc__card__image"></i>
       </div>
     </div>
 
@@ -93,8 +98,11 @@ debug("3日前".$nowdate);
   <!--ゲームレビューエリア-->
   <section class="top-games">
     <div class="top-games__search">
-      <h2>ー新着投稿一覧ー</h2>
+      <h2 class="top-games__search__text">新着投稿一覧</h2>
     </div>
+    <p>新しいポスト順に表示します。<br>
+       <a href="searchreviews.php">もっと多くの投稿を見る</a>
+    </p>
 
 
     <div class="top-posts">
@@ -106,7 +114,7 @@ debug("3日前".$nowdate);
             <a href="reviewdetail.php?r_id=<?php echo h($row['id']) ?>">
               <?php echo h($row['title']);
               echo "<br>";?></a>
-              <p><?php echo h($row['body']);?><br>
+              <p class="overflow-ellipsis"><?php echo h($row['body']);?><br>
               投稿者：<?php echo h($row['username']); ?>
             </p>
           </div>
@@ -118,9 +126,9 @@ debug("3日前".$nowdate);
 
           <div class="pic">
             <?php if ($row['pic']){  ?>
-              <img src="<?php echo h($row['pic']);?>" alt="" style="width:400px;">
+              <img src="<?php echo h($row['pic']);?>" alt="">
             <?php }else{ ?>
-              <img src="images/disc1.jpg" alt="" style="width:400px;">
+              <img src="images/disc1.jpg" alt="">
             <?php } ?>
           </div>
         </article>

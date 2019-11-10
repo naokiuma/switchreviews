@@ -70,14 +70,14 @@ require('head.php');
     <section id ="form-main">
       <div class="form-container">
         <form action="" method="post" class="form">
-          <h2 class="title">退会</h2>
+          <h2 class="title">退会しますか？</h2>
           <div class="area-msg">
             <?php
             if(!empty($err_msg['common'])) echo $err_msg['common'];
             ?>
           </div>
           <div class="btn-container">
-            <input type="submit" name="submit" value="退会する" class="btn btn-mid">
+            <input type="submit" name="submit" value="退会する" class="btn btn-mid ">
           </div>
         </form>
       </div>

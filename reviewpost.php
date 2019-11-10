@@ -19,10 +19,12 @@ require('auth.php');
 //================================
 //getデータを取得する
 $r_id = (!empty($_GET['r_id'])) ? $_GET['r_id'] : '';
-//dbから商品データを取得
+//dbからデータを取得、存在している場合のみdbformdata
+
 $dbFormData = (!empty($r_id)) ? getReview($_SESSION['user_id'], $r_id) : '';
-//新規登録か、編集か判別フラグ
+//新規登録か、編集か判別フラグ。dbデータが場合
 $edit_flg = (empty($dbFormData)) ? false : true;
+debug('editflg:'.$edit_flg);
 //DBからカテゴリーを取得
 $dbCategoryData = getCategory();
 debug('商品id:'.$r_id);
@@ -48,6 +50,7 @@ if(!empty($_POST)){
 
   //変数にユーザー情報を代入する
   $title = $_POST['title'];
+  $gametitle = $_POST['gametitle'];
   $category = $_POST['category_id'];
   $body = $_POST['body'];
   $abouturl = $_POST['abouturl'];
@@ -82,15 +85,15 @@ if(!empty($_POST)){
       //dbへ接続
       $dbh = dbConnect();
       //sql文作成
-      //編集画面の場合はupdate、新規登録画面の場合はinserする。
+      //編集画面の場合はupdate、新規登録画面の場合はinsertする。
       if($edit_flg){
         debug('レビュー更新します。');
-        $sql = 'UPDATE reviews SET title = :title, category_id = :category, body = :body, pic = :pic, abouturl = :abouturl WHERE user_id = :u_id AND id = :r_id';
-        $data = array(':title' => $title, ':category' => $category, ':body' => $body, ':pic' => $pic, ':abouturl' => $abouturl, ':u_id' => $_SESSION['user_id'], ':r_id' => $r_id);
+        $sql = 'UPDATE reviews SET title = :title, gametitle = :gametitle,category_id = :category, body = :body, pic = :pic, abouturl = :abouturl WHERE user_id = :u_id AND id = :r_id';
+        $data = array(':title' => $title, ':gametitle' => $gametitle, ':category' => $category, ':body' => $body, ':pic' => $pic, ':abouturl' => $abouturl, ':u_id' => $_SESSION['user_id'], ':r_id' => $r_id);
       }else{
         debug('新規登録です。');
-        $sql = 'INSERT INTO reviews (title, category_id, body, pic, abouturl, user_id, create_date) values (:title, :category, :body, :pic, :abouturl, :u_id, :date)';
-        $data =array(':title' => $title, ':category' => $category, ':body' => $body, ':pic' => $pic, ':abouturl' => $abouturl, ':u_id' => $_SESSION['user_id'], ':date' => date('Y-m-d H:i:s'));
+        $sql = 'INSERT INTO reviews (title, gametitle,category_id, body, pic, abouturl, user_id, create_date) values (:title, :gametitle,:category, :body, :pic, :abouturl, :u_id, :date)';
+        $data =array(':title' => $title, ':gametitle' => $gametitle, ':category' => $category, ':body' => $body, ':pic' => $pic, ':abouturl' => $abouturl, ':u_id' => $_SESSION['user_id'], ':date' => date('Y-m-d H:i:s'));
       }
       debug('sqlの中身:'.$sql);
       debug('流し込みデータ：'.print_r($data,true));
@@ -136,8 +139,9 @@ debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
               if(!empty($err_msg['common'])) echo $err_msg['common'];
               ?>
             </div>
+
             <label class="<?php if(!empty($err_msg['name'])) echo 'err'; ?>">
-              <h3>投稿タイトル<span class="area-msg">※ゲーム名も含むとわかりやすいです！<br></span></h3>
+              <h3>投稿タイトル</h3>
               <input type="text" class="textbox" name="title" value="<?php echo getFormData('title'); ?>">
             </label>
             <div class="area-msg">
@@ -145,8 +149,15 @@ debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
               if(!empty($err_msg['title'])) echo $err_msg['title'];
               ?>
             </div>
+
+            <label>
+              <h3>ゲームタイトル</h3>
+              <input type="text" class="textbox" name="gametitle" value="<?php echo getFormData('gametitle'); ?>">
+            </label>
+
+
             <label class="<?php if(!empty($err_msg['category_id'])) echo 'err'; ?>">
-              <h3>カテゴリ<span class="area-msg">※必須<br></span></h3>
+              <h3>カテゴリ</h3>
               <select name="category_id" id="">
                 <option value="0" <?php if(getFormData('category_id') == 0 ){ echo 'selected'; } ?> >選択してください</option>
                 <?php
@@ -158,29 +169,38 @@ debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
                 <?php
                   }
                 ?>
-              </select>
+              </select><br>
+              <span class="area-msg">※必須</span>
             </label>
             <div class="area-msg">
                 <?php
                 if(!empty($err_msg['category_id'])) echo $err_msg['category_id'];
                 ?>
             </div>
+
+
             <label class="<?php if(!empty($err_msg['body'])) echo 'err'; ?>">
               <h3>レビュー/メモ<br></h3>
-              <textarea name="body" id="js-count" cols="80" row="30" style="height:300px;"><?php echo getFormData("body"); ?></textarea>
-            </label><p><span id="js-count-view">0</span>/1000文字まで</p>
+              <textarea name="body" id="js-count" class="post_main_text"><?php echo getFormData("body"); ?></textarea>
+              <p><span id="js-count-view">0</span>/1000文字まで</p>
+            </label>
             <div class="area-msg">
               <?php
               if(!empty($err_msg['body'])) echo $err_msg['body'];
               ?>
             </div>
+
+
             <label>
-              <h3>参考URL<span class="area-msg">※トレーラーやプレイ動画などのURLを入力します。<br></span></h3>
-              <input type="url" name="abouturl" style="width:40%;height:30px;">
+              <h3>参考URL</h3>
+              <input type="url"  name="abouturl" class="textbox" name="title" value="<?php echo getFormData('abouturl'); ?>"><br>
+              <span class="area-msg">※トレーラーやプレイ動画などのURLを入力します。</span>
             </label>
+
+            <h3>ゲーム画像</h3>
+            <span class="area-msg">※PCではドラッグ＆ドロップできます。未設定の場合、サンプル画像が設定されます。</span>
             <div style="overflow:hidden;">
               <div class="imgdrop-container">
-                <h3>画像<span class="area-msg">※ドラッグ＆ドロップできます。</span></h3>
                 <label class="area-drop <?php if(!empty($err_msg['pic'])) echo 'err'; ?>" style="height: 300px; line-height: 300px; width:400px; position: relative; border: medium none;">
                   <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                   <input type="file" name="pic" class="input-file" style="height:300px; width:400px;">

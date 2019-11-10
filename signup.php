@@ -122,7 +122,7 @@ if(empty($err_msg) && $page_flag === 2){
           <?php if(!empty($err_msg['username'])) echo $err_msg['username']; ?>
         </div>
         <label class="<?php if(!empty($err_msg['email'])) echo 'err'; ?>">
-          ユーザーID <span class="area-msg">※ログイン時のIDです。<br>
+          ユーザーID <span class="area-msg">※ログイン時のIDです。</span><br>
           <input type="text" name="email" class="textbox" id="js-get-val-id" value="<?php if(!empty($_POST['email'])) echo $_POST['email']; ?>">
         </label>
         <div class="area-msg">

@@ -14,7 +14,7 @@ html{
   padding:0px;
   height: 100%;
   background-color: $main_bg;
-  font-family: 'Hiragino Kaku Gothic W5 JIS2004',sans-serif;
+  font-family: 'FOT-セザンヌ Pro DB','Hiragino Kaku Gothic W5 JIS2004',sans-serif;
   //font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 body {
@@ -22,7 +22,7 @@ body {
   padding:0px;
   width:100%;
   height: 100%;
-  font-family: 'Hiragino Kaku Gothic W5 JIS2004',sans-serif;
+  font-family: 'FOT-セザンヌ Pro DB','Hiragino Kaku Gothic W5 JIS2004',sans-serif;
   //font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 
@@ -40,9 +40,8 @@ label span{
 button{
   transition: 0.1s;
   &:hover{
-    transform:scale(1.05);
+    transform:scale(0.99);
     transition: 0.1s;
-    //background-color: #BBFFFF;
   }
 }
 
@@ -93,7 +92,7 @@ footer{
 
 /*エラー*/
 .area-msg{
-  color: red;
+  color: #f00;;
   font-size: 0.8rem;
 }
 
@@ -135,16 +134,15 @@ header{
   line-height: 80px;
   margin: 0 20px;
   @media screen and (max-width: $res-max-width) {
-    width: 70%;
+    width: 100%;
   }
     a{
      text-align: center;
      letter-spacing: 3px;
      font-size: 20px;
      @media screen and (max-width: $res-max-width) {
-       width:80%;
        box-sizing: border-box;
-       font-size: 16px;
+       font-size: 14px;
      }
     }
 }
@@ -208,9 +206,19 @@ header{
   padding-top: 15px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #FFCC99;
+  background-color: #A1E879;
   width:90%;
-  padding-bottom: 150px;
+  min-height: 65vh;
+  height: 700px;
+  @media screen and (max-width: $res-max-width){
+    min-height: 50vh;
+  }
+  h2{
+    font-size: 24px;
+    @media screen and (max-width: $res-max-width){
+      font-size: 20px;
+    }
+  }
 
 }
 
@@ -227,19 +235,27 @@ header{
 }
 
 .textbox{
-  padding:10px;
-  margin-bottom: 10px;
-  width: 40%;
-  height: 30px;
+  padding:5px;
+  width: 60%;
+  height: 20px;
+}
+
+.post_main_text{
+  width: 70%;
+  height: 250px;
 }
 
 
 .imgdrop-container{
   width:400px;
-  background-color: #FFFFCC;
+  background-color: #F9D754;
   height: 300px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (max-width: $res-max-width){
+    width: 80%;
+  }
+
 }
 /*画像ボタン周り*/
 
@@ -258,12 +274,10 @@ header{
 }
 
 
-
 .area-drop input{
   opacity: 0;
   float: left;
 }
-
 
 
 .form .input-file{
@@ -296,20 +310,19 @@ header{
   width:100%;
   margin: 50px 0px;
   padding-bottom: 50px;
+  &.btn{
+      display: inline-block;
+      position: relative;
+      padding: 0.35em 1em;
+      background: #6699FF;/*ボタン色*/
+      color: brack;
+      width: 200px;
+      height: 40px;
+      margin: 10px;
+      text-decoration: none;
+  }
 }
 
-
-
-.btn-container .btn{
-    display: inline-block;
-    position: relative;
-    padding: 0.35em 1em;
-    background: #6699FF;/*ボタン色*/
-    color: brack;
-    width: 300px;
-    height: 70px;
-    text-decoration: none;
-}
 
 .btn-container .btn:hover{
   box-shadow: 2px 2px 4px;
@@ -325,7 +338,7 @@ header{
 
 .bg-box {
 	width: 100%;
-	height: 1100px;;
+	height: 700px;;
 	background-position:center center;
 	background-size: cover;
 	display: flex;
@@ -333,13 +346,15 @@ header{
 	justify-content: center;
   h2{
     width: 60%;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     text-shadow: white 2px 2px 0px;
     background-color:#ffebcd9e;
     border-radius: 50%;
     font-style: italic;
-    padding: 50px 10px;
+    padding: 10px 10px;
+    box-shadow: 4px 4px #090331;
+    border-radius: 10px;
     @media screen and (max-width: $res-max-width){
         font-size: 30px;
         width: 80%;
@@ -354,17 +369,18 @@ header{
   text-align: center;
   &__search{
     margin-bottom: 100px;
-    background-color: #ff00002e;
-  }
-  h2{
-    font-size: 30px;
-    height: 200px;
-    line-height: 200px;
-    @media screen and (max-width: $res-max-width){
-      height: 100px;
-      line-height: 100px;
+    background-color: #A1E879;
+    h2{
+      font-size: 30px;
+      height: 200px;
+      line-height: 200px;
+      @media screen and (max-width: $res-max-width){
+        height: 100px;
+        line-height: 100px;
+      }
     }
   }
+
   button{
     width:300px;
     height:60px;
@@ -391,8 +407,9 @@ header{
   &__new{
     width: 20%;
     margin: auto;
-    background-color: yellow;border: solid 1px;
-    box-shadow: 2px 2px;
+    background: radial-gradient(yellow, #D0C677C4);
+    box-shadow: 4px 4px;
+    text-align: center;
   }
 }
 
@@ -405,34 +422,48 @@ header{
   }
 }
 
-.posts-text > a{
-  display: inline-block;
-  width:70%;
-  font-size: 20px;
-  background-color: #99FFE7;
-  color: black;
-  margin-top: 20px;
-  border: solid 2px;
-  box-shadow: 2px 2px;
-  text-decoration:none;
+.posts-text {
+  p{
+    font-size: 14px;
+    margin: 20px auto;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 20px;
+    width: 400px;
+    @media screen and (max-width: $res-max-width){
+      padding: auto;
+      width: auto;
+    }
+  }
+  a{
+    display: inline-block;
+    width:70%;
+    font-size: 20px;
+    background-color: #99FFE7;
+    color: black;
+    margin-top: 20px;
+    border: solid 2px;
+    box-shadow: 2px 2px;
+    text-decoration:none;
+    @media screen and (max-width: $res-max-width){
+      font-size: 14px;
+      padding: 1px;
+    }
+  }
 }
 
-.posts-text p{
-  min-height:80px;
-  max-height: 200px;
-  font-size: 15px;
-  text-align: center;
-
-}
-
-
-.top-posts-sample > .pic{
+.pic{
   height: 100%;
   width: 100%;
   text-align: center;
   margin: auto;
   img{
     box-shadow: 4px 4px;
+    width: 400px;
+    max-height: 250px;
+    @media screen and (max-width: $res-max-width){
+      width: 300px;
+    }
   }
 
 }
@@ -469,6 +500,7 @@ header{
 
 .panel-list{
   overflow: hidden;
+  margin-top: 20px;
 }
 
 .panel-head{
@@ -478,21 +510,31 @@ header{
   padding:10px;
   text-align: center;
   box-sizing: border-box;
+  @media screen and (max-width: $res-max-width){
+    height: 400px;
+    width: 50%;
+  }
 }
 
 .panel_a{
   display: inline-block;
   font-size: 15px;
-  width:80%;
+  width:95%;
   margin-left:auto;
   margin-right: auto;
   text-align: center;
-  background-color: #FFCC99;
+  background-color: #99FFE7;
   color: black;
+  padding: 4px;
+  border: 2px solid;
+  box-shadow: 2px 2px;
+  height: 55px;
 }
 
 .panel_p{
   min-height: 25%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .panel-head > .panel-head-img{
@@ -508,35 +550,45 @@ header{
   position: fixed;
   top: 80px;
   right: 0;
-  height: 50px;
+  height: 40px;
   width: 200px;
   z-index: 2;
   border-radius: 5px;
   border: solid 1px;
   box-shadow:4px 4px;
   transition: 0.1s;
+  @media screen and (max-width: $res-max-width){
+    font-size: 12px;
+    width: 120px;
+  }
+  &:hover{
+    background-color: #BBFFFF;
+  }
 }
 
-.search-button:hover{
-  transform:scale(0.9);
-  transition: 0.1s;
-  background-color: #BBFFFF;
-}
 
+//検索窓付近---------------
 .search-container{
   text-align: center;
   display: none;
   width:100%;
   position: fixed;
   bottom: 0;
-  height:300px;
-  background-color: #CCFFCC;
+  height:250px;
+  background-color: #70FD94DB;
   border-top:solid 3px;
   box-shadow: 5px;
+  @media screen and (max-width: $res-max-width){
+    height:400px;
+  }
 }
 
 .search-info__wrapper{
   display: flex;
+  margin-bottom: 20px;
+  @media screen and (max-width: $res-max-width){
+    display: block;
+  }
 }
 .search-category {
   width: 20%;
@@ -552,6 +604,10 @@ header{
   	background: #eee;
   	background: -webkit-linear-gradient(top, #fff 0%,#efebe1 100%);
   	background: linear-gradient(to bottom, #fff 0%,#efebe1 100%);
+    @media screen and (max-width: $res-max-width){
+      font-size: 12px;
+      padding: 5px;
+    }
   }
   label{
     width: 300px;
@@ -572,17 +628,31 @@ header{
 
 .search-keywords{
   width: 60%;
+  @media screen and (max-width: $res-max-width){
+    margin: 20px auto;
+  }
 }
 
 .search-textbox{
-  width: 90%;
-  height: 40px;
+  width: 70%;
+  height: 25px;
   padding: 5px;
+  @media screen and (max-width: $res-max-width){
+    width: 90%;
+  }
+}
+
+.search-start{
+  margin: 15px;
+  padding: 2px 10px;
 }
 
 .search-result{
-  font-size: 26px;
+  font-size: 16px;
   letter-spacing: 2px;
+  @media screen and (max-width: $res-max-width){
+    font-size: 12px;
+  }
 }
 
 /*========================================
@@ -644,13 +714,14 @@ header{
       margin: 100px 0 auto 0;
       animation-name:RightToLeft;
       animation-duration: 1s;
-      font-size: 40px;
+      font-size: 30px;
       @media screen and (max-width: $res-max-width){
-        margin: 50px 0 auto 0;
+        margin: 50px auto;
         font-size: 20px;
+        width: 80%;
       }
       &:before{
-        content: "投稿タイトル";
+        content: "タイトル";
         font-size: 16px;
         margin: 10px;
         color:$before-text;
@@ -679,7 +750,7 @@ header{
       width: 80%;
     }
     button{
-      margin: 10px 50px;
+      margin: 10px 0;
     }
 
   }
@@ -701,12 +772,17 @@ header{
     width: 80%;
     min-height: 150px;
     margin: 5px 0;
+    font-size: 16px;
     @media screen and (max-width: $res-max-width){
+      font-size: 14px;
       width: 100%;
       min-height: 50px;
     }
     p{
       font-size: 20px;
+      @media screen and (max-width: $res-max-width){
+        font-size: 16px;
+      }
     }
   }
   &-commnet{
@@ -714,6 +790,9 @@ header{
     height:100%;
     padding: 15px;
     background-color: pink;
+    label{
+      margin: 10px 0;
+    }
   }
 }
 
@@ -787,19 +866,6 @@ header{
   width:80%;
 }
 
-.search-container{
-  text-align: center;
-  display: none;
-  width:100%;
-  position: fixed;
-  bottom: 0;
-  height:300px;
-  background-color: #CCFFCC;
-  border-top:solid 1px;
-  box-shadow: 5px;
-}
-
-
 /*キーフレーム----------------------------*/
 @keyframes TopToBottom{
   0%{
@@ -847,7 +913,7 @@ header{
   }
 }
 
-/*jクエリー中級で追加------------------*/
+/*検索ページ追加------------------*/
 
 .js-category-success-effect{
     animation-name:Underline;
@@ -862,4 +928,24 @@ header{
   height: 100%;
   position: absolute;
   top:0;
+}
+
+//fontawasome
+
+.fa-twitter-square{
+  color: rgb(29, 161, 242);
+}
+
+.fa-star{
+  color: #e2ff00a6;
+}
+
+.fa-comments{
+  color: #9aeab7;
+}
+
+
+//文字数超える場合に切り取る
+.overflow-ellipsis {
+  text-overflow: ellipsis;
 }

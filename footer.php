@@ -15,7 +15,7 @@ $(function(){
   $(menuclick).on("click",function(){
     console.log("動作");
     var target = $('.toggle_menu');
-    $(target).slideToggle(600);
+    $(target).slideToggle(300);
   })
 })
 
