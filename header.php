@@ -10,8 +10,6 @@
     </div>
   </div>
 
-
-
 </header>
 <div class="toggle_menu">
 <ul>

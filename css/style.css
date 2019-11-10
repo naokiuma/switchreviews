@@ -498,10 +498,14 @@ header {
   width: 500px;
   height: 60px;
   margin-bottom: 100px;
-  font-size: 30px;
+  font-size: 20px;
   border: solid;
   box-shadow: 1px 1px 1px #668AD8;
   transition: 1s; }
+  @media screen and (max-width: 770px) {
+    .first-button {
+      width: 200px;
+      font-size: 16px; } }
 
 .first-button a {
   color: black; }
