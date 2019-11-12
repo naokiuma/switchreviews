@@ -2,10 +2,11 @@
 $main_bg:#E6EA9A59;
 $res-max-width:770px;
 $green_color:#66FF33;
-$red_color:#D3001A;
+$red_color:#de0101;
 $font-s:16px;
 $font-l:36px;
 $before-text:#00000091;
+$black:#666;
 
 @import "about.scss";
 
@@ -13,7 +14,6 @@ html{
   margin:0px;
   padding:0px;
   height: 100%;
-  background-color: $main_bg;
   font-family: 'FOT-セザンヌ Pro DB','Hiragino Kaku Gothic W5 JIS2004',sans-serif;
   //font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
@@ -28,6 +28,7 @@ body {
 
 p{
   font-size:$font-s;
+  color: $black;
 }
 
 label{
@@ -51,13 +52,6 @@ ul li{
   text-align: center;
 }
 
-header a{
-  display: block;
-  text-align: center;
-  margin-top: auto;
-  margin-bottom:auto;
-}
-
 
 footer{
   text-align: center;
@@ -68,6 +62,8 @@ footer{
   font-size: $font-s;
   color: white;
   background-color: #D3001A;
+  position: fixed;
+  z-index: 99;
   a{
     text-decoration: none;
     color: white;
@@ -107,8 +103,8 @@ header{
     color: white;
   }
   img{
-    height:50px;
-    line-height: 50px;
+    height:80px;
+    line-height: 80px;
   }
 }
 
@@ -166,7 +162,7 @@ header{
   button{
     height: 97%;
     width: 150px;
-    font-size: 20px;
+    font-size: 16px;
     font-style: italic;
     letter-spacing: 4px;
     background: 0,0,0,0;
@@ -194,7 +190,7 @@ header{
         display: block;
       }
       li{
-        margin: 20px 0;
+        margin: 0px;
       }
     }
 }
@@ -206,18 +202,21 @@ header{
   padding-top: 15px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #A1E879;
+  background-color: #00000014;
   width:90%;
   min-height: 65vh;
-  height: 700px;
   @media screen and (max-width: $res-max-width){
     min-height: 50vh;
+    height: auto;
   }
   h2{
     font-size: 24px;
     @media screen and (max-width: $res-max-width){
       font-size: 20px;
     }
+  }
+  label{
+    margin: 50px auto;
   }
 
 }
@@ -255,22 +254,29 @@ header{
   @media screen and (max-width: $res-max-width){
     width: 80%;
   }
-
+  label{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
+
+
 /*画像ボタン周り*/
 
-.form .area-drop{
+.area-drop{
   margin-bottom: 15px;
-  width: 300px;
-  height: 140px;
+  height: 100%;
+  width: 100%;
   background: #f6f5f4;
   color: #ccc;
   text-align: center;
   line-height: 150px;
+  background-color: #7fffd43d;
+//  position: absolute;
   position: relative;
   box-sizing: border-box;
   z-index: 2; /* 必ずz-indexをつけないと登録画像を変更する際にドラッグ＆ドロップできなくなる*/
-
 }
 
 
@@ -280,18 +286,21 @@ header{
 }
 
 
-.form .input-file{
+.input-file{
   opacity:0;
-  width:300px;
-  height: 140px;
+  width:100%;
+  height:100%;
   position:absolute;
   top:0;
   left:0;
   float: left;
+  z-index: 5;
 }
 
-.form .prev-img{
-  width:100%;
+.prev-img{
+  width: 100%;
+  position: absolute;
+  left: 0;
   z-index:0;
 }
 
@@ -344,23 +353,91 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+  @media screen and (max-width: $res-max-width){
+    height: 500px;
+  }
   h2{
     width: 60%;
     font-size: 30px;
     text-align: center;
     text-shadow: white 2px 2px 0px;
-    background-color:#ffebcd9e;
+    background-color:#ffebcd4f;
     border-radius: 50%;
     font-style: italic;
-    padding: 10px 10px;
+    padding: 30px;
     box-shadow: 4px 4px #090331;
     border-radius: 10px;
+    position: absolute;
+    top: 20%;
     @media screen and (max-width: $res-max-width){
-        font-size: 30px;
+        font-size: 16px;
         width: 80%;
+        top: 15%;
+        left: auto;
     }
   }
 }
+
+.top_news{
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  width: 70%;
+  @media screen and (max-width: $res-max-width){
+    display: block;
+    width: 90%;
+  }
+  &__left{
+    width: 30%;
+    @media screen and (max-width: $res-max-width){
+      width: 100%;
+    }
+    h2{
+      font-size: 30px;
+      font-style: italic;
+      font-family: sans-serif;
+      text-align: center;
+      @media screen and (max-width: $res-max-width){
+        font-size: 26px;
+      }
+    }
+    p{
+      background-color: #fec748;
+      width: 100%;
+      text-align: center;
+      margin: auto;
+    }
+    a{
+      font-style: italic;
+      font-family: sans-serif;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  &__right{
+    width: 70%;
+    margin: auto;
+    @media screen and (max-width: $res-max-width){
+      width: 100%;
+    }
+    ul{
+      margin:auto;
+    }
+    li{
+      margin: 10px;
+      @media screen and (max-width: $res-max-width){
+        font-size: 12px;
+      }
+    }
+    span{
+      margin: auto 15px;
+      letter-spacing: 1px;
+    }
+  }
+
+}
+
+
 
 
 
@@ -369,7 +446,7 @@ header{
   text-align: center;
   &__search{
     margin-bottom: 100px;
-    background-color: #A1E879;
+    background-color: #fec748;
     h2{
       font-size: 30px;
       height: 200px;
@@ -378,6 +455,10 @@ header{
         height: 100px;
         line-height: 100px;
       }
+    }
+    .more_link{
+      font-size: 26px;
+      border-bottom: 2px dotted red;
     }
   }
 
@@ -440,7 +521,7 @@ header{
     width:70%;
     font-size: 20px;
     background-color: #99FFE7;
-    color: black;
+    color: $black;
     margin-top: 20px;
     border: solid 2px;
     box-shadow: 2px 2px;
@@ -515,7 +596,7 @@ header{
   text-align: center;
   box-sizing: border-box;
   @media screen and (max-width: $res-max-width){
-    height: 400px;
+    height: 300px;
     width: 50%;
   }
 }
@@ -742,10 +823,6 @@ header{
     @media screen and (max-width: $res-max-width){
       flex-wrap: wrap;
     }
-
-    p{
-      margin: 5px;
-    }
   }
   &-other{
     width:30%;
@@ -756,7 +833,6 @@ header{
     button{
       margin: 10px 0;
     }
-
   }
 
   &-pic{
@@ -783,9 +859,9 @@ header{
       min-height: 50px;
     }
     p{
-      font-size: 20px;
+      font-size: 16px;
       @media screen and (max-width: $res-max-width){
-        font-size: 16px;
+        font-size: 14px;
       }
     }
   }
@@ -818,22 +894,23 @@ header{
   width:100%;
 }
 
-.page-2colum{
-  width:98%;
-  min-height: 100px;
-  margin:0 auto;
-}
-#sidebar{
-  float: left;
-  width:35%;
-  background-color: skyblue;
-  box-sizing: border-box;
-  min-height: 450px;
+.mypage-container{
+  display: flex;
+  flex-wrap:wrap;
 }
 
+#sidebar{
+  width:30%;
+  background-color: #00000014;
+  box-sizing: border-box;
+  p{
+    text-align: center;
+  }
+}
+
+
 #mypage-posts{
-  float: left;
-  width:65%;
+  width:70%;
   box-sizing: border-box;
   min-height: 950px;
   text-align: center;
@@ -849,25 +926,42 @@ header{
   margin-right: 10%;
 }
 
-.myprof h3{
-  font-size: 20px;
-  width:300px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+.myprof {
+  h3{
+    font-size:70%;
+    width:300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  span{
+    font-size: 150%;
+  }
+  button{
+    margin: auto;
+    width: 60%;
+    padding: 2px;
+    display: block;
+  }
 }
 
-#sidebar p{
-  text-align: center;
-}
+
+
 
 .fav-games{
   display: none;
   text-align: center;
+  margin-top: 10px;
+  img{
+    width:80%;
+  }
 }
 
-.fav-games img{
-  width:80%;
+.fav-game{
+  margin-top: 10px;
+  a{
+    background-color: #c4ecec4d;
+  }
 }
 
 /*キーフレーム----------------------------*/

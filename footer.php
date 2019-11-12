@@ -81,8 +81,6 @@ if($('.about-text-wrap').length){
 
 
 
-
-
     // 非同期でお気に入り登録・削除
     var $fav,
     favreviewID;

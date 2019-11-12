@@ -47,7 +47,7 @@ if(!empty($_POST)){
 
           //ログイン有効期限
           $sesLimit = 60 * 60;
-          $_SESSION['login_date'] = time();
+          $_SESSION['login_date'] = time(); //ログインデータは今の時間
 
           //ログイン保持にチェックがある場合
           if($pass_save){

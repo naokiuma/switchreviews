@@ -47,20 +47,56 @@ debug("3日前".$nowdate);
 <?php require('header.php'); ?>
 
 <section class="bg-box">
-  <h2>Play and enjoy!</h2>
+  <h2>Play and enjoy!<br>ゲームの楽しさは外側にも広がります。</h2>
 </section>
+
+<div class="top_news">
+  <div class="top_news__left">
+    <h2>NEWS</h2>
+    <p><a href="#">More　<i class="fas fa-arrow-right"></i></a></p>
+  </div>
+  <div class="top_news__right">
+    <ul>
+     <li>
+      <a href="#">
+        <time datetime="2019-11-12">2019/11/12</time><span>サイトを公開しました。</span>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+        <time datetime="2019-11-12">2019/11/12</time><span>サイトを公開しました。</span>
+      </a>
+     </li>
+     <li>
+      <a href="#">
+        <time datetime="2019-11-12">2019/11/12</time><span>サイトを公開しました。</span>
+      </a>
+     </li>
+    </ul>
+  </div>
+</div>
 
   <section class="about__wrapper">
     <div class="about__box">
       <div class="about-text-wrap">
-        <h2 class="about-title">Switchインディーズライフとは？</h2>
-        <p>たくさんのインディーズゲームがどんどん毎週のようにリリースされるNintendo Switch。<br>
-          ゲームに関する感想、期待や攻略情報などのメモを投稿し、よりゲームを楽しむ手助けをするサイトです。<br>
+        <h3 class="about-title">About</h3>
+        <p>毎週多くのインディーズゲームがリリースされるNintendo Switch。<br>
+          有名で良質なゲームも多くありますが、目に止まりにくい良質なゲームだって沢山あります。<br>
+          そんなゲームに関する感想や期待、攻略方法なんかを語り合ったり、ツイッターでゲームについて呟いている人を見つけたり。<br>
+          Nintendo Switch Indies LiFEは、もっとゲームを楽しむためのサイトです。<br>
           <br>
           <a href="https://twitter.com/intent/tweet?button_hashtag=Switchインディーズライフ&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </p>
       </div>
+      <img class="about__box_img3" src="images/disc3.jpg" alt="">
+      <img class="about__box_img2" src="images/disc2.jpg" alt="">
     </div>
+<!--
+    <div class="about-img__wrapper">
+      <img src="images/disc4.png" alt="">
+      <img src="images/disc2.jpg" alt="">
+    </div>
+-->
   </section>
 
   <section class="disc">
@@ -100,8 +136,7 @@ debug("3日前".$nowdate);
     <div class="top-games__search">
       <h2 class="top-games__search__text">新着投稿一覧</h2>
     </div>
-    <p>新しいポスト順に表示します。<br>
-       <a href="searchreviews.php">もっと多くの投稿を見る</a>
+    <p>新しいポスト順に表示します。<a class="more_link" href="searchreviews.php"><i class="fas fa-arrow-right"></i>もっと見る</a>
     </p>
 
 

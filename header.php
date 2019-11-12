@@ -1,7 +1,7 @@
 <header>
   <div class="header-wrapper">
     <div class="header-logo">
-      <a href="index.php">Switchインディーズライフ</a>
+      <a href="index.php"><img src="images/logo.png" alt=""></a>
     </div>
     <div id="top-nav">
       <div class="menu__trigger">
@@ -17,7 +17,6 @@
     if(!empty($_SESSION['user_id'])){
   ?>
     <li><a href="mypage.php?u_id=<?php echo h($_SESSION['user_id']) ?>"><i class="fas fa-gamepad my-gray"></i>マイページ</a></li>
-    <li><a href="index.php"><i class="fas fa-gamepad"></i> トップページ</a></li>
     <li><a href="searchreviews.php"><i class="fas fa-gamepad"></i> 記事一覧</a></li>
     <li><a href="reviewpost.php"><i class="fas fa-gamepad"></i> レビュー投稿</a></li>
     <li><a href="profEdit.php"><i class="fas fa-gamepad"></i> プロフィール編集</a></li>

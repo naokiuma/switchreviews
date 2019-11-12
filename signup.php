@@ -146,10 +146,10 @@ if(empty($err_msg) && $page_flag === 2){
         </div>
         プロフィール画像
         <div class="imgdrop-container">
-        <label for="input-file" class="area-drop" style="height: 300px; line-height: 300px; width:400px; position: relative; border: medium none;">
+        <label class="area-drop">
           <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
-          <input type="file" name="pic" class="input-file" style="height:300px; width:400px;">
-          <img src="" alt="" class="prev-img" style="display:none; width:400px; height:300px; position:absolute;left:0px;" >
+          <input type="file" name="pic" class="input-file" >
+          <img src="" alt="" class="prev-img">
         </label>
         <div class="area-msg">
           <?php
@@ -190,10 +190,10 @@ if(empty($err_msg) && $page_flag === 2){
     </label>
     プロフィール画像<br>
     <div class="imgdrop-container">
-    <label for="input-file" class="area-drop" style="height: 300px; line-height: 300px; width:400px; position: relative; border: medium none;">
+    <label for="input-file" class="area-drop">
       <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
-      <input type="file" name="pic" class="input-file" style="height:300px; width:400px;">
-      <img src="<?php if(!empty($pic)) echo $pic; ?>" alt="" class="prev-img" style="width:400px; height:300px; position:absolute;left:0px;" >
+      <input type="file" name="pic" class="input-file">
+      <img src="<?php if(!empty($pic)) echo $pic; ?>" alt="" class="prev-img">
     </label>
     </div>
 
