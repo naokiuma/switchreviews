@@ -76,37 +76,31 @@ debug("3日前".$nowdate);
   </div>
 </div>
 
-  <section class="about__wrapper">
-    <div class="about__box">
-      <div class="about-text-wrap">
-        <h3 class="about-title">About</h3>
-        <p>毎週多くのインディーズゲームがリリースされるNintendo Switch。<br>
-          有名で良質なゲームも多くありますが、目に止まりにくい良質なゲームだって沢山あります。<br>
-          そんなゲームに関する感想や期待、攻略方法なんかを語り合ったり、ツイッターでゲームについて呟いている人を見つけたり。<br>
+<section class="about__wrapper">
+  <div class="about__box">
+    <div class="about-text-wrap">
+      <h2 class="about-title">About</h2>
+      <p>毎週多くのインディーズゲームがリリースされるNintendo Switch。<br>
+          有名で良質なゲームだけでなく、目に止まりにくい良質なゲームも沢山あります。<br>
+          そんなゲームに関する感想や期待、攻略方法なんかを語り合ったり<br>ツイッターでゲームについて呟いている人を見つけたり。<br>
           Nintendo Switch Indies LiFEは、もっとゲームを楽しむためのサイトです。<br>
           <br>
-          <a href="https://twitter.com/intent/tweet?button_hashtag=Switchインディーズライフ&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </p>
-      </div>
+      <a href="https://twitter.com/intent/tweet?button_hashtag=Switchインディーズライフ&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </p>
+    </div>
       <img class="about__box_img3" src="images/disc3.jpg" alt="">
       <img class="about__box_img2" src="images/disc2.jpg" alt="">
-    </div>
-<!--
-    <div class="about-img__wrapper">
-      <img src="images/disc4.png" alt="">
-      <img src="images/disc2.jpg" alt="">
-    </div>
--->
-  </section>
+  </div>
+</section>
 
-  <section class="disc">
+<section class="disc">
 
     <h2 class="disc__about">できること</h2>
 
     <div class="disc__about__wrapper">
       <div class="disc__card">
         <h3>投稿する</h3>
-        <p>お気に入りのゲーム、気になるゲームについて投稿しよう。</p>
+        <p>お気に入りや、気になるゲームについて投稿しよう。</p>
         <i class="fas fa-laptop disc__card__image"></i>
       </div>
 
@@ -118,7 +112,7 @@ debug("3日前".$nowdate);
 
       <div class="disc__card">
         <h3>お気に入り</h3>
-        <p>投稿をお気に入りしておけばマイページから確認可能です。</p>
+        <p>投稿をお気に入りし、マイページからいつでも確認可能です。</p>
         <i class="far fa-star disc__card__image"></i>
       </div>
 
@@ -129,16 +123,16 @@ debug("3日前".$nowdate);
       </div>
     </div>
 
-  </section>
+</section>
 
   <!--ゲームレビューエリア-->
-  <section class="top-games">
+<section class="top-games">
     <div class="top-games__search">
       <h2 class="top-games__search__text">新着投稿一覧</h2>
     </div>
-    <p>新しいポスト順に表示します。<a class="more_link" href="searchreviews.php"><i class="fas fa-arrow-right"></i>もっと見る</a>
+    <p>新しいポスト順に表示します。<a class="more_link" href="searchreviews.php">
+    <h3><i class="fas fa-arrow-right"></i>もっと見る</h3></a>
     </p>
-
 
     <div class="top-posts">
 
@@ -173,7 +167,6 @@ debug("3日前".$nowdate);
 
   </section>
 
-</div>
 
 
 

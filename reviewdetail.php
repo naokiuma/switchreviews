@@ -103,16 +103,18 @@ require('head.php');
 
 
     <div class="detail-other">
-      <p>投稿者：<?php echo ($post_user['username']); ?><br>
-        カテゴリー：<?php echo ($viewData['category']); ?><br>
-        お気に入り：<i class="fa fa-heart icn-like js-click-fav <?php if(isFav($_SESSION['user_id'],$viewData['id'])){echo
-        'active';} ?>" aria-hidden="true" data-review_id="<?php echo ($viewData['id']); ?>" ></i><br>
-        参考URL：<a href="<?php echo h($viewData['abouturl']); ?>"><?php echo h($viewData['abouturl']); ?></a>
-      </p>
       <div class="detail-body">
-        <h4>投稿本文</h4>
+        <p><span class="u-strong">本文</span><br></p>
         <p><?php echo nl2br(h($viewData['body'])); ?></p>
       </div>
+
+      <p><span class="u-strong">投稿者：</span><?php echo ($post_user['username']); ?><br>
+        <span class="u-strong">カテゴリー：</span><?php echo ($viewData['category']); ?><br>
+        <span class="u-strong">お気に入り：</span><i class="fa fa-heart icn-like js-click-fav <?php if(isFav($_SESSION['user_id'],$viewData['id'])){echo
+        'active';} ?>" aria-hidden="true" data-review_id="<?php echo ($viewData['id']); ?>" ></i><br>
+        <span class="u-strong">参考URL：</span><a href="<?php echo h($viewData['abouturl']); ?>"><?php echo h($viewData['abouturl']); ?></a>
+      </p>
+
       <!--もしセッションにユーザーIDがあり、かつそのユーザーIDとセッションIDが同じ場合編集できるようにする-->
       <?php if(!empty($_SESSION['user_id']) && $_SESSION['user_id'] == $post_user['id']) : ?>
         <button><a href="reviewpost.php?r_id=<?php echo ($viewData['id']); ?>">記事を編集する</a></button>
@@ -127,15 +129,19 @@ require('head.php');
       $u_name = getUser($u_id);
     ?>
     <p>
-    <a href="#">ユーザー名：<?php print_r($u_name['username']); ?></a><br>
-     <?php echo ($val['comment']); ?><br>
+      <a href="#">ユーザー名：<?php print_r($u_name['username']); ?></a><br>
+      <?php echo ($val['comment']); ?><br>
+      <span style="font-size:13px;">
+      <?php echo ($val['create_date']); ?>posted.
+      </span>
     <p>
-
-    <span style="font-size:13px;">
-    <?php echo ($val['create_date']); ?>posted.</span>
 
     <?php
      endforeach;}
+    ?>
+
+    <?php
+      if(!empty($_SESSION['user_id'])){
     ?>
 
     <form action="" method="post">
@@ -145,6 +151,16 @@ require('head.php');
         </label>
       <input type="submit" placeholder="コメント" class="btn btn-primary" value="コメントする">
     </form>
+
+    <?php
+      }else{
+    ?>
+
+    <h4>ログインするとコメント投稿が可能です。</h4>
+
+    <?php
+      }
+    ?>
 
   </div>
 </section>

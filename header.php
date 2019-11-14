@@ -1,3 +1,11 @@
+<?php
+if($_SESSION['user_id']){
+  $user = getUser($_SESSION['user_id']);
+  $user_menuname = ($user['username']);
+
+}
+?>
+
 <header>
   <div class="header-wrapper">
     <div class="header-logo">
@@ -5,6 +13,7 @@
     </div>
     <div id="top-nav">
       <div class="menu__trigger">
+        <h4><?php echo h($user_menuname); ?></h4>
         <button class="js-toggle-sp-menu" type="button" name="button">MENU</button>
       </div>
     </div>

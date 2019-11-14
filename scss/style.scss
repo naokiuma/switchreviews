@@ -14,7 +14,7 @@ html{
   margin:0px;
   padding:0px;
   height: 100%;
-  font-family: 'FOT-セザンヌ Pro DB','Hiragino Kaku Gothic W5 JIS2004',sans-serif;
+  font-family: 'Hiragino Kaku Gothic W5 JIS2004','SF Pro Display','FOT-セザンヌ Pro DB',sans-serif;
   //font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 body {
@@ -22,13 +22,18 @@ body {
   padding:0px;
   width:100%;
   height: 100%;
-  font-family: 'FOT-セザンヌ Pro DB','Hiragino Kaku Gothic W5 JIS2004',sans-serif;
-  //font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+  font-family: 'Hiragino Kaku Gothic W5 JIS2004','SF Pro Display','FOT-セザンヌ Pro DB',sans-serif;
+  position: relative;
 }
 
 p{
   font-size:$font-s;
-  color: $black;
+  color: #311818;
+}
+
+.u-strong{
+  font-weight: bold;
+  color: black;
 }
 
 label{
@@ -55,14 +60,14 @@ ul li{
 
 footer{
   text-align: center;
-  bottom: 0px;
   width: 100%;
-  height: 60px;
-  line-height: 60px;
-  font-size: $font-s;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
   color: white;
-  background-color: #D3001A;
+  background-color: $red_color;
   position: fixed;
+  bottom: 0;
   z-index: 99;
   a{
     text-decoration: none;
@@ -97,14 +102,14 @@ footer{
 
 header{
   background-color: $red_color;
-  height:80px;
+  height:60px;
   a{
     text-decoration: none;
     color: white;
   }
   img{
-    height:80px;
-    line-height: 80px;
+    height:60px;
+    line-height: 60px;
   }
 }
 
@@ -118,19 +123,18 @@ header{
 .header-wrapper{
   position: fixed;
   z-index: 3;
-  height:80px;
+  height:60px;
   width: 100%;
-  background-color: #D3001A;
+  background-color: $red_color;
   display:flex;
   justify-content: space-between;
 }
 
 .header-logo{
-  height: 80px;
-  line-height: 80px;
-  margin: 0 20px;
+  height: 60px;
+  line-height: 60px;
   @media screen and (max-width: $res-max-width) {
-    width: 100%;
+    width: 50%;
   }
     a{
      text-align: center;
@@ -159,16 +163,25 @@ header{
 
 .menu__trigger{
   height: 100%;
-  button{
-    height: 97%;
-    width: 150px;
-    font-size: 16px;
-    font-style: italic;
-    letter-spacing: 4px;
-    background: 0,0,0,0;
-    border: none;
-    color:white;
-  }
+  display: flex;
+    h4{
+      font-size: 12px;
+      color: white;
+      letter-spacing: 2px;
+      @media screen and (max-width: $res-max-width) {
+        font-size: 10px;
+      }
+    }
+    button{
+      height: 97%;
+      width: 150px;
+      font-size: 16px;
+      font-style: italic;
+      letter-spacing: 4px;
+      background: 0,0,0,0;
+      border: none;
+      color:white;
+    }
 }
 
 .toggle_menu{
@@ -235,8 +248,8 @@ header{
 
 .textbox{
   padding:5px;
-  width: 60%;
-  height: 20px;
+  width: 50%;
+  height: 30px;
 }
 
 .post_main_text{
@@ -381,8 +394,10 @@ header{
 .top_news{
   display: flex;
   justify-content: space-between;
-  margin: 50px auto;
+  margin: 100px auto;
   width: 70%;
+  border: solid 3px #6091d3;
+  background:#FFFFFF9E;
   @media screen and (max-width: $res-max-width){
     display: block;
     width: 90%;
@@ -449,8 +464,8 @@ header{
     background-color: #fec748;
     h2{
       font-size: 30px;
-      height: 200px;
-      line-height: 200px;
+      height: 150px;
+      line-height: 150px;
       @media screen and (max-width: $res-max-width){
         height: 100px;
         line-height: 100px;
@@ -459,6 +474,7 @@ header{
     .more_link{
       font-size: 26px;
       border-bottom: 2px dotted red;
+      background: yellow;
     }
   }
 
@@ -520,7 +536,7 @@ header{
     display: inline-block;
     width:70%;
     font-size: 20px;
-    background-color: #99FFE7;
+    background-color: #FFC49912;
     color: $black;
     margin-top: 20px;
     border: solid 2px;
@@ -564,15 +580,19 @@ header{
   border: solid;
   box-shadow: 1px 1px 1px #668AD8;
   transition: 1s;
+  box-shadow: 2px 2px black;
   @media screen and (max-width: $res-max-width){
     width: 200px;
     font-size: 16px;
   }
+  a{
+    color: black;
+  }
+  &:hover{
+    background-color: #BBFFFF;
+  }
 }
 
-.first-button a{
-  color: black;
-}
 
 
 /*検索ページ-------------------------------*/
@@ -590,7 +610,7 @@ header{
 
 .panel-head{
   float:left;
-  height: 500px;
+  height: 400px;
   width:25%;
   padding:10px;
   text-align: center;
@@ -608,7 +628,7 @@ header{
   margin-left:auto;
   margin-right: auto;
   text-align: center;
-  background-color: #99FFE7;
+  background-color: white;
   color: black;
   padding: 4px;
   border: 2px solid;
@@ -618,6 +638,7 @@ header{
 
 .panel_p{
   min-height: 25%;
+  padding: 5px;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -633,7 +654,7 @@ header{
 
 .search-button{
   position: fixed;
-  top: 80px;
+  top: 60px;
   right: 0;
   height: 40px;
   width: 200px;
@@ -642,13 +663,14 @@ header{
   border: solid 1px;
   box-shadow:4px 4px;
   transition: 0.1s;
+  &:hover{
+    background-color: #BBFFFF;
+  }
   @media screen and (max-width: $res-max-width){
     font-size: 12px;
     width: 120px;
   }
-  &:hover{
-    background-color: #BBFFFF;
-  }
+
 }
 
 
@@ -796,10 +818,11 @@ header{
     margin-top: -20px;
     h1{
       text-align: center;
-      margin: 100px 0 auto 0;
+      margin: 50px;
       animation-name:RightToLeft;
       animation-duration: 1s;
       font-size: 30px;
+      border-bottom: 3px solid yellow;
       @media screen and (max-width: $res-max-width){
         margin: 50px auto;
         font-size: 20px;
@@ -808,7 +831,7 @@ header{
       &:before{
         content: "タイトル";
         font-size: 16px;
-        margin: 10px;
+        margin: 15px;
         color:$before-text;
         @media screen and (max-width: $res-max-width){
           font-size: 12px;
@@ -818,15 +841,15 @@ header{
   }
 
   &-info-wrapper{
-    display: flex;
-    justify-content: center;
+    width: 90%;
+    margin: auto;
     @media screen and (max-width: $res-max-width){
       flex-wrap: wrap;
     }
   }
   &-other{
-    width:30%;
-    margin: 50px auto;
+    width: 90%;
+    margin: 50px;
     @media screen and (max-width: $res-max-width){
       width: 80%;
     }
@@ -836,23 +859,24 @@ header{
   }
 
   &-pic{
-    width: 50%;
-    margin: 50px 100px;
+    width: 65%;
+    margin: auto;
+    text-align: center;
     @media screen and (max-width: $res-max-width){
       width: 70%;
       margin: 10px auto;
     }
     img{
-      width:100%;
+      width:85%;
       box-shadow: 8px 8px;
     }
   }
 
   &-body{
-    width: 80%;
+    width: 95%;
     min-height: 150px;
-    margin: 5px 0;
-    font-size: 16px;
+    margin: 10px 0;
+    font-size: $font-s;
     @media screen and (max-width: $res-max-width){
       font-size: 14px;
       width: 100%;

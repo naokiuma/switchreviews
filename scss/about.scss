@@ -48,7 +48,7 @@
 .about__box_img3{
   position: absolute;
   width: 300px;
-  top: -30%;
+  top: -20%;
   right: 10%;
   @media screen and (max-width: $res-max-width){
     display: none;
@@ -58,7 +58,7 @@
   position: absolute;
   width: 500px;
   top: 40%;
-  right: -15%;
+  right: 5%;
   @media screen and (max-width: $res-max-width){
     position: unset;
     width: 100%;
@@ -108,10 +108,10 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: 200px;
-    line-height: 200px;
+    height: 150px;
+    line-height: 150px;
     font-size: 36px;
-    background-color: #A1E879;
+    background-color: #79E8E885;
     @media screen and (max-width: $res-max-width){
         font-size: 30px;
         height: 100px;
