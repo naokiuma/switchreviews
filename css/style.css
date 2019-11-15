@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*アバウトエリア*/
 .about__wrapper {
-  margin: 200px auto;
+  margin: 100px auto;
   width: 100%; }
   @media screen and (max-width: 770px) {
     .about__wrapper {
@@ -9,7 +9,7 @@
 
 .about__box {
   width: 80%;
-  margin: auto auto;
+  margin: 50px auto;
   position: relative; }
   @media screen and (max-width: 770px) {
     .about__box {
@@ -44,9 +44,10 @@
 
 .about__box_img3 {
   position: absolute;
-  width: 300px;
-  top: -20%;
-  right: 10%; }
+  width: 200px;
+  top: 20%;
+  right: 0%;
+  z-index: 2; }
   @media screen and (max-width: 770px) {
     .about__box_img3 {
       display: none; } }
@@ -158,6 +159,9 @@ body {
   height: 100%;
   font-family: 'Hiragino Kaku Gothic W5 JIS2004','SF Pro Display','FOT-セザンヌ Pro DB',sans-serif;
   position: relative; }
+
+h2 {
+  font-family: "M PLUS Rounded 1c"; }
 
 p {
   font-size: 16px;
@@ -272,7 +276,8 @@ header {
   .menu__trigger h4 {
     font-size: 12px;
     color: white;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    margin: auto; }
     @media screen and (max-width: 770px) {
       .menu__trigger h4 {
         font-size: 10px; } }
@@ -323,7 +328,7 @@ header {
       #form-main h2 {
         font-size: 20px; } }
   #form-main label {
-    margin: 50px auto; }
+    margin: 15px auto; }
 
 #form-main h3 {
   margin-bottom: 0px; }
@@ -340,10 +345,16 @@ header {
   padding: 5px;
   width: 50%;
   height: 30px; }
+  @media screen and (max-width: 770px) {
+    .textbox {
+      width: 70%; } }
 
 .post_main_text {
   width: 70%;
   height: 250px; }
+  @media screen and (max-width: 770px) {
+    .post_main_text {
+      width: 90%; } }
 
 .imgdrop-container {
   width: 400px;
@@ -513,8 +524,7 @@ header {
 .top-games {
   text-align: center; }
   .top-games__search {
-    margin-bottom: 100px;
-    background-color: #fec748; }
+    margin-bottom: 100px; }
     .top-games__search h2 {
       font-size: 30px;
       height: 150px;
@@ -576,7 +586,6 @@ header {
   display: inline-block;
   width: 70%;
   font-size: 20px;
-  background-color: #FFC49912;
   color: #666;
   margin-top: 20px;
   border: solid 2px;
@@ -666,6 +675,9 @@ header {
   white-space: nowrap;
   overflow: hidden; }
 
+.new_post {
+  background: yellow; }
+
 .panel-head > .panel-head-img {
   width: 80%; }
 
@@ -675,6 +687,7 @@ header {
 
 .search-button {
   position: fixed;
+  background-color: white;
   top: 60px;
   right: 0;
   height: 40px;
@@ -697,13 +710,13 @@ header {
   width: 100%;
   position: fixed;
   bottom: 0;
-  height: 250px;
-  background-color: #70FD94DB;
+  height: 300px;
+  background-color: #eae7e1;
   border-top: solid 3px;
   box-shadow: 5px; }
   @media screen and (max-width: 770px) {
     .search-container {
-      height: 400px; } }
+      height: 350px; } }
 
 .search-info__wrapper {
   display: flex;
@@ -816,7 +829,8 @@ header {
     margin: 50px;
     animation-name: RightToLeft;
     animation-duration: 1s;
-    font-size: 30px; }
+    font-size: 30px;
+    border-bottom: 3px solid yellow; }
     @media screen and (max-width: 770px) {
       .detail-wrapper h1 {
         margin: 50px auto;
@@ -877,7 +891,7 @@ header {
 
 .detail-commnet {
   width: 100%;
-  height: 100%;
+  min-height: 300px;
   padding: 15px;
   background-color: pink; }
   .detail-commnet label {
@@ -905,26 +919,38 @@ header {
   width: 30%;
   background-color: #00000014;
   box-sizing: border-box; }
+  @media screen and (max-width: 770px) {
+    #sidebar {
+      width: 100%;
+      margin-top: 20px;
+      padding-bottom: 20px; } }
   #sidebar p {
     text-align: center; }
 
 #mypage-posts {
   width: 70%;
   box-sizing: border-box;
-  min-height: 950px;
+  min-height: 350px;
   text-align: center; }
-
-#mypage-posts img {
-  width: 80%; }
-
-#mypage-posts p {
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%; }
+  @media screen and (max-width: 770px) {
+    #mypage-posts {
+      width: 100%;
+      margin-top: 30px;
+      margin-bottom: 50px; } }
+  #mypage-posts img {
+    width: 80%; }
+  #mypage-posts h2 {
+    width: 30%;
+    margin: 40px auto;
+    border-bottom: 3px solid #ff0c00; }
+  #mypage-posts p {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%; }
 
 .myprof h3 {
   font-size: 70%;
-  width: 300px;
+  width: 70%;
   text-align: center;
   margin-left: auto;
   margin-right: auto; }
@@ -936,19 +962,28 @@ header {
   margin: auto;
   width: 60%;
   padding: 2px;
-  display: block; }
+  display: block;
+  box-shadow: 2px 2px; }
+  .myprof button:active {
+    background-color: #00ffff75; }
+
+@media screen and (max-width: 770px) {
+  .myprof img {
+    width: 40%; } }
 
 .fav-games {
   display: none;
   text-align: center;
-  margin-top: 10px; }
+  margin: 50px auto; }
   .fav-games img {
     width: 80%; }
 
 .fav-game {
-  margin-top: 10px; }
+  margin-top: 10px;
+  border-top: dotted; }
   .fav-game a {
-    background-color: #c4ecec4d; }
+    background-color: #c4ecec4d;
+    font-size: 18px; }
 
 /*キーフレーム----------------------------*/
 @keyframes TopToBottom {

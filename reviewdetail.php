@@ -146,7 +146,7 @@ require('head.php');
 
     <form action="" method="post">
       <label class="<?php if(!empty($err_msg['comment'])) echo 'err'; ?>">
-        <b>コメント投稿</b><br>
+        <h2>コメント投稿</h2><br>
         <input type="text" name="comment" class="textbox" >
         </label>
       <input type="submit" placeholder="コメント" class="btn btn-primary" value="コメントする">

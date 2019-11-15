@@ -201,10 +201,10 @@ debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
             <span class="area-msg">※PCではドラッグ＆ドロップできます。未設定の場合、サンプル画像が設定されます。</span>
             <div style="overflow:hidden;">
               <div class="imgdrop-container">
-                <label class="area-drop <?php if(!empty($err_msg['pic'])) echo 'err'; ?>" style="height: 300px; line-height: 300px; width:400px; position: relative; border: medium none;">
+                <label class="area-drop <?php if(!empty($err_msg['pic'])) echo 'err'; ?>">
                   <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
-                  <input type="file" name="pic" class="input-file" style="height:300px; width:400px;">
-                  <img src="<?php echo getFormData('pic'); ?>" alt="" class="prev-img" style= "width:400px; height: 300px; position:absolute;left:0px; <?php if(empty(getFormData('pic'))) echo 'display:none;' ?>">
+                  <input type="file" name="pic" class="input-file" >
+                  <img src="<?php echo getFormData('pic'); ?>" alt="" class="prev-img" style= "<?php if(empty(getFormData('pic'))) echo 'display:none;' ?>">
                 </label>
                 <div class="area-msg">
                   <?php

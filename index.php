@@ -29,7 +29,7 @@ arsort($topgames);
 
 date_default_timezone_set('Asia/Tokyo');
 $nowdate = date("Y-m-d H:i:s",strtotime("-3 day"));//strtotimeでdatetimeの方を調べる
-debug("3日前".$nowdate);
+//debug("3日前".$nowdate);
 //debug(gettype($nowdate));//型を調べる。
 
 ?>
@@ -59,32 +59,23 @@ debug("3日前".$nowdate);
     <ul>
      <li>
       <a href="#">
-        <time datetime="2019-11-12">2019/11/12</time><span>サイトを公開しました。</span>
+        <time datetime="2019-11-12">2019/11/15</time><span>サイトを公開しました。</span>
       </a>
      </li>
-     <li>
-      <a href="#">
-        <time datetime="2019-11-12">2019/11/12</time><span>サイトを公開しました。</span>
-      </a>
-     </li>
-     <li>
-      <a href="#">
-        <time datetime="2019-11-12">2019/11/12</time><span>サイトを公開しました。</span>
-      </a>
-     </li>
+
     </ul>
   </div>
 </div>
 
 <section class="about__wrapper">
+  <h2 class="disc__about">ゲームについて語ろう。</h2>
   <div class="about__box">
     <div class="about-text-wrap">
       <h2 class="about-title">About</h2>
-      <p>毎週多くのインディーズゲームがリリースされるNintendo Switch。<br>
-          有名で良質なゲームだけでなく、目に止まりにくい良質なゲームも沢山あります。<br>
-          そんなゲームに関する感想や期待、攻略方法なんかを語り合ったり<br>ツイッターでゲームについて呟いている人を見つけたり。<br>
-          Nintendo Switch Indies LiFEは、もっとゲームを楽しむためのサイトです。<br>
-          <br>
+      <p>毎週多くのインディーズゲームがリリースされる<br>Nintendo Switch。<br>
+         目に止まりにくい良質なゲームも沢山あります。<br>
+         そんなゲームに関する感想や期待、攻略方法なんかを語り合ったり、ツイッターでゲームについて呟いている人を見つけたり。<br>
+         Nintendo Switch Indies LiFEは、投稿タイプのミニコミュニティです。<br>
       <a href="https://twitter.com/intent/tweet?button_hashtag=Switchインディーズライフ&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </p>
     </div>
@@ -106,13 +97,13 @@ debug("3日前".$nowdate);
 
       <div class="disc__card">
         <h3>コメントする</h3>
-        <p>投稿にメモやコメントを投稿。</p>
+        <p>投稿にコメントして、それぞれの話題について盛り上がろう。</p>
         <i class="fas fa-comments disc__card__image"></i>
       </div>
 
       <div class="disc__card">
         <h3>お気に入り</h3>
-        <p>投稿をお気に入りし、マイページからいつでも確認可能です。</p>
+        <p>投稿はお気に入りし、いつでもマイページから確認できます。</p>
         <i class="far fa-star disc__card__image"></i>
       </div>
 
@@ -128,7 +119,7 @@ debug("3日前".$nowdate);
   <!--ゲームレビューエリア-->
 <section class="top-games">
     <div class="top-games__search">
-      <h2 class="top-games__search__text">新着投稿一覧</h2>
+      <h2 class="disc__about">新着投稿一覧</h2>
     </div>
     <p>新しいポスト順に表示します。<a class="more_link" href="searchreviews.php">
     <h3><i class="fas fa-arrow-right"></i>もっと見る</h3></a>
@@ -140,18 +131,13 @@ debug("3日前".$nowdate);
         <article class="top-posts-sample">
 
           <div class="posts-text">
-            <a href="reviewdetail.php?r_id=<?php echo h($row['id']) ?>">
+            <a href="reviewdetail.php?r_id=<?php echo h($row['id']) ?>" class="<?php if ($row['create_date'] > $nowdate) echo 'new_post'; ?>">
               <?php echo h($row['title']);
               echo "<br>";?></a>
               <p class="overflow-ellipsis"><?php echo h($row['body']);?><br>
               投稿者：<?php echo h($row['username']); ?>
             </p>
           </div>
-          <?php if ($row['create_date'] > $nowdate){  ?>
-            <div class="top-posts__new">
-              NEW!
-            </div>
-          <?php } ?>
 
           <div class="pic">
             <?php if ($row['pic']){  ?>

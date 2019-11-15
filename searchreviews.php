@@ -33,6 +33,9 @@ $dbReviewsData = (!empty($_POST)) ? searchReviews($search_word) : getReviewsList
 $dbCategoryData = getCategory();
 //debug('カテゴリデータを取る'.print_r($dbCategoryData,true));
 
+date_default_timezone_set('Asia/Tokyo');
+$nowdate = date("Y-m-d H:i:s",strtotime("-3 day"));//strtotimeでdatetimeの方を調べる
+
 
 if(!is_int((int)$currentPageNum)){
   error_log('エラー発生：指定ページに不正な値が入りました。');
@@ -67,12 +70,15 @@ require('head.php');
     </div>
   </div>
 
+<!--各種投稿-->
   <div class="panel-list">
    <?php
     foreach($dbReviewsData['data'] as $key => $val):
    ?>
   <div class="panel-head">
-    <a href="reviewdetail.php?r_id=<?php echo h($val['id']) ?>" class="panel_a"><?php echo ($val['title']); ?></a>
+
+    <a href="reviewdetail.php?r_id=<?php echo h($val['id']) ?>"
+      class="panel_a <?php if ($val['create_date'] > $nowdate) echo 'new_post'; ?>"><?php echo ($val['title']); ?></a>
     <p class="panel_p overflow-ellipsis"><?php echo nl2br($val['body']); ?></p>
     <img class= "panel-head-img" src="<?php echo ($val['pic']); ?>" >
   </div>
@@ -113,11 +119,10 @@ require('head.php');
               <input type="text" name="s_key" class="search-textbox" placeholder="キーワードで検索" >
             </label>
           </div>
-
         </section>
-        <input type="submit" class="search-start" value="Search!">
+        <p class="search-result">このカテゴリには<span class ="js-category-success">0</span>件の投稿があります。</p>
+        <input type="submit" class="search-start" value="Search">
       </form>
-      <p class="search-result">このカテゴリには<span class ="js-category-success">0</span>件の投稿があります。</p>
 
   </div>
 </section>

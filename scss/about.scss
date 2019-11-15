@@ -1,7 +1,7 @@
 
 /*アバウトエリア*/
 .about__wrapper{
-  margin: 200px auto;
+  margin: 100px auto;
   width:100%;
   @media screen and (max-width: $res-max-width){
    margin: 30px auto;
@@ -9,7 +9,7 @@
 }
 .about__box{
   width:80%;
-  margin: auto auto;
+  margin: 50px auto;
   position: relative;
   @media screen and (max-width: $res-max-width){
       width: 80%;
@@ -47,9 +47,10 @@
 
 .about__box_img3{
   position: absolute;
-  width: 300px;
-  top: -20%;
-  right: 10%;
+  width: 200px;
+  top: 20%;
+  right: 0%;
+  z-index: 2;
   @media screen and (max-width: $res-max-width){
     display: none;
   }
