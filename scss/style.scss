@@ -97,8 +97,8 @@ footer{
 
 /*エラー*/
 .area-msg{
-  color: #f00;;
-  font-size: 0.8rem;
+  color: #f00;
+  font-size: 20px;
 }
 
 
@@ -216,8 +216,14 @@ header{
 
 //-----------------------フォーム
 
+.btn-mind{
+  padding: 5px;
+  box-shadow: 2px 2px;
+}
+
 #form-main{
   padding-top: 15px;
+  padding-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   background-color: #00000014;

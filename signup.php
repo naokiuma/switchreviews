@@ -189,9 +189,10 @@ if(empty($err_msg) && $page_flag === 2){
     <input type="password" name="pass_re" class="textbox" value="<?php if(!empty($_POST['pass_re'])) echo $_POST['pass_re']; ?>" style="display:none;">
     </label>
     プロフィール画像<br>
+    <span>※PCではドラッグ＆ドロップ可。未設定の場合、サンプル画像が設定されます。<br>※※約10MBまで</span>
     <div class="imgdrop-container">
     <label for="input-file" class="area-drop">
-      <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
+      <input type="hidden" name="MAX_FILE_SIZE" value="9145728">
       <input type="file" name="pic" class="input-file">
       <img src="<?php if(!empty($pic)) echo $pic; ?>" alt="" class="prev-img">
     </label>

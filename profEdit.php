@@ -94,7 +94,7 @@ require('head.php');
               ?>
             </div>
             <label class="<?php if(!empty($err_msg['username'])) echo 'err'; ?>">
-             名前<br>
+            <h3>ユーザー名</h3>
               <input type="text" name="username" class="textbox" value="<?php echo getFormData('username'); ?>">
             </label>
             <div class="area-msg">
@@ -104,7 +104,7 @@ require('head.php');
             </div>
 
             <label class="<?php if(!empty($err_msg['email'])) echo 'err'; ?>">
-              Email<br>
+            <h3>ユーザーID</h3>
               <input type="text" name="email" class="textbox" value="<?php echo getFormData('email'); ?>">
             </label>
             <div class="area-msg">
@@ -114,13 +114,14 @@ require('head.php');
             </div>
 
             <label>
-              ひとこと<br>
+              <h3>ひとこと</h3>
               <input type="text" name="lovegame" class="textbox" value="<?php echo getFormData('lovegame'); ?>">
             </label>
-            プロフィール画像
+              <h3>プロフィール画像</h3>
+            <span>※PCではドラッグ＆ドロップ可。未設定の場合、サンプル画像が設定されます。<br>※※約10MBまで</span>
             <div class="imgdrop-container">
             <label class="area-drop <?php if(!empty($err_msg['pic'])) echo 'err'; ?>" >
-              <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
+              <input type="hidden" name="MAX_FILE_SIZE" value="9145728">
               <input type="file" name="pic" class="input-file">
               <img src="<?php echo getFormData('pic'); ?>" class="prev-img <?php if(empty(getFormData('pic'))) echo 'display:none;' ?>">
             </label>

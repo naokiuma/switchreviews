@@ -66,13 +66,12 @@ define('MSG05', 'パスワードが異なります。');
 define('MSG06', '6文字以上で入力してください');
 define('MSG07', '1000文字以内で入力してください');
 define('MSG08', '何かしら正しくありません');
+define('MSG09', 'ファイルサイズが大きすぎました。');
 define('SUC01','ログインに成功しました。');
 define('SUC02','ご登録いただきありがとうございます。');
 define('SUC03','プロフィールを更新しました。');
 define('SUC04','投稿しました！');
 define('SUC05','コメントを投稿しました！');
-
-
 
 //グローバル定数エラーメッセージを格納する用。
 $err_msg = array();
@@ -634,6 +633,8 @@ function getCategory(){
             case UPLOAD_ERR_INI_SIZE:  // php.ini定義の最大サイズが超過した場合
             case UPLOAD_ERR_FORM_SIZE: // フォーム定義の最大サイズ超過した場合
                 throw new RuntimeException('ファイルサイズが大きすぎます');
+
+
             default: // その他の場合
                 throw new RuntimeException('その他のエラーが発生しました');
         }
@@ -665,6 +666,7 @@ function getCategory(){
         debug($e->getMessage());
         global $err_msg;
         $err_msg[$key] = $e->getMessage();
+
 
       }
     }

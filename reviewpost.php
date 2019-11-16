@@ -191,18 +191,18 @@ debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
             </div>
 
 
+
             <label>
               <h3>参考URL</h3>
               <input type="url"  name="abouturl" class="textbox" name="title" value="<?php echo getFormData('abouturl'); ?>"><br>
-              <span class="area-msg">※トレーラーやプレイ動画などのURLを入力します。</span>
+              <span>※トレーラーやプレイ動画などのURLを入力します。</span>
             </label>
-
             <h3>ゲーム画像</h3>
-            <span class="area-msg">※PCではドラッグ＆ドロップできます。未設定の場合、サンプル画像が設定されます。</span>
-            <div style="overflow:hidden;">
+            <span>※PCではドラッグ＆ドロップ可。未設定の場合、サンプル画像が設定されます。<br>※※約10MBまで</span>
+            <div>
               <div class="imgdrop-container">
                 <label class="area-drop <?php if(!empty($err_msg['pic'])) echo 'err'; ?>">
-                  <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
+                  <input type="hidden" name="MAX_FILE_SIZE" value="9145728"><!--元は3145728-->
                   <input type="file" name="pic" class="input-file" >
                   <img src="<?php echo getFormData('pic'); ?>" alt="" class="prev-img" style= "<?php if(empty(getFormData('pic'))) echo 'display:none;' ?>">
                 </label>
