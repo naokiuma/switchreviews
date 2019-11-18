@@ -372,7 +372,6 @@ function pagination( $currentPageNum, $totalPageNum, $link = '', $pageColNum = 5
 }
 
 
-
 //レビューデータの検索結果を取得
 //検索用の処理。
 function searchReviews($s_key, $span = 20){

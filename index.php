@@ -53,13 +53,13 @@ $nowdate = date("Y-m-d H:i:s",strtotime("-3 day"));//strtotimeでdatetimeの方�
 <div class="top_news">
   <div class="top_news__left">
     <h2>NEWS</h2>
-    <p><a href="#">More　<i class="fas fa-arrow-right"></i></a></p>
+    <p><a href="news.php#news">More　<i class="fas fa-arrow-right"></i></a></p>
   </div>
   <div class="top_news__right">
     <ul>
      <li>
-      <a href="#">
-        <time datetime="2019-11-12">2019/11/15</time><span>サイトを公開しました。</span>
+      <a href="news.php#news">
+        <time datetime="2019-11-12">2019/11/19</time><span>サイトを公開しました。</span>
       </a>
      </li>
 
@@ -108,7 +108,7 @@ $nowdate = date("Y-m-d H:i:s",strtotime("-3 day"));//strtotimeでdatetimeの方�
       </div>
 
       <div class="disc__tweet">
-        <h3>ツイッターで見つける</h3>
+        <h3>ツイッターで見つける(※準備中です！)</h3>
         <p>本サービス内で新しく投稿されたゲームや、話題のゲームに関するツイートを収集、表示。<br>気になるゲームの話題をツイートしているアカウントを見つけ、フォローしよう！</p>
         <i class="fab fa-twitter-square disc__card__image"></i>
       </div>

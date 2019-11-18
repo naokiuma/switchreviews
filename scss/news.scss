@@ -1,0 +1,24 @@
+.news{
+  &__container{
+    width: 80%;
+    height: 80%;
+    background-color: #00000014;
+    margin: auto;
+    h2{
+      text-align: center;
+      padding: 25px;
+    }
+    p{
+      letter-spacing: 0.5px;
+    }
+  }
+  &__post{
+    margin: 50px auto;
+    padding: 25px;
+  }
+  &__title{
+    span{
+      background: linear-gradient(transparent 70%, yellow 70%);
+    }
+  }
+}

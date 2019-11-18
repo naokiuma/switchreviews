@@ -91,9 +91,5 @@ require('head.php');
   require('footer.php');
 ?>
 
-<script>
-$('.js-get-id').html($.cookie('pageid'));
-</script>
-
 </body>
 </html>

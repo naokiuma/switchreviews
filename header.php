@@ -36,7 +36,7 @@ if(!empty($_SESSION['user_id'])){
     <li><a href="reviewpost.php"><i class="fas fa-gamepad"></i> レビュー投稿</a></li>
     <li><a href="profEdit.php"><i class="fas fa-gamepad"></i> プロフィール編集</a></li>
     <li><a href="logout.php"><i class="fas fa-gamepad"></i> ログアウト</a></li>
-    <li><a href=""><i class="fas fa-gamepad"></i>NEWS/ABOUT</a></li>
+    <li><a href="news.php"><i class="fas fa-gamepad"></i>NEWS</a></li>
 
   <?php
     }else{
@@ -44,7 +44,7 @@ if(!empty($_SESSION['user_id'])){
   <li><a href="signup.php"><i class="fas fa-gamepad"></i> ユーザー登録</a></li>
   <li><a href="login.php"><i class="fas fa-gamepad"></i> ログイン</a></li>
   <li><a href="searchreviews.php"><i class="fas fa-gamepad"></i> 記事一覧</a></li>
-  <li><a href=""><i class="fas fa-gamepad"></i>NEWS/ABOUT</a></li>
+  <li><a href="news.php"><i class="fas fa-gamepad"></i>NEWS</a></li>
 
   <?php
     }

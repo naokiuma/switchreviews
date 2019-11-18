@@ -114,11 +114,11 @@ require('head.php');
             </div>
 
             <label>
-              <h3>ひとこと</h3>
+              <h3>好きなゲーム</h3>
               <input type="text" name="lovegame" class="textbox" value="<?php echo getFormData('lovegame'); ?>">
             </label>
               <h3>プロフィール画像</h3>
-            <span>※PCではドラッグ＆ドロップ可。未設定の場合、サンプル画像が設定されます。<br>※※約10MBまで</span>
+            <span>※PCではドラッグ＆ドロップ可。未設定の場合、サンプル画像が設定されます。<br>※約10MBまで</span>
             <div class="imgdrop-container">
             <label class="area-drop <?php if(!empty($err_msg['pic'])) echo 'err'; ?>" >
               <input type="hidden" name="MAX_FILE_SIZE" value="9145728">

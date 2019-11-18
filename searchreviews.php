@@ -79,6 +79,7 @@ require('head.php');
 
     <a href="reviewdetail.php?r_id=<?php echo h($val['id']) ?>"
       class="panel_a <?php if ($val['create_date'] > $nowdate) echo 'new_post'; ?>"><?php echo ($val['title']); ?></a>
+    <p class="tag-category"><?php echo getReviewOne($val['id'])['category']; ?></p>
     <p class="panel_p overflow-ellipsis"><?php echo nl2br($val['body']); ?></p>
     <img class= "panel-head-img" src="<?php echo ($val['pic']); ?>" >
   </div>

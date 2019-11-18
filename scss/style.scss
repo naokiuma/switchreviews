@@ -9,6 +9,8 @@ $before-text:#00000091;
 $black:#666;
 
 @import "about.scss";
+@import "news.scss";
+@import "twitter.scss";
 
 html{
   margin:0px;
@@ -99,6 +101,12 @@ footer{
 .area-msg{
   color: #f00;
   font-size: 20px;
+}
+
+/*もっと見る*/
+.more_link{
+  font-size: 26px;
+  border-bottom: 2px solid red;
 }
 
 
@@ -200,6 +208,8 @@ header{
     a{
       text-decoration: none;
       color: white;
+      letter-spacing: 2px;
+      font-size: 80%;
     }
     ul{
       display: flex;
@@ -209,6 +219,7 @@ header{
       }
       li{
         margin: 0px;
+
       }
     }
 }
@@ -216,7 +227,7 @@ header{
 
 //-----------------------フォーム
 
-.btn-mind{
+.btn-mid{
   padding: 5px;
   box-shadow: 2px 2px;
 }
@@ -241,6 +252,9 @@ header{
   }
   label{
     margin: 15px auto;
+  }
+  span{
+    font-size: 12px;
   }
 
 }
@@ -332,6 +346,9 @@ header{
   position: absolute;
   left: 0;
   z-index:0;
+  max-height: 100%;
+  max-width: 100%;
+
 }
 
 .form .imgDrop-container{
@@ -487,11 +504,6 @@ header{
         line-height: 100px;
       }
     }
-    .more_link{
-      font-size: 26px;
-      border-bottom: 2px dotted red;
-      background: yellow;
-    }
   }
 
   button{
@@ -536,6 +548,7 @@ header{
 }
 
 .posts-text {
+  position: relative;
   p{
     font-size: 14px;
     margin: 20px auto;
@@ -611,6 +624,13 @@ header{
 
 
 /*検索ページ-------------------------------*/
+
+.tag-category{
+  width: 100%;
+  background-color:#87ceeb91;
+  border: dotted 0.2px;
+  font-size: 12px;
+}
 .search-main{
   background-color: #fafad2;
   position: relative;
@@ -630,11 +650,13 @@ header{
   padding:10px;
   text-align: center;
   box-sizing: border-box;
+  position: relative;
   @media screen and (max-width: $res-max-width){
     height: 300px;
     width: 50%;
   }
 }
+
 
 .panel_a{
   display: inline-block;
@@ -648,7 +670,6 @@ header{
   padding: 4px;
   border: 2px solid;
   box-shadow: 2px 2px;
-  height: 55px;
 }
 
 .panel_p{
@@ -659,7 +680,32 @@ header{
 }
 
 .new_post{
-  background: yellow;
+  &:after{
+    content: "NEW!";
+    padding: 3px;
+    border: 1px solid;
+    background-color:#ffff00e3;
+    position: absolute;
+    top: 0;
+    left: 7%;
+    letter-spacing: 1px;
+    border-radius: 5px;
+  }
+}
+
+.top-new_post{
+  &:after{
+    content: "NEW!";
+    padding: 3px;
+    border: 1px solid;
+    background-color:
+    yellow;
+    position: absolute;
+    top: 0;
+    left: 8%;
+    letter-spacing: 1px;
+    border-radius: 5px;
+  }
 }
 
 
@@ -1003,6 +1049,7 @@ header{
     padding: 2px;
     display: block;
     box-shadow: 2px 2px;
+    font-size: 12px;
     &:active{
       background-color: #00ffff75;
     }

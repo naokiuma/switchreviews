@@ -3,6 +3,7 @@ php.log
 package.json
 package-lock.json
 yarn.lock
-twitter.php
+twitter_new.php
+twitter_switch.php
 withdraw_old.php
 /node_modules
