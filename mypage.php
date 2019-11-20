@@ -3,7 +3,7 @@
 require('function.php');
 
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
-debug('「　トップページ　');
+debug('マイページ');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 debugLogStart();
 
@@ -54,7 +54,12 @@ require('head.php');
     <div class="myprof">
       <img src="<?php echo showImg($userData['pic']); ?>" alt="自分の画像" style="width:90%; margin:20px 20px;">
       <h3>ユーザー名：<span><?php echo ($userData['username']); ?></span></h3>
-      <h3>好きなゲーム：<span><?php echo ($userData['lovegame']); ?></span></h3>
+
+      <!--もしアクセスしているユーザーの場合編集可能-->
+      <?php if($userData['id'] == $u_id) : ?>
+        <p><a href="profEdit.php">プロフィールを編集する</a></p>
+      <?php endif; ?>
+
       <button type="button" name="button" class="fav-button">お気に入り投稿一覧</button>
     </div>
     <div class="fav-games">
@@ -62,7 +67,7 @@ require('head.php');
          foreach($favData as $val):
        ?>
        <div class="fav-game">
-         <a href="reviewdetail.php?r_id=<?php echo htmlspecialchars($val['id']) ?>"><?php echo ($val['title']); ?></a>
+         <a href="reviewdetail.php?r_id=<?php echo h($val['id']) ?>"><?php echo ($val['title']); ?></a>
          <p><?php echo ($val['body']); ?><p>
          <img src="<?php echo ($val['pic']); ?>">
        </div>

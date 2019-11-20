@@ -226,10 +226,7 @@ function getReviewsTop(){
   debug('ログイン有無に関わらず、top用のpostを検索します');
   try{
     $dbh = dbConnect();
-    //$sql = 'SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id LIMIT 6'; //アウタージョインでユーザー情報も引っ張ってきた！
     $sql = 'SELECT * FROM users AS u RIGHT JOIN reviews AS r ON u.id = r.user_id ORDER BY r.id desc LIMIT 6';
-    //$sql = 'SELECT * FROM reviews WHERE delete_flg = 0 LIMIT 6';
-    //debug('sqlの結果情報：'.print_r($sql,true));
     $stmt = $dbh->query($sql);
     $result_r = $stmt->fetchAll(PDO::FETCH_ASSOC);
     //debug('クエリ結果情報：'.print_r($result_r,true));
@@ -245,7 +242,7 @@ function getReviewsTop(){
 
 //3日以内の記事のみ取得
 function getReviewsNew(){
-  debug('等奥から3日以内の記事を検索');
+  debug('投稿から3日以内の記事を検索');
   try{
     $dbh = dbConnect();
     $sql = 'SELECT * FROM reviews Where DATE_ADD(create_date, INTERVAL 1 DAY)';
@@ -411,6 +408,31 @@ function searchReviews($s_key, $span = 20){
 }
 
 
+
+//Twitterの検索ワードを作る。投稿記事最新からランダムで取り出す。
+function searchcronWord(){
+  debug('検索ワードを確定します。');
+  try{
+    $dbh = dbConnect();
+    $sql = 'SELECT * FROM reviews WHERE gametitle IS NOT NULL ORDER BY create_date DESC LIMIT 0, 3;';
+    $stmt = $dbh->query($sql);
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $key = array_rand($result,1);//リザルトから一つ、キーをランダムで取得。
+    $search_word = $result[$key];//結果のうち、1件を取得。
+    //debug($stmt);
+    //debug(print_r($result));//print_rなら配列を出せる
+    //debug(print_r($search_word['gametitle']));
+    //debug($search_word['gametitle']);
+    $word = $search_word['gametitle'];
+    return $word;
+  }catch (Exception $e){
+      error_log('エラー発生:' . $e->getMessage());
+    }
+}
+
+
+
+
 //レビューデータの数値取得
 function getReviewsList($currentMinNum = 1, $category, $span = 20){
   debug('レビュー情報一覧を取得します');
@@ -430,14 +452,11 @@ function getReviewsList($currentMinNum = 1, $category, $span = 20){
     if(!$stmt){
       return false;
     }
-
     //ページング用のSQL文作成
     $sql = 'SELECT * FROM reviews';
     if(!empty($category)) $sql .= 'WHERE category_id = '.$category;
     $sql .= ' ORDER BY id desc LIMIT '.$span.' OFFSET '.$currentMinNum;
     //SELECT * FROM reviews ORDER BY id desc LIMIT 20 OFFSET 0 phpmyadminで行けたやつ
-
-
 
     $data = array(); //本来はここでプリペアードしている必要あり
     debug('SQL文章:'.$sql);
@@ -573,6 +592,8 @@ function getCategory(){
     error_log('エラー発生:' .$e->getMessage());
   }
 }
+
+
 
   function getFormData($str){
     global $dbFormData;

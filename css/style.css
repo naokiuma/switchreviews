@@ -674,8 +674,7 @@ header {
 /*検索ページ-------------------------------*/
 .tag-category {
   width: 100%;
-  background-color: #87ceeb91;
-  border: dotted 0.2px;
+  background-color: #87ceeb52;
   font-size: 12px; }
 
 .search-main {
@@ -928,7 +927,8 @@ header {
 .detail-pic {
   width: 65%;
   margin: auto;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   @media screen and (max-width: 770px) {
     .detail-pic {
       width: 70%;
@@ -939,7 +939,6 @@ header {
 
 .detail-body {
   width: 95%;
-  min-height: 150px;
   margin: 10px 0;
   font-size: 16px; }
   @media screen and (max-width: 770px) {
@@ -955,7 +954,7 @@ header {
 
 .detail-commnet {
   width: 100%;
-  min-height: 300px;
+  min-height: 350px;
   padding: 15px;
   background-color: pink; }
   .detail-commnet label {
@@ -963,12 +962,19 @@ header {
 
 /*お気に入りアイコン*/
 .icn-like {
-  color: #ddd; }
+  color: #ddd;
+  position: absolute;
+  bottom: 0;
+  font-size: 45px !important;
+  right: 30px; }
+  @media screen and (max-width: 770px) {
+    .icn-like {
+      font-size: 25px !important;
+      right: 10px; } }
+  .icn-like:hover {
+    cursor: pointer; }
 
-.icn-like:hover {
-  cursor: pointer; }
-
-.icn-like.active {
+.active {
   color: #fe8a8b; }
 
 /*マイページ*/
@@ -1035,6 +1041,9 @@ header {
 @media screen and (max-width: 770px) {
   .myprof img {
     width: 40%; } }
+
+.myprof a:hover {
+  border-bottom: green 1px dotted; }
 
 .fav-games {
   display: none;

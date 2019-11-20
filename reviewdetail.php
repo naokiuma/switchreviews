@@ -88,10 +88,11 @@ require('head.php');
 </p>
 
 <section class="detail-wrapper">
-    <h1><?php echo ($viewData['title']); ?></h1>
-
+    <h1>
+      <?php echo ($viewData['title']); ?>
+      <p class="tag-category">カテゴリー：<?php echo ($viewData['category']); ?></sp>
+    </h1>
   <div class="detail-info-wrapper">
-
     <div class="detail-pic">
       <img src="<?php echo (!empty($viewData['pic'])) ? $viewData['pic'] : "images/sample.png"; ?>" alt="ゲーム画像">
       <?php if ($viewData['create_date'] > $nowdate){  ?>
@@ -99,6 +100,8 @@ require('head.php');
           NEW!
         </div>
       <?php } ?>
+      <i class="fa fa-heart icn-like js-click-fav <?php if(isFav($_SESSION['user_id'],$viewData['id'])){echo
+      'active';} ?>" aria-hidden="true" data-review_id="<?php echo ($viewData['id']); ?>" ></i>
     </div>
 
 
@@ -107,11 +110,7 @@ require('head.php');
         <p><span class="u-strong">本文</span><br></p>
         <p><?php echo nl2br(h($viewData['body'])); ?></p>
       </div>
-
       <p><span class="u-strong">投稿者：</span><?php echo ($post_user['username']); ?><br>
-        <span class="u-strong">カテゴリー：</span><?php echo ($viewData['category']); ?><br>
-        <span class="u-strong">お気に入り：</span><i class="fa fa-heart icn-like js-click-fav <?php if(isFav($_SESSION['user_id'],$viewData['id'])){echo
-        'active';} ?>" aria-hidden="true" data-review_id="<?php echo ($viewData['id']); ?>" ></i><br>
         <span class="u-strong">参考URL：</span><a href="<?php echo h($viewData['abouturl']); ?>"><?php echo h($viewData['abouturl']); ?></a>
       </p>
 

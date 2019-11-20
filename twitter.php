@@ -32,15 +32,15 @@ require('auth.php');
 
 
   <div class="twitter__posts">
-    <?php
-    $posts = array();
-
-    ?>
+    <div id="vue">
+      <tweet-data></tweet-data>
+    </div>
   </div>
 
 
 
 </section>
+<?php $search_word = searchcronWord();?>
 
 
 <script src="js/twitter_switch.js"></script>

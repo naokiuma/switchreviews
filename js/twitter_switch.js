@@ -1,7 +1,20 @@
 console.log("switch.jsを読み込みます");
 
-$(function(){
+Vue.component('tweet-data',{
+  data:function(){
+    return{
+      hash:"",
+      word:""
+    }
+  },
+  template:'<div>テストです</div>',
+  mounted(){
+    console.log("読み込みました");
+  }
+})
+
             // Ajax button click
+            /*
             $('#twitter_switch').on('click',function(){
               $.ajax({
                   url:'./twitter_switch.php',
@@ -21,9 +34,7 @@ $(function(){
           });
       });
 
-
-/*
-axios.get(url).then(function(response){
-  self.coins = response.data;
-  });
 */
+new Vue({
+  el:'#vue',
+})

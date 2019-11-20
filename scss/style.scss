@@ -627,8 +627,7 @@ header{
 
 .tag-category{
   width: 100%;
-  background-color:#87ceeb91;
-  border: dotted 0.2px;
+  background-color:#87ceeb52;
   font-size: 12px;
 }
 .search-main{
@@ -929,6 +928,7 @@ header{
     width: 65%;
     margin: auto;
     text-align: center;
+    position: relative;
     @media screen and (max-width: $res-max-width){
       width: 70%;
       margin: 10px auto;
@@ -941,7 +941,6 @@ header{
 
   &-body{
     width: 95%;
-    min-height: 150px;
     margin: 10px 0;
     font-size: $font-s;
     @media screen and (max-width: $res-max-width){
@@ -958,7 +957,7 @@ header{
   }
   &-commnet{
     width:100%;
-    min-height: 300px;
+    min-height: 350px;
     padding: 15px;
     background-color: pink;
     label{
@@ -971,11 +970,19 @@ header{
 /*お気に入りアイコン*/
 .icn-like{
   color: #ddd;
+  position: absolute;
+  bottom: 0;
+  font-size: 45px !important;
+  right: 30px;
+  @media screen and (max-width: $res-max-width){
+    font-size: 25px !important;
+    right: 10px;
+  }
+  &:hover{
+    cursor: pointer;
+  }
 }
-.icn-like:hover{
-  cursor: pointer;
-}
-.icn-like.active{
+.active{
   color: #fe8a8b;
 }
 
@@ -1057,6 +1064,11 @@ header{
   img{
     @media screen and (max-width: $res-max-width){
       width:40%;
+    }
+  }
+  a{
+    &:hover{
+      border-bottom: green 1px dotted;
     }
   }
 }
