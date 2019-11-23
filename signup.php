@@ -123,7 +123,7 @@ require('header.php');
           <?php if(!empty($err_msg['username'])) echo $err_msg['username']; ?>
         </div>
         <label class="<?php if(!empty($err_msg['email'])) echo 'err'; ?>">
-          ユーザーID <span>※メールアドレスです。</span><br>
+          ユーザーID <span>※メールアドレスです。他のユーザーに公開されることはありません。</span><br>
           <input type="email" name="email" class="textbox" id="js-get-val-id" value="<?php if(!empty($_POST['email'])) echo $_POST['email']; ?>">
         </label>
         <div class="area-msg">

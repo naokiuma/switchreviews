@@ -74,7 +74,8 @@ $nowdate = date("Y-m-d H:i:s",strtotime("-3 day"));//strtotimeでdatetimeの方�
       <h2 class="about-title">About</h2>
       <p>毎週多くのインディーズゲームがリリースされるNintendo Switch。<br>
          目に止まりにくい良質なゲームも沢山あります。<br>
-         そんなゲームに関する感想や期待、攻略方法なんかを語り合ったり、ツイッターでゲームについて呟いている人を見つけたり。<br>
+         そんなゲームに関する感想や期待、攻略方法なんかを語り合ったり、<br>
+         ツイッターでゲームについて呟いている人を見つけたり。<br>
          Nintendo Switch Indies LiFEは、投稿タイプのミニコミュニティです。<br><br>
       <a href="https://twitter.com/intent/tweet?button_hashtag=Switchインディーズライフ&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </p>
@@ -91,7 +92,7 @@ $nowdate = date("Y-m-d H:i:s",strtotime("-3 day"));//strtotimeでdatetimeの方�
     <div class="disc__about__wrapper">
       <div class="disc__card">
         <h3>投稿する</h3>
-        <p>お気に入りや、気になるゲームについて投稿しよう。</p>
+        <p>お気に入りや、気になるゲームについて投稿しよう。インディーズゲームでなくてもOKです！</p>
         <i class="fas fa-laptop disc__card__image"></i>
       </div>
 

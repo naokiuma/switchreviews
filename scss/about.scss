@@ -19,9 +19,10 @@
     width:90%;
     text-align: center;
     line-height: 26px;
-    font-size: 12px;
+    font-size: 14px;
     @media screen and (max-width: $res-max-width){
         height: auto;
+        font-size: 12px;
     }
   }
 }
@@ -37,6 +38,7 @@
     width: auto;
   }
   p{
+
     @media screen and (max-width: $res-max-width){
       text-align: left;
     }

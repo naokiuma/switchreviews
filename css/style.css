@@ -19,10 +19,11 @@
     width: 90%;
     text-align: center;
     line-height: 26px;
-    font-size: 12px; }
+    font-size: 14px; }
     @media screen and (max-width: 770px) {
       .about__box p {
-        height: auto; } }
+        height: auto;
+        font-size: 12px; } }
 
 /*この辺参考　https://saruwakakun.com/html-css/reference/box */
 .about-text-wrap {
@@ -650,8 +651,7 @@ header {
   .posts-text a {
     display: inline-block;
     width: 70%;
-    font-size: 20px;
-    color: #666;
+    font-size: 16px;
     margin-top: 20px;
     border: solid 2px;
     box-shadow: 2px 2px;
