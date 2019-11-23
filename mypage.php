@@ -52,7 +52,7 @@ require('head.php');
 
   <section id="sidebar">
     <div class="myprof">
-      <img src="<?php echo showImg($userData['pic']); ?>" alt="自分の画像" style="width:90%; margin:20px 20px;">
+      <img src="<?php echo showImg($userData['pic']); ?>" alt="自分の画像">
       <h3>ユーザー名：<span><?php echo ($userData['username']); ?></span></h3>
       <h3>好きなゲーム：<span><?php echo ($userData['lovegame']); ?></span></h3>
 
