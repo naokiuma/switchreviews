@@ -251,7 +251,8 @@ header{
     }
   }
   label{
-    margin: 15px auto;
+    margin: 15px auto 0 auto;
+    //margin: 15px auto;
   }
   span{
     font-size: 12px;
@@ -371,7 +372,7 @@ header{
       position: relative;
       padding: 0.35em 1em;
       background: #6699FF;/*ボタン色*/
-      color: brack;
+      color: black;
       width: 200px;
       height: 40px;
       margin: 10px;
@@ -404,24 +405,31 @@ header{
     height: 500px;
   }
   h2{
-    width: 60%;
+    width: 45%;
     font-size: 30px;
-    text-align: center;
     text-shadow: white 2px 2px 0px;
     background-color:#ffebcd4f;
     border-radius: 50%;
     font-style: italic;
-    padding: 30px;
+    padding: 15px;
     box-shadow: 4px 4px #090331;
     border-radius: 10px;
     position: absolute;
     top: 20%;
+    //ここから
     @media screen and (max-width: $res-max-width){
         font-size: 16px;
-        width: 80%;
+        width: 70%;
         top: 15%;
         left: auto;
     }
+  }
+  span{
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    display:block;
+    letter-spacing: 1px;
   }
 }
 
@@ -627,8 +635,11 @@ header{
 
 .tag-category{
   width: 100%;
-  background-color:#87ceeb52;
-  font-size: 12px;
+  background-color:#87e2ebc7;
+  font-size: 16px;
+  @media screen and (max-width: $res-max-width){
+    font-size: 12px;
+  }
 }
 .search-main{
   background-color: #fafad2;
@@ -888,12 +899,16 @@ header{
       animation-name:RightToLeft;
       animation-duration: 1s;
       font-size: 30px;
-      border-bottom: 3px solid yellow;
       @media screen and (max-width: $res-max-width){
         margin: 50px auto;
         font-size: 20px;
         width: 80%;
       }
+      span{
+        border-bottom: 3px solid #00abff6e;
+        padding-bottom: 5px;
+      }
+
       &:before{
         content: "タイトル";
         font-size: 16px;
@@ -905,7 +920,11 @@ header{
       }
     }
   }
-
+  &-category{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
   &-info-wrapper{
     width: 90%;
     margin: auto;
@@ -941,7 +960,6 @@ header{
 
   &-body{
     width: 95%;
-    margin: 10px 0;
     font-size: $font-s;
     @media screen and (max-width: $res-max-width){
       font-size: 14px;
@@ -1178,4 +1196,20 @@ header{
 //文字数超える場合に切り取る
 .overflow-ellipsis {
   text-overflow: ellipsis;
+}
+
+
+/* Animation */
+.anime-typewriter{
+  animation: typewriter 3s steps(33) 1s 1 normal both,
+ blinkTextCursor 1000ms steps(33) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0%;}
+  to{width: 80%;}
+
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
 }

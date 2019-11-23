@@ -105,7 +105,7 @@ require('head.php');
 
             <label class="<?php if(!empty($err_msg['email'])) echo 'err'; ?>">
             <h3>ユーザーID</h3>
-              <input type="text" name="email" class="textbox" value="<?php echo getFormData('email'); ?>">
+              <input type="email" name="email" class="textbox" value="<?php echo getFormData('email'); ?>">
             </label>
             <div class="area-msg">
               <?php

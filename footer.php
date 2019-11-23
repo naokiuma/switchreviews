@@ -60,6 +60,7 @@ if($('.about-text-wrap').length){
 }
 
 //右から左
+if($('.disc').length){
   $(window).scroll(function(){
     //$('.disc').addClass('move');
     var imgPos = $('.disc').offset().top;
@@ -70,7 +71,7 @@ if($('.about-text-wrap').length){
       $('.disc').css("opacity", "1");
     }
   });
-
+}
 
 
   //bgスライドショー

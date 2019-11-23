@@ -66,9 +66,11 @@ define('MSG05', 'パスワードが異なります。');
 define('MSG06', '6文字以上で入力してください');
 define('MSG07', '1000文字以内で入力してください');
 define('MSG08', '何かしら正しくありません');
-define('MSG09', 'ファイルサイズが大きすぎました。');
+define('MSG09', 'ファイルサイズが大きすぎます。');
+define('MSG10', 'メールアドレス形式ではありません。');
+
 define('SUC01','ログインに成功しました。');
-define('SUC02','ご登録いただきありがとうございます。');
+define('SUC02','登録しました！');
 define('SUC03','プロフィールを更新しました。');
 define('SUC04','投稿しました！');
 define('SUC05','コメントを投稿しました！');
@@ -112,12 +114,24 @@ function validpassMatch($str1,$str2,$key){
 }
 
 //セレクトボックスチェック
+/*
 function validSelect($str, $key){
   if(!preg_match("/^[0-9]+$/", $str)){
     global $err_msg;
     $err_msg[$key] = MSG08;
   }
 }
+*/
+
+//メルアド形式かどうかチェック
+function validEmailcheck($email,$key){
+  global $err_msg;
+  if(!filter_var( $email,FILTER_VALIDATE_EMAIL)){
+    $err_msg[$key] = MSG10;
+  }
+}
+
+
 
 //メルアドの重複確認
 function validEmailDup($email){
@@ -143,9 +157,6 @@ function validEmailDup($email){
 }
 
 function queryPost($dbh, $sql, $data){
-  //debug('この時点でのdbh:'.print_r($dbh,true));
-  //debug('この時点でのsql:'.print_r($sql,true));
-
   $stmt = $dbh->prepare($sql);
   if(!$stmt->execute($data)){
     debug('クエリ大失敗！！');

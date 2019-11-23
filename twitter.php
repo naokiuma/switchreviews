@@ -25,19 +25,20 @@ require('auth.php');
 <?php require('header.php'); ?>
 
 <section class="twitter__container">
-  <h2>Tweet About Switch</h2>
-  <p>「#Nintendoswitch」とランダムで最近投稿されたゲームに関するツイートを取得しました。<br>
-  ツイッターを通してスイッチに関してツイートしているユーザーを探し、交流しましょう！</p>
-  <button id="twitter_switch" type="button" name="button">スイッチ関連のハッシュタグを取得</button>
-
+  <h2>ツイートを見てみよう。</h2>
+  <p>「#Nintendoswitch」のハッシュタグに関するツイート、<br>
+      最近投稿されたゲームに関するツイートを取得しました。<br>
+      気になるツイートを見つけたら、Twitterへリンクしフォローしてみよう。<br>
+      <br>
+      <span>※繰り返し取得すると、api制限がかかる場合があります。<br>
+      取得できない場合は、時間をあけて試してください。</span>
+  </p>
 
   <div class="twitter__posts">
     <div id="vue">
       <tweet-data></tweet-data>
     </div>
   </div>
-
-
 
 </section>
 <?php $search_word = searchcronWord();?>

@@ -7,8 +7,6 @@ debug('「　トップページ　');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 debugLogStart();
 
-
-//ログイン認証
 require('auth.php');
 
 //================================
@@ -59,7 +57,7 @@ if(!empty($_POST['comment'])){
       $_SESSION['msg_success'] = SUC05;
       unset($_POST);
       header('location: reviewdetail.php?r_id='.$r_id);
-      exit();//←忘れずに！
+      exit();
     }
 
   }catch (Exception $e) {
@@ -89,8 +87,7 @@ require('head.php');
 
 <section class="detail-wrapper">
     <h1>
-      <?php echo ($viewData['title']); ?>
-      <p class="tag-category">カテゴリー：<?php echo ($viewData['category']); ?></sp>
+      <span><?php echo ($viewData['title']); ?></span>
     </h1>
   <div class="detail-info-wrapper">
     <div class="detail-pic">
@@ -102,6 +99,9 @@ require('head.php');
       <?php } ?>
       <i class="fa fa-heart icn-like js-click-fav <?php if(isFav($_SESSION['user_id'],$viewData['id'])){echo
       'active';} ?>" aria-hidden="true" data-review_id="<?php echo ($viewData['id']); ?>" ></i>
+    </div>
+    <div class="detail-category">
+      <p class="tag-category"><?php echo ($viewData['category']); ?></sp>
     </div>
 
 

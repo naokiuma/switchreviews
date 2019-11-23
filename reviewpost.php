@@ -8,6 +8,12 @@ debug('「　投稿登録ページ　');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 debugLogStart();
 
+//ログインしてなければリダイレクト
+if(empty($_SESSION['login_date'])){
+  $_SESSION['msg_success'] = "ログインしてください";
+  header("Location:login.php"); //ログインページへ
+}
+
 //ログイン認証
 require('auth.php');
 
@@ -103,8 +109,8 @@ if(!empty($_POST)){
       //クエリ成功の場合
       if($stmt){
         $_SESSION['msg_success'] = SUC04;
-        debug('トップページへ遷移します。');
-        header("Location:index.php"); //マイページへ
+        debug('記事一覧へ遷移します。');
+        header("Location:searchreviews.php"); //マイページへ
       }
 
     } catch (Exception $e){

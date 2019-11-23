@@ -47,7 +47,7 @@ $nowdate = date("Y-m-d H:i:s",strtotime("-3 day"));//strtotimeでdatetimeの方�
 <?php require('header.php'); ?>
 
 <section class="bg-box">
-  <h2>Play and enjoy!<br>ゲームの楽しさは外側にも広がります。</h2>
+  <h2><span  class="anime-typewriter">Play and enjoy the Game!</span></h2>
 </section>
 
 <div class="top_news">
@@ -59,7 +59,7 @@ $nowdate = date("Y-m-d H:i:s",strtotime("-3 day"));//strtotimeでdatetimeの方�
     <ul>
      <li>
       <a href="news.php#news">
-        <time datetime="2019-11-12">2019/11/19</time><span>サイトを公開しました。</span>
+        <time datetime="2019-11-2">2019/11/22</time><span>サイトを公開しました。</span>
       </a>
      </li>
 
@@ -72,10 +72,10 @@ $nowdate = date("Y-m-d H:i:s",strtotime("-3 day"));//strtotimeでdatetimeの方�
   <div class="about__box">
     <div class="about-text-wrap">
       <h2 class="about-title">About</h2>
-      <p>毎週多くのインディーズゲームがリリースされる<br>Nintendo Switch。<br>
+      <p>毎週多くのインディーズゲームがリリースされるNintendo Switch。<br>
          目に止まりにくい良質なゲームも沢山あります。<br>
          そんなゲームに関する感想や期待、攻略方法なんかを語り合ったり、ツイッターでゲームについて呟いている人を見つけたり。<br>
-         Nintendo Switch Indies LiFEは、投稿タイプのミニコミュニティです。<br>
+         Nintendo Switch Indies LiFEは、投稿タイプのミニコミュニティです。<br><br>
       <a href="https://twitter.com/intent/tweet?button_hashtag=Switchインディーズライフ&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </p>
     </div>
@@ -108,7 +108,7 @@ $nowdate = date("Y-m-d H:i:s",strtotime("-3 day"));//strtotimeでdatetimeの方�
       </div>
 
       <div class="disc__tweet">
-        <h3>ツイッターで見つける(※準備中です！)</h3>
+        <h3>ツイッターで見つける</h3>
         <p>本サービス内で新しく投稿されたゲームや、話題のゲームに関するツイートを収集、表示。<br>気になるゲームの話題をツイートしているアカウントを見つけ、フォローしよう！</p>
         <i class="fab fa-twitter-square disc__card__image"></i>
       </div>

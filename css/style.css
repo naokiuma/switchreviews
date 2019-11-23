@@ -166,11 +166,36 @@
 
 .twitter__container {
   text-align: center; }
+  .twitter__container h2 {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    font-size: 36px;
+    background-color: #79E8E885;
+    margin: 0; }
+    @media screen and (max-width: 770px) {
+      .twitter__container h2 {
+        font-size: 30px;
+        height: 100px;
+        line-height: 100px; } }
+  .twitter__container span {
+    font-size: 12px; }
 
 .twitter__posts {
   width: 90%;
   margin: auto;
   background-color: #00000014; }
+  .twitter__posts li {
+    width: 90%;
+    margin: 10px auto;
+    background: white; }
+
+.each-tweet a {
+  background-color: #87ceeb66;
+  padding: 5px; }
+
+.tweets {
+  margin: 50px auto 150px auto; }
 
 html {
   margin: 0px;
@@ -366,7 +391,7 @@ header {
       #form-main h2 {
         font-size: 20px; } }
   #form-main label {
-    margin: 15px auto; }
+    margin: 15px auto 0 auto; }
   #form-main span {
     font-size: 12px; }
 
@@ -466,7 +491,7 @@ header {
     padding: 0.35em 1em;
     background: #6699FF;
     /*ボタン色*/
-    color: brack;
+    color: black;
     width: 200px;
     height: 40px;
     margin: 10px;
@@ -492,14 +517,13 @@ header {
     .bg-box {
       height: 500px; } }
   .bg-box h2 {
-    width: 60%;
+    width: 45%;
     font-size: 30px;
-    text-align: center;
     text-shadow: white 2px 2px 0px;
     background-color: #ffebcd4f;
     border-radius: 50%;
     font-style: italic;
-    padding: 30px;
+    padding: 15px;
     box-shadow: 4px 4px #090331;
     border-radius: 10px;
     position: absolute;
@@ -507,9 +531,15 @@ header {
     @media screen and (max-width: 770px) {
       .bg-box h2 {
         font-size: 16px;
-        width: 80%;
+        width: 70%;
         top: 15%;
         left: auto; } }
+  .bg-box span {
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    letter-spacing: 1px; }
 
 .top_news {
   display: flex;
@@ -674,8 +704,11 @@ header {
 /*検索ページ-------------------------------*/
 .tag-category {
   width: 100%;
-  background-color: #87ceeb52;
-  font-size: 12px; }
+  background-color: #87e2ebc7;
+  font-size: 16px; }
+  @media screen and (max-width: 770px) {
+    .tag-category {
+      font-size: 12px; } }
 
 .search-main {
   background-color: #fafad2;
@@ -892,13 +925,15 @@ header {
     margin: 50px;
     animation-name: RightToLeft;
     animation-duration: 1s;
-    font-size: 30px;
-    border-bottom: 3px solid yellow; }
+    font-size: 30px; }
     @media screen and (max-width: 770px) {
       .detail-wrapper h1 {
         margin: 50px auto;
         font-size: 20px;
         width: 80%; } }
+    .detail-wrapper h1 span {
+      border-bottom: 3px solid #00abff6e;
+      padding-bottom: 5px; }
     .detail-wrapper h1:before {
       content: "タイトル";
       font-size: 16px;
@@ -907,6 +942,11 @@ header {
       @media screen and (max-width: 770px) {
         .detail-wrapper h1:before {
           font-size: 12px; } }
+
+.detail-category {
+  width: 50%;
+  text-align: center;
+  margin: auto; }
 
 .detail-info-wrapper {
   width: 90%;
@@ -939,7 +979,6 @@ header {
 
 .detail-body {
   width: 95%;
-  margin: 10px 0;
   font-size: 16px; }
   @media screen and (max-width: 770px) {
     .detail-body {
@@ -1119,3 +1158,19 @@ header {
 
 .overflow-ellipsis {
   text-overflow: ellipsis; }
+
+/* Animation */
+.anime-typewriter {
+  animation: typewriter 3s steps(33) 1s 1 normal both, blinkTextCursor 1000ms steps(33) infinite normal; }
+
+@keyframes typewriter {
+  from {
+    width: 0%; }
+  to {
+    width: 80%; } }
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75); }
+  to {
+    border-right-color: transparent; } }

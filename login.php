@@ -94,6 +94,10 @@ debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
   <?php
   require('header.php');
   ?>
+  <!--フラッシュメッセージ-->
+  <p id="js-show-msg" style="display:none;" class="msg-slide">
+    <?php echo getSessionFlash('msg_success'); ?>
+  </p>
 
   <section id ="main">
     <section id="form-container">
@@ -105,8 +109,8 @@ debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
         </div>
 
         <label class="<?php if(!empty($err_msg['email'])) echo 'err'; ?>">
-          ユーザーID<br>
-          <input type="text" name="email" class="textbox" value="<?php if(!empty($_POST['email'])) echo $_POST['email']; ?>">
+          ユーザーID<span> ※メールアドレス</span><br>
+          <input type="email" name="email" class="textbox" value="<?php if(!empty($_POST['email'])) echo $_POST['email']; ?>">
         </label>
         <div class="area-msg">
           <?php if(!empty($err_msg['email'])) echo $err_msg['email']; ?>

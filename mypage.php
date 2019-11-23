@@ -54,6 +54,7 @@ require('head.php');
     <div class="myprof">
       <img src="<?php echo showImg($userData['pic']); ?>" alt="自分の画像" style="width:90%; margin:20px 20px;">
       <h3>ユーザー名：<span><?php echo ($userData['username']); ?></span></h3>
+      <h3>好きなゲーム：<span><?php echo ($userData['lovegame']); ?></span></h3>
 
       <!--もしアクセスしているユーザーの場合編集可能-->
       <?php if($userData['id'] == $u_id) : ?>
