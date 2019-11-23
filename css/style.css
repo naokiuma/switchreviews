@@ -15,13 +15,11 @@
     .about__box {
       width: 80%; } }
   .about__box p {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
+    margin: 40px auto auto auto;
     width: 90%;
     text-align: center;
-    line-height: 30px;
-    height: 300px; }
+    line-height: 26px;
+    font-size: 12px; }
     @media screen and (max-width: 770px) {
       .about__box p {
         height: auto; } }
@@ -54,7 +52,7 @@
 
 .about__box_img2 {
   position: absolute;
-  width: 500px;
+  width: 400px;
   top: 40%;
   right: 5%; }
   @media screen and (max-width: 770px) {
@@ -81,7 +79,7 @@
   animation-duration: 1s;
   /* アニメーション時間 */ }
   .disc h3 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold; }
     .disc h3::before {
       font-family: FontAwesome;
@@ -273,7 +271,7 @@ footer {
 
 /*もっと見る*/
 .more_link {
-  font-size: 26px;
+  font-size: 20px;
   border-bottom: 2px solid red; }
 
 /*ヘッダー*/
@@ -558,7 +556,7 @@ header {
       .top_news__left {
         width: 100%; } }
     .top_news__left h2 {
-      font-size: 30px;
+      font-size: 20px;
       font-style: italic;
       font-family: sans-serif;
       text-align: center; }
@@ -595,16 +593,14 @@ header {
 /*トップページpostのサンプル一覧----------------*/
 .top-games {
   text-align: center; }
-  .top-games__search {
-    margin-bottom: 100px; }
-    .top-games__search h2 {
-      font-size: 30px;
-      height: 150px;
-      line-height: 150px; }
-      @media screen and (max-width: 770px) {
-        .top-games__search h2 {
-          height: 100px;
-          line-height: 100px; } }
+  .top-games__search h2 {
+    font-size: 30px;
+    height: 150px;
+    line-height: 150px; }
+    @media screen and (max-width: 770px) {
+      .top-games__search h2 {
+        height: 100px;
+        line-height: 100px; } }
   .top-games button {
     width: 300px;
     height: 60px;

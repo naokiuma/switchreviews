@@ -105,7 +105,7 @@ footer{
 
 /*もっと見る*/
 .more_link{
-  font-size: 26px;
+  font-size: 20px;
   border-bottom: 2px solid red;
 }
 
@@ -450,7 +450,7 @@ header{
       width: 100%;
     }
     h2{
-      font-size: 30px;
+      font-size: 20px;
       font-style: italic;
       font-family: sans-serif;
       text-align: center;
@@ -502,7 +502,6 @@ header{
 .top-games{
   text-align: center;
   &__search{
-    margin-bottom: 100px;
     h2{
       font-size: 30px;
       height: 150px;
