@@ -1056,6 +1056,7 @@ header{
 
 
 .myprof {
+  text-align: center;
   h3{
     font-size:70%;
     width:70%;
@@ -1078,6 +1079,8 @@ header{
     }
   }
   img{
+    width: 70%;
+    margin: 20px auto;
     @media screen and (max-width: $res-max-width){
       width:40%;
     }

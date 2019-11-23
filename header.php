@@ -15,7 +15,7 @@ if(!empty($_SESSION['user_id'])){
         <?php
           if(!empty($_SESSION['user_id'])){
         ?>
-        <h4><?php echo h($user_menuname); ?></h4>
+        <h4><a href="mypage.php?u_id=<?php echo h($_SESSION['user_id']) ?>"><?php echo h($user_menuname); ?></a></h4>
         <?php
           }
         ?>

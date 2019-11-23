@@ -1053,32 +1053,33 @@ header {
     margin-left: 10%;
     margin-right: 10%; }
 
-.myprof h3 {
-  font-size: 70%;
-  width: 70%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto; }
-
-.myprof span {
-  font-size: 150%; }
-
-.myprof button {
-  margin: auto;
-  width: 60%;
-  padding: 2px;
-  display: block;
-  box-shadow: 2px 2px;
-  font-size: 12px; }
-  .myprof button:active {
-    background-color: #00ffff75; }
-
-@media screen and (max-width: 770px) {
+.myprof {
+  text-align: center; }
+  .myprof h3 {
+    font-size: 70%;
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+  .myprof span {
+    font-size: 150%; }
+  .myprof button {
+    margin: auto;
+    width: 60%;
+    padding: 2px;
+    display: block;
+    box-shadow: 2px 2px;
+    font-size: 12px; }
+    .myprof button:active {
+      background-color: #00ffff75; }
   .myprof img {
-    width: 40%; } }
-
-.myprof a:hover {
-  border-bottom: green 1px dotted; }
+    width: 70%;
+    margin: 20px auto; }
+    @media screen and (max-width: 770px) {
+      .myprof img {
+        width: 40%; } }
+  .myprof a:hover {
+    border-bottom: green 1px dotted; }
 
 .fav-games {
   display: none;
