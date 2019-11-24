@@ -647,8 +647,10 @@ header{
 }
 
 .panel-list{
-  overflow: hidden;
   margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .panel-head{
@@ -681,7 +683,8 @@ header{
 }
 
 .panel_p{
-  min-height: 25%;
+  min-height: 25px;
+  max-height: 50px;;
   padding: 5px;
   white-space: nowrap;
   overflow: hidden;
@@ -719,6 +722,7 @@ header{
 
 .panel-head > .panel-head-img{
   width:80%;
+  max-height: 200px;
 }
 
 .panel-head-img:hover{
@@ -1011,6 +1015,7 @@ header{
 .mypage-container{
   display: flex;
   flex-wrap:wrap;
+  min-height: 100%;
 }
 
 #sidebar{

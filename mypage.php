@@ -57,9 +57,12 @@ require('head.php');
       <h3>好きなゲーム：<span><?php echo ($userData['lovegame']); ?></span></h3>
 
       <!--もしアクセスしているユーザーの場合編集可能-->
-      <?php if($userData['id'] == $u_id) : ?>
+      <?php if($_SESSION['user_id']== $u_id) : ?>
         <p><a href="profEdit.php">プロフィールを編集する</a></p>
       <?php endif; ?>
+
+
+
 
       <button type="button" name="button" class="fav-button">お気に入り投稿一覧</button>
     </div>

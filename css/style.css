@@ -713,8 +713,10 @@ header {
   margin-bottom: 25px; }
 
 .panel-list {
-  overflow: hidden;
-  margin-top: 20px; }
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
 
 .panel-head {
   float: left;
@@ -743,7 +745,8 @@ header {
   box-shadow: 2px 2px; }
 
 .panel_p {
-  min-height: 25%;
+  min-height: 25px;
+  max-height: 50px;
   padding: 5px;
   white-space: nowrap;
   overflow: hidden; }
@@ -771,7 +774,8 @@ header {
   border-radius: 5px; }
 
 .panel-head > .panel-head-img {
-  width: 80%; }
+  width: 80%;
+  max-height: 200px; }
 
 .panel-head-img:hover {
   transform: scale(1.05);
@@ -1018,7 +1022,8 @@ header {
 
 .mypage-container {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  min-height: 100%; }
 
 #sidebar {
   width: 30%;
