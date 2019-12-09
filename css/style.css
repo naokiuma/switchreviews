@@ -806,7 +806,7 @@ header {
   width: 100%;
   position: fixed;
   bottom: 0;
-  height: 300px;
+  height: 500px;
   background-color: #eae7e1;
   border-top: solid 3px;
   box-shadow: 5px; }
@@ -816,6 +816,7 @@ header {
 
 .search-info__wrapper {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 20px; }
   @media screen and (max-width: 770px) {
     .search-info__wrapper {
@@ -823,7 +824,10 @@ header {
 
 .search-category {
   width: 20%;
-  margin-left: 10%; }
+  margin: 30px auto 30px 40%; }
+  @media screen and (max-width: 770px) {
+    .search-category {
+      margin: 0; } }
   .search-category select {
     position: relative;
     width: 70%;
@@ -854,14 +858,15 @@ header {
       pointer-events: none; }
 
 .search-keywords {
-  width: 60%; }
+  width: 80%;
+  margin: auto; }
   @media screen and (max-width: 770px) {
     .search-keywords {
       margin: 20px auto; } }
 
 .search-textbox {
   width: 70%;
-  height: 25px;
+  height: 35px;
   padding: 5px; }
   @media screen and (max-width: 770px) {
     .search-textbox {
@@ -877,6 +882,19 @@ header {
   @media screen and (max-width: 770px) {
     .search-result {
       font-size: 12px; } }
+
+.search-suggest__active {
+  width: 50%;
+  min-height: 30px;
+  position: absolute;
+  top: -200px;
+  background: #faf7fdcc;
+  left: 300px;
+  opacity: 1; }
+  @media screen and (max-width: 770px) {
+    .search-suggest__active {
+      font-size: 12px;
+      left: 30px; } }
 
 /*========================================
   ページネーション

@@ -1,5 +1,5 @@
 //カテゴリ検索時に行われる処理
-
+ 
 $(function($){
   $('.js-select-category').change(function(e){
 

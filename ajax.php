@@ -1,6 +1,8 @@
 
+<!--カテゴリ検索を行う--->
 <?php
 require('function.php');
+
 
 if(!empty($_POST)){
   //検索カテゴリーapp.jsから。
@@ -31,9 +33,5 @@ if(!empty($_POST)){
   echo($result);
   //echo json_encode(array('count' => $result));
 
-  //if(!empty($result)){
-    //echo json_encode(array('count' => $result));
-    //
-    //  }
   exit();
 }

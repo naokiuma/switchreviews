@@ -1,4 +1,4 @@
-console.log("switch.jsを読み込みます");
+//console.log("switch.jsを読み込みます");
 
 Vue.component('tweet-data',{
   data:function(){
@@ -85,5 +85,5 @@ Vue.component('tweet-data',{
 })
 
 new Vue({
-  el:'#vue',
+  el:'#twitter',
 })

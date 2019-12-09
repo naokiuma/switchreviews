@@ -401,7 +401,7 @@ function searchReviews($s_key, $span = 20){
   $data = array();
   $stmt = queryPost($dbh, $sql, $data);
   debug('検索でのクエリ結果情報です!!：'.print_r($stmt,true));
-
+  
   $result_s['total'] = $stmt->rowCount(); //総レコード数
   $result_s['total_page'] = ceil($result_s['total']/$span); //総ページ数
   $result_s['data'] = $stmt->fetchAll(PDO::FETCH_ASSOC);

@@ -34,7 +34,7 @@ if(!empty($_SESSION['user_id'])){
     <li><a href="mypage.php?u_id=<?php echo h($_SESSION['user_id']) ?>"><i class="fas fa-gamepad my-gray"></i>マイページ</a></li>
     <li><a href="searchreviews.php"><i class="fas fa-gamepad"></i> 投稿をさがす</a></li>
     <li><a href="reviewpost.php"><i class="fas fa-gamepad"></i> 投稿する</a></li>
-    <li><a href="twitter.php"><i class="fas fa-gamepad"></i>ツイートを見てみる</a></li>
+    <li><a href="twitter.php"><i class="fas fa-gamepad"></i>ツイートを探す</a></li>
     <li><a href="profEdit.php"><i class="fas fa-gamepad"></i> プロフィール修正</a></li>
     <li><a href="logout.php"><i class="fas fa-gamepad"></i> ログアウト</a></li>
     <li><a href="news.php"><i class="fas fa-gamepad"></i>ニュース</a></li>

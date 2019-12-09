@@ -62,6 +62,8 @@ require('head.php');
 
 
 <section class="search-main">
+
+
   <div class="search-title">
     <div class="search-left">
       <label class="<?php if(!empty($err_msg['addr'])) echo 'err'; ?>">
@@ -94,14 +96,27 @@ require('head.php');
   </div>
   <?php pagination($currentPageNum, $dbReviewsData['total_page']); ?>
 
+
+
+
   <div class="cover"></div>
-    <!--フッターの検索バーエリア-->
+
     <button type="button" class="search-button" name="button">検索する</button>
     <div class="search-container">
       <form id="search-form-main" action="" method="post">
         <h3 class="title">投稿を条件で検索する</h3>
 
+
+        <div class="search-suggest"></div><!--タイトルのサジェスト-->
+
         <section class="search-info__wrapper">
+        
+          <div class="search-keywords">
+            <label>
+              <input type="text" name="s_key" class="search-textbox ajax-keywords" placeholder="キーワードで検索" >
+            </label>
+          </div>
+
           <div class="search-category">
             <label>
               <select name="c_id" class="js-select-category search-select"><!--app.jsにて処理-->
@@ -119,18 +134,20 @@ require('head.php');
             </lavel>
           </div>
 
-          <div class="search-keywords">
-            <label>
-              <input type="text" name="s_key" class="search-textbox" placeholder="キーワードで検索" >
-            </label>
-          </div>
+
+
         </section>
         <p class="search-result">このカテゴリには<span class ="js-category-success">0</span>件の投稿があります。</p>
-        <input type="submit" class="search-start" value="Search">
-      </form>
+      <input type="submit" class="search-start" value="Search">
+    </form>
 
   </div>
+
+
 </section>
+
+<!--jquary/ajaxでキーワードの候補を出す-->
+<script src="js/ajax_title.js"></script>
 
 <?php
   require('footer.php'); //フッターの中でapp.jsを読み込んでいる。

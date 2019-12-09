@@ -60,6 +60,7 @@ $nowdate = date("Y-m-d H:i:s",strtotime("-3 day"));//strtotimeでdatetimeの方�
      <li>
       <a href="news.php#news">
         <time datetime="2019-11-2">2019/11/22</time><span>サイトを公開しました。</span>
+        <time datetime="2019-12-9">2019/12/29</time><span>キーワード検索時にタイトル候補を表示させるようにしました。</span>
       </a>
      </li>
 

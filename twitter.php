@@ -35,7 +35,7 @@ require('auth.php');
   </p>
 
   <div class="twitter__posts">
-    <div id="vue">
+    <div id="twitter">
       <tweet-data></tweet-data>
     </div>
   </div>
@@ -44,6 +44,7 @@ require('auth.php');
 <?php $search_word = searchcronWord();?>
 
 
+<!--vue.jsでツイッターデータを読み込む-->
 <script src="js/twitter_switch.js"></script>
 
 
