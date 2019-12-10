@@ -583,10 +583,11 @@ header {
     .top_news__right ul {
       margin: auto; }
     .top_news__right li {
-      margin: 10px; }
+      margin: 10px;
+      font-size: 12px; }
       @media screen and (max-width: 770px) {
         .top_news__right li {
-          font-size: 12px; } }
+          font-size: 10px; } }
     .top_news__right span {
       margin: auto 15px;
       letter-spacing: 1px; }
