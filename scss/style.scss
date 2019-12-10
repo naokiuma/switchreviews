@@ -482,8 +482,9 @@ header{
     }
     li{
       margin: 10px;
+      font-size: 12px;
       @media screen and (max-width: $res-max-width){
-        font-size: 12px;
+        font-size: 10px;
       }
     }
     span{
@@ -634,9 +635,19 @@ header{
 .tag-category{
   width: 100%;
   background-color:#87e2ebc7;
-  font-size: 16px;
+  font-size: 12px;
+  margin: 5px auto;
   @media screen and (max-width: $res-max-width){
-    font-size: 12px;
+    font-size: 10px;
+  }
+}
+.tag-gametitle{
+  width: 100%;
+  background-color:#a8ffadc4;;
+  font-size: 12px;
+  margin: 5px auto;
+  @media screen and (max-width: $res-max-width){
+    font-size: 10px;
   }
 }
 .search-main{
@@ -670,7 +681,7 @@ header{
 
 .panel_a{
   display: inline-block;
-  font-size: 15px;
+  font-size: 14px;
   width:95%;
   margin-left:auto;
   margin-right: auto;
@@ -688,6 +699,7 @@ header{
   padding: 5px;
   white-space: nowrap;
   overflow: hidden;
+  font-size: 12px;
 }
 
 .new_post{
@@ -918,12 +930,12 @@ header{
     margin-top: -20px;
     h1{
       text-align: center;
-      margin: 50px;
+      margin: 40px;
       animation-name:RightToLeft;
       animation-duration: 1s;
       font-size: 30px;
       @media screen and (max-width: $res-max-width){
-        margin: 50px auto;
+        margin: 40px auto;
         font-size: 20px;
         width: 80%;
       }
@@ -931,7 +943,6 @@ header{
         border-bottom: 3px solid #00abff6e;
         padding-bottom: 5px;
       }
-
       &:before{
         content: "タイトル";
         font-size: 16px;
@@ -942,6 +953,35 @@ header{
         }
       }
     }
+
+    h2{
+      text-align: center;
+      margin: 20px;
+      animation-name:LeftToRight;
+      animation-duration: 1s;
+      font-size: 20px;
+      @media screen and (max-width: $res-max-width){
+        font-size: 14px;
+        width: 80%;
+      }
+      span{
+        border-bottom: 3px solid #00abff6e;
+        padding-bottom: 5px;
+      }
+
+
+      &:before{
+        content: "ゲームタイトル";
+        font-size: 16px;
+        color:$before-text;
+        @media screen and (max-width: $res-max-width){
+          font-size: 12px;
+        }
+      }
+    }
+
+
+
   }
   &-category{
     width: 50%;
@@ -1156,7 +1196,7 @@ header{
 @keyframes LeftToRight{
   0%{
     opacity:0;
-    transform:translateX(-500px);
+    transform:translateX(-200px);
   }
   100%{
     opacity:1;

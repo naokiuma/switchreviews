@@ -93,7 +93,7 @@ $nowdate = date("Y-m-d H:i:s",strtotime("-3 day"));//strtotimeでdatetimeの方�
     <div class="disc__about__wrapper">
       <div class="disc__card">
         <h3>投稿する</h3>
-        <p>お気に入りや、気になるゲームについて投稿しよう。インディーズゲームでなくてもOKです！</p>
+        <p>お気に入りや、気になるゲームについて投稿しよう！</p>
         <i class="fas fa-laptop disc__card__image"></i>
       </div>
 
@@ -134,8 +134,7 @@ $nowdate = date("Y-m-d H:i:s",strtotime("-3 day"));//strtotimeでdatetimeの方�
 
           <div class="posts-text">
             <a href="reviewdetail.php?r_id=<?php echo h($row['id']) ?>" class="<?php if ($row['create_date'] > $nowdate) echo 'new_post'; ?>">
-              <?php echo h($row['title']);
-              echo "<br>";?></a>
+              <?php echo h($row['title']); echo "/"; echo h($row['gametitle']); echo "<br>";?></a>
               <p class="overflow-ellipsis"><?php echo h($row['body']);?><br>
               投稿者：<?php echo h($row['username']); ?>
             </p>

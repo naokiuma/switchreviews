@@ -89,6 +89,9 @@ require('head.php');
     <h1>
       <span><?php echo ($viewData['title']); ?></span>
     </h1>
+    <h2>
+      <?php echo ($viewData['gametitle']); ?>
+    </h2>
   <div class="detail-info-wrapper">
     <div class="detail-pic">
       <img src="<?php echo (!empty($viewData['pic'])) ? $viewData['pic'] : "images/sample.png"; ?>" alt="ゲーム画像">

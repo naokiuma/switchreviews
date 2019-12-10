@@ -1,5 +1,3 @@
-
-<!--カテゴリ検索を行う--->
 <?php
 require('function.php');
 

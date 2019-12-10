@@ -701,10 +701,20 @@ header {
 .tag-category {
   width: 100%;
   background-color: #87e2ebc7;
-  font-size: 16px; }
+  font-size: 12px;
+  margin: 5px auto; }
   @media screen and (max-width: 770px) {
     .tag-category {
-      font-size: 12px; } }
+      font-size: 10px; } }
+
+.tag-gametitle {
+  width: 100%;
+  background-color: #a8ffadc4;
+  font-size: 12px;
+  margin: 5px auto; }
+  @media screen and (max-width: 770px) {
+    .tag-gametitle {
+      font-size: 10px; } }
 
 .search-main {
   background-color: #fafad2;
@@ -733,7 +743,7 @@ header {
 
 .panel_a {
   display: inline-block;
-  font-size: 15px;
+  font-size: 14px;
   width: 95%;
   margin-left: auto;
   margin-right: auto;
@@ -749,7 +759,8 @@ header {
   max-height: 50px;
   padding: 5px;
   white-space: nowrap;
-  overflow: hidden; }
+  overflow: hidden;
+  font-size: 12px; }
 
 .new_post:after {
   content: "NEW!";
@@ -940,13 +951,13 @@ header {
   margin-top: -20px; }
   .detail-wrapper h1 {
     text-align: center;
-    margin: 50px;
+    margin: 40px;
     animation-name: RightToLeft;
     animation-duration: 1s;
     font-size: 30px; }
     @media screen and (max-width: 770px) {
       .detail-wrapper h1 {
-        margin: 50px auto;
+        margin: 40px auto;
         font-size: 20px;
         width: 80%; } }
     .detail-wrapper h1 span {
@@ -959,6 +970,26 @@ header {
       color: #00000091; }
       @media screen and (max-width: 770px) {
         .detail-wrapper h1:before {
+          font-size: 12px; } }
+  .detail-wrapper h2 {
+    text-align: center;
+    margin: 20px;
+    animation-name: LeftToRight;
+    animation-duration: 1s;
+    font-size: 20px; }
+    @media screen and (max-width: 770px) {
+      .detail-wrapper h2 {
+        font-size: 14px;
+        width: 80%; } }
+    .detail-wrapper h2 span {
+      border-bottom: 3px solid #00abff6e;
+      padding-bottom: 5px; }
+    .detail-wrapper h2:before {
+      content: "ゲームタイトル";
+      font-size: 16px;
+      color: #00000091; }
+      @media screen and (max-width: 770px) {
+        .detail-wrapper h2:before {
           font-size: 12px; } }
 
 .detail-category {
@@ -1130,7 +1161,7 @@ header {
 @keyframes LeftToRight {
   0% {
     opacity: 0;
-    transform: translateX(-500px); }
+    transform: translateX(-200px); }
   100% {
     opacity: 1;
     transform: translateX(0); } }

@@ -542,7 +542,7 @@ function getReviewOne($r_id){
     //DBへ接続
     $dbh = dbConnect();
     //sql文作成
-    $sql = 'SELECT r.id, r.title, r.body, r.pic, r.user_id, r.create_date, r.update_date, r.abouturl, c.name AS category
+    $sql = 'SELECT r.id, r.title, r.gametitle,r.body, r.pic, r.user_id, r.create_date, r.update_date, r.abouturl, c.name AS category
             FROM reviews AS r LEFT JOIN category AS c ON r.category_id = c.id WHERE r.id = :r_id AND r.delete_flg = 0';
     $data = array(':r_id' => $r_id);
     $stmt = queryPost($dbh, $sql, $data);
