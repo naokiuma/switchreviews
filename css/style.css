@@ -150,6 +150,9 @@
   height: 80%;
   background-color: #00000014;
   margin: auto; }
+  @media screen and (max-width: 770px) {
+    .news__container {
+      height: auto; } }
   .news__container h2 {
     text-align: center;
     padding: 25px; }

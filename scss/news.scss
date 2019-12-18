@@ -4,6 +4,9 @@
     height: 80%;
     background-color: #00000014;
     margin: auto;
+    @media screen and (max-width: $res-max-width){
+      height: auto;
+    }
     h2{
       text-align: center;
       padding: 25px;
