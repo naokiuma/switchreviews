@@ -159,6 +159,8 @@
 .news__post {
   margin: 50px auto;
   padding: 25px; }
+  .news__post img {
+    max-height: 150px; }
 
 .news__title span {
   background: linear-gradient(transparent 70%, yellow 70%); }
@@ -584,7 +586,11 @@ header {
       margin: auto; }
     .top_news__right li {
       margin: 10px;
-      font-size: 12px; }
+      font-size: 12px;
+      text-align: left; }
+      @media screen and (max-width: 770px) {
+        .top_news__right li span {
+          display: block; } }
       @media screen and (max-width: 770px) {
         .top_news__right li {
           font-size: 10px; } }

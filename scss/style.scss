@@ -483,6 +483,15 @@ header{
     li{
       margin: 10px;
       font-size: 12px;
+      text-align: left;
+      span{
+        @media screen and (max-width: $res-max-width){
+          display: block;
+          
+
+        }
+
+      }
       @media screen and (max-width: $res-max-width){
         font-size: 10px;
       }
