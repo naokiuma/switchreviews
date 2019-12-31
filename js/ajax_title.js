@@ -5,7 +5,6 @@ $(".ajax-keywords").keyup(function(){
     //let val = $(this).val();
     //console.log(val);
     
-
     $.ajax({
         type:'post',
         dataType:'json',
@@ -16,17 +15,7 @@ $(".ajax-keywords").keyup(function(){
         } 
 
     }).then(function(ajax){
-       
         if(ajax){
-            //$('.search-suggest__active').remove();
-            //let now = $('.search-suggest__active').children();
-            //console.log(now.val());
-            
-            //console.log(ajax);//stringです。
-            
-            //count = Object.keys(ajax.length);
-            //count = ajax.length
-            //console.log(count);
             console.log($(".search-suggest__active").text());
 
                  //ここに成功時の処理
@@ -37,13 +26,11 @@ $(".ajax-keywords").keyup(function(){
                         //console.log(suggestList);
                         //console.log("ajax[i]です");
                         //console.log(ajax[i]);
-
                     if($(".search-suggest__active").text().indexOf(ajax[i]) < 0 ){
-                        
                         suggestList += '<p>'+ ajax[i] + '</p>';
                     }
-                        
-                    }
+  
+                }
                 $('.search-suggest__active').append(suggestList);
 
                 //document.getElementsByClassName('.search-suggest').innerHTML = suggestList;

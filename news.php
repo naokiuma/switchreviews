@@ -25,6 +25,14 @@ require('head.php');
   </div>
 
   <div class="news__post">
+    <time datetime="2019-12-09">2020/01/01</time>
+    <h3 class="news__title"><span>記事ページのツイートをできるようにしました。</span></h3>
+    <p class="new__contens">
+    記事詳細ページで投稿をシェアできるようにしました。
+    </p>
+  </div>
+
+  <div class="news__post">
     <time datetime="2019-12-09">2019/12/09</time>
     <h3 class="news__title"><span>キーワード検索時にタイトル候補を表示</span></h3>
     <p class="new__contens">

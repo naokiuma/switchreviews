@@ -52,13 +52,14 @@ $nowdate = date("Y-m-d H:i:s",strtotime("-3 day"));//strtotimeでdatetimeの方�
 
 <div class="top_news">
   <div class="top_news__left">
-    <h2>NEWS</h2>
+    <h2><i class="fas fa-newspaper"></i> NEWS</h2>
     <p><a href="news.php#news">More　<i class="fas fa-arrow-right"></i></a></p>
   </div>
   <div class="top_news__right">
     <ul>
      <li>
       <a href="news.php#news">
+        <time datetime="2020-1-1">2020/01/01</time><span>記事ページのツイートをできるようにしました。</span><br>
         <time datetime="2019-12-9">2019/12/09</time><span>キーワード検索時の候補タイトルを表示しました。</span><br>
         <time datetime="2019-11-2">2019/11/22</time><span>サイトを公開しました。</span><br>
       </a>

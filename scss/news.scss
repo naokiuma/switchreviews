@@ -2,7 +2,6 @@
   &__container{
     width: 80%;
     height: 80%;
-    background-color: #00000014;
     margin: auto;
     @media screen and (max-width: $res-max-width){
       height: auto;
@@ -18,9 +17,7 @@
   &__post{
     margin: 50px auto;
     padding: 25px;
-    img{
-      max-height: 150px;
-    }
+
   }
   &__title{
     span{

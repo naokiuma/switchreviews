@@ -71,10 +71,26 @@ debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 <!--画面表示--------------------------------------------->
 
-<?php
-$siteTitle = '投稿詳細ページ';
-require('head.php');
-?>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title> Switchインディーズライフ</title>
+  <meta name="description" content="Switchnのインディーズゲームの感想やメモを投稿し、交流し、よりゲームを楽しむことを目的としたサイトです。">
+  <meta name="keywords" content="スイッチ,switch,任天堂,NintendoSwitch,ゲーム">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><!--jqueryをここで読み込んでいる-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- フォントアイコン -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+  <!--vue.js-->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+
+
+</head>
 
 
 <body>
@@ -87,29 +103,30 @@ require('head.php');
 
 <section class="detail-wrapper">
     <h1>
-      <span><?php echo ($viewData['title']); ?></span>
+      <span class="js-geth1"><?php echo h($viewData['title']); ?></span>
     </h1>
     <h2>
-      <?php echo ($viewData['gametitle']); ?>
+      <?php echo h($viewData['gametitle']); ?>
     </h2>
   <div class="detail-info-wrapper">
     <div class="detail-pic">
-      <img src="<?php echo (!empty($viewData['pic'])) ? $viewData['pic'] : "images/sample.png"; ?>" alt="ゲーム画像">
+      <img src="<?php echo h(!empty($viewData['pic'])) ? $viewData['pic'] : "images/sample.png"; ?>" alt="ゲーム画像">
       <?php if ($viewData['create_date'] > $nowdate){  ?>
         <div class="top-posts__new">
           NEW!
         </div>
       <?php } ?>
       <i class="fa fa-heart icn-like js-click-fav <?php if(isFav($_SESSION['user_id'],$viewData['id'])){echo
-      'active';} ?>" aria-hidden="true" data-review_id="<?php echo ($viewData['id']); ?>" ></i>
+      'active';} ?>" aria-hidden="true" data-review_id="<?php echo h($viewData['id']); ?>" ></i>
     </div>
     <div class="detail-category">
-      <p class="tag-category"><?php echo ($viewData['category']); ?></sp>
+      <p class="tag-category"><?php echo h($viewData['category']); ?></sp>
     </div>
-
 
     <div class="detail-other">
       <div class="detail-body">
+        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         <p><span class="u-strong">本文</span><br></p>
         <p><?php echo nl2br(h($viewData['body'])); ?></p>
       </div>
@@ -166,6 +183,11 @@ require('head.php');
 
   </div>
 </section>
+<script>
+  var title = document.getElementsByClassName('js-geth1')[0].innerHTML;
+  document.title = title;
+  console.log(title);
+</script>
 
   <?php
     require('footer.php');

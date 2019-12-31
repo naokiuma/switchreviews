@@ -148,7 +148,6 @@
 .news__container {
   width: 80%;
   height: 80%;
-  background-color: #00000014;
   margin: auto; }
   @media screen and (max-width: 770px) {
     .news__container {
@@ -162,8 +161,6 @@
 .news__post {
   margin: 50px auto;
   padding: 25px; }
-  .news__post img {
-    max-height: 150px; }
 
 .news__title span {
   background: linear-gradient(transparent 70%, yellow 70%); }
