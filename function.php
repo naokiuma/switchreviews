@@ -390,7 +390,7 @@ function searchReviews($s_key, $span = 20){
   $dbh = dbConnect();
   //タイトルか名前にヒットするか検索
   if(!empty($s_key)){
-    $sql = "SELECT * FROM reviews WHERE (title LIKE '%$s_key%' OR body LIKE '%$s_key%') ";
+    $sql = "SELECT * FROM reviews WHERE (title LIKE '%$s_key%' OR gametitle LIKE '%$s_key%' OR body LIKE '%$s_key%') ";
     if(!empty($category)) $sql .= ' AND category_id = ' .$category;
   }else{
     $sql = "SELECT * FROM reviews ";
