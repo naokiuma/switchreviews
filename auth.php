@@ -4,7 +4,8 @@
 // ログイン認証・自動ログアウト
 //================================
 // ログインしている場合
-if( !empty($_SESSION['login_date']) ){
+debug('authの処理です。');
+if(!empty($_SESSION['login_date']) ){
   debug('ログイン済みユーザーです。');
 
   // 現在日時が最終ログイン日時＋有効期限を超えていた場合
@@ -23,10 +24,12 @@ if( !empty($_SESSION['login_date']) ){
     //現在実行中のスクリプトファイル名がlogin.phpの場合
     //$_SERVER['PHP_SELF']はドメインからのパスを返すため、今回だと「/login.php」が返ってくるので、
     //さらにbasename関数を使うことでファイル名だけを取り出せる
+    /*
     if(basename($_SERVER['PHP_SELF']) === 'login.php'){
       debug('マイページへ遷移します。');
       header("Location: " . $_SERVER['PHP_SELF']);
       header("Location:index.php"); //マイページへ
     }
+    */
   }
 }

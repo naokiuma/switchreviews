@@ -62,7 +62,6 @@ if($('.about-text-wrap').length){
 //右から左
 if($('.disc').length){
   $(window).scroll(function(){
-    //$('.disc').addClass('move');
     var imgPos = $('.disc').offset().top;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();

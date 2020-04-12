@@ -22,11 +22,7 @@ $(".ajax-keywords").keyup(function(){
                 let suggestList = '';
                 $('.search-suggest').addClass('search-suggest__active');
                     for(let i = 0; i < ajax.length; i++) {
-                        //console.log("suggestListです");
-                        //console.log(suggestList);
-                        //console.log("ajax[i]です");
-                        //console.log(ajax[i]);
-                    if($(".search-suggest__active").text().indexOf(ajax[i]) < 0 ){
+                        if($(".search-suggest__active").text().indexOf(ajax[i]) < 0 ){
                         suggestList += '<p>'+ ajax[i] + '</p>';
                     }
   

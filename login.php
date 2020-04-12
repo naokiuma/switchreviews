@@ -59,14 +59,15 @@ if(!empty($_POST)){
             //この場合はログイン有効期限は1時間のまま
             $_SESSION['login_limit'] = $sesLimit;
           }
-
+ 
           //ユーザーIDとサクセスメッセージをセッションに格納
           $_SESSION['user_id'] = $result['id'];
           $_SESSION['msg_success'] = SUC01;
+          debug('セッション変数の中身:'.print_r($_SESSION,true));
+          header("Location:index.php");//トップページへ
+          return;
 
-          debug('セッション変数の中身：'.print_r($_SESSION,true));
-          debug('トップへ遷移します。');
-          header("Location:index.php"); //マイページへ
+
 
         }else{
           debug('パスワードが違います');

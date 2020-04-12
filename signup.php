@@ -74,7 +74,7 @@ if(empty($err_msg) && $page_flag === 2){
         $_SESSION['login_limit'] = $sesLimit;
         //ユーザーIDとサクセスメッセージを格納
         $_SESSION['user_id'] = $dbh->lastInsertId();
-        $_SESSION['msg_success'] = SUC02;
+        $_SESSION['msg_success'] = SUC01;
         debug('セッション変数の中身:'.print_r($_SESSION,true));
         header("Location:index.php");//トップページへ
         }

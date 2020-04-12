@@ -14,14 +14,16 @@ debugLogStart();
 
 //mypage。ユーザー情報をGETで取得する。
 $u_id = (!empty($_GET['u_id'])) ? $_GET['u_id'] : '';
-if(empty($u_id)){
-  error_log('ユーザーIDがありません。');
-  header("Location:index.php");
-}
 
 //ユーザーデーターを取得。
 $userData = getUser($u_id);
-//debug('$userDataの中身'.print_r($userData,true));
+debug('$userDataの中身'.print_r($userData,true));
+
+if(empty($userData)){
+  $_SESSION['msg_success'] = MSG11;
+  header("Location:index.php");
+
+}
 
 //DBからポストデータを取得
 $reviewData = getMyreviews($u_id);

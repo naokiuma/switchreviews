@@ -10,6 +10,10 @@ debug('「　トップページ　');
 debug('「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「「');
 debugLogStart();
 
+debug('トップページのセッションです。');
+debug('セッション変数の中身：'.print_r($_SESSION,true));
+
+
 
 //ログイン認証
 require('auth.php');
